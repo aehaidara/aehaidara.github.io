@@ -1,0 +1,32 @@
+@use "../mq";
+@use "../base" as *;
+@use "../abstracts" as *;
+
+.card-regular {
+    @include flex-col-center;
+    border: 0.7px solid $color-primary-beige;
+    padding: 3rem 2rem;
+    border-radius: 3rem;
+    gap: 3rem;
+
+    &__icon {
+        @include flex;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-family: $font-family-lora;
+    }
+
+    &__text {
+        text-align: center
+    }
+}
+
+.card-regular__wrapper {
+    @include flex-col-center;
+    gap: 1rem;
+}
+

@@ -1,0 +1,37 @@
+@use "../mq";
+@use "../base" as *;
+@use "../abstracts" as *;
+
+.swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem;
+    text-align: center;
+    font-size: $font-size-x1;
+    font-family: $font-family-hind;
+    padding: 2rem 3rem;
+    height: auto !important;
+
+
+    span {
+        font-style: italic;
+        color: $color-secondary-orange;
+    }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "" !important;
+}
+
+.swiper-pagination {
+    color: $color-primary-brown !important;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: $color-primary-brown !important;
+}

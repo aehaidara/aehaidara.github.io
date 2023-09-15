@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Hind:wght@300;400&display=swap');
+/* ==========================================================================
+COLOR 
+========================================================================== */
+
+/* ------------ color-primary ------------ */
+$color-primary-white: #FFFFFF;
+$color-primary-beige: #F4EEE3;
+$color-primary-brown: #946A57;
+$color-primary-dark-brown: #442E24;
+
+/* ------------ color-secondary ------------ */
+$color-secondary-orange: #CF7C29;
+$color-secondary-dark-green: #403A2C;
+
+/* ==========================================================================
+FONTS 
+========================================================================== */
+
+/* ------------ font-family ------------ */
+$font-family-lora: 'Lora', serif;
+$font-family-hind: 'Hind', sans-serif;
+
+/* ------------ font-size ------------ */
+$font-size-x1: 1rem;
+$font-size-x2: 2rem;
+$font-size-x3: 3.5rem;
+
+/* ------------ font-weight ------------ */
+$font-weight-100: 100;
+$font-weight-200: 200;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;
+
+/* ------------ line-height ------------ */
+$line-height-sm: 1.5rem;
+
+/* ------------ letter-spacing ------------ */
+$letter-spacing-sm: 0.06rem;
+
+
+/* ==========================================================================
+MARGIN
+========================================================================== */
+
+/* ------------ line-height ------------ */
+$section-margin-top-mobile: 3rem;
+
+/* ==========================================================================
+BORDER RADIUS
+========================================================================== */
+
+$border-radius-2: 2rem;

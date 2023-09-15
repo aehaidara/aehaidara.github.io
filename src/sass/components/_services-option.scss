@@ -1,0 +1,46 @@
+@use "../mq";
+@use "../base" as *;
+@use "../abstracts" as *;
+
+.my-services__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: $color-primary-brown;
+}
+
+.my-services__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 1.1rem; // create variable
+    border-radius: 2rem;
+    border: 1px solid $color-primary-brown;
+    color: $color-primary-brown;
+    cursor: pointer;
+    &--active {
+        background: $color-primary-brown;
+        color: $color-primary-white;
+    }
+    transition: all 0.2s linear;
+}
+
+.my-services__description {
+    @include flex-col;
+    gap: 1rem;
+    padding: 0 1.5rem;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+
+
+.my-services__info {
+    span {
+        color: $color-secondary-orange;
+    }
+}
+
+.my-services__btn {
+    align-self: flex-end;
+}

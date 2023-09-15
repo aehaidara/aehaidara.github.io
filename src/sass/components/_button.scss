@@ -1,0 +1,28 @@
+@use "../mq";
+@use "../base" as *;
+@use "../abstracts" as *;
+
+.btn-brown, .btn-transparent {
+    display: flex;
+    gap: 1rem;
+    color: $color-primary-white;
+    font-family: $font-family-hind;
+    font-size: $font-size-x1;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.btn-brown {
+    background: $color-primary-brown;
+}
+
+.btn-transparent {
+    border: 1px solid $color-primary-white;
+}
+
+@include mq.mq($from: desktop) {
+    .btn-brown:hover {
+        transition: 0.2s ease-in-out;
+        gap: 1.5rem;
+    }
+}

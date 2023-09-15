@@ -1,0 +1,6 @@
+@use "../mq";
+@use "../abstracts" as *;
+
+.page-bg-beige {
+    background-color: $color-primary-beige;
+}
