@@ -9,7 +9,7 @@ section {
     // border: 1px dashed darkmagenta;
 
     @include mq.mq($from: mobileLandscape, $until: tablet) {
-        border: 1px dashed darkblue;
+        // border: 1px dashed darkblue;
     }
     @include mq.mq($from: tablet, $until: desktop) {
         //  border: 1px dashed black;

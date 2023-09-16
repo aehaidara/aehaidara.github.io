@@ -5,22 +5,37 @@
 .hero {
     grid-column: 1/4;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
+
     z-index: 1;
 
+    /* mobile-land */
     @include mq.mq($from: mobileLandscape) {
         margin-top: $nav-mobile-height + 1rem !important;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 100vh;
         gap: 1rem;
         &__images {
             width: 100%;
-            height: 370px;
+            height: 350px;
             img {
-                width: 100%;
-                height: 100%;
                 border-radius: 2rem;
+            }
+        }
+    }
+
+    // tablet
+    @include mq.mq($from: tablet, $until: desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__images {
+            width: 100%;
+            height: 66vh;
+            img {
+                border-radius: 2rem;
+                padding: 0 1rem;
             }
         }
     }
@@ -31,6 +46,7 @@
         object-fit: cover;
         filter: saturate(80%);
 
+        // mobile-land
         @include mq.mq($from: mobileLandscape) {
             max-width: 100%;
             height: 100%;
@@ -38,15 +54,19 @@
     }
 
     &__be-your-best-self {
-        display: none; 
-
+        display: none;
+        height: 250px;
+        align-self: center;
         @include mq.mq($from: mobileLandscape) {
             display: flex;
             justify-content: center;
             align-items: center;
             border: 1px solid $color-primary-brown;
             border-radius: 2rem;
-            
+        }
+        //tablet
+        @include mq.mq($from: tablet, $until: desktop) {
+            width: 50%;
         }
     }
 
@@ -62,13 +82,11 @@
             font-size: 4rem;
             font-family: $font-family-hind;
             font-weight: 600;
-            
         }
-        @include mq.mq($from: mobileLandscape) {       
+        @include mq.mq($from: mobileLandscape) {
             @include flex-col-center;
             gap: 1rem;
         }
-        
     }
 }
 
@@ -86,6 +104,23 @@
     }
 }
 
+.meet-your-coach-container {
+    grid-column: 1/4;
+    margin: 0 !important;
+
+    // mobile-land
+    @include mq.mq($from: mobileLandscape) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    //tablet
+    @include mq.mq($from: tablet, $until: desktop) {
+
+    }
+    
+}
+
 .meet-your-coach {
     position: relative;
     grid-column: 1/4; // occupy full width
@@ -100,11 +135,16 @@
         right: 5%;
         transform: translateY(-50%);
         color: $color-primary-beige;
+        @include mq.mq($from: mobileLandscape) {
+            display: none;
+        }
         img {
             margin-top: 0.5rem;
             align-self: center;
             width: 35% !important;
             position: relative;
+
+            
         }
     }
 
@@ -119,14 +159,36 @@
     img {
         width: 100%;
         height: 100%;
+        @include mq.mq($from: mobileLandscape) {
+            height: 480px;
+            object-fit: cover;
+            border-radius: 2rem;
+        }
+        
     }
 }
 
 .aicha-info {
-    @include flex-col-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     gap: 2rem;
     color: $color-primary-brown;
     text-align: center;
+    padding: 0 1rem;
+    font-family: $font-family-lora;
+    @include mq.mq($from: mobileLandscape) {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+    }
+    &__sub-title {
+        font-size: 2rem;
+    }
 }
 
 .what-is-life-coaching {
@@ -137,6 +199,12 @@
     padding: 3rem 1rem;
     background: $color-primary-brown;
     color: $color-primary-white;
+
+    /* mobile-land */
+    @include mq.mq($from: mobileLandscape) {
+        width: 100%;
+        padding: 3rem;
+    }
 }
 
 .my-services {
@@ -144,6 +212,12 @@
     gap: 2rem;
     width: 100%;
     color: $color-primary-brown;
+
+    /* mobile-land */
+    @include mq.mq($from: mobileLandscape) {
+        width: 100%;
+        padding: 0 5rem;
+    }
 }
 
 .for-businesses {
@@ -153,6 +227,12 @@
     background: $color-secondary-dark-green;
     color: $color-primary-beige;
     padding: 3rem 1rem;
+
+    /* mobile-land */
+    @include mq.mq($from: mobileLandscape) {
+        width: 100%;
+        padding: 3rem 5rem;
+    }
 }
 
 .company-logos {
@@ -168,6 +248,12 @@
     &__wrapper {
         @include flex-col-center;
         gap: 0.5rem;
+
+        /* mobile-land */
+        @include mq.mq($from: mobileLandscape) {
+            flex-direction: row;
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -189,4 +275,9 @@
 .testimonial {
     grid-column: 1/4;
     color: $color-primary-brown;
+
+     /* mobile-land */
+     @include mq.mq($from: mobileLandscape) {
+        padding: 0 3rem;
+    }
 }
