@@ -467,6 +467,11 @@ nav .logo {
     grid-template-columns: 1fr 95% 1fr;
   }
 }
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .layout {
+    grid-template-columns: 1fr 95% 1fr;
+  }
+}
 @media (min-width: 61.25em) and (max-width: 81.24em) {
   .layout {
     grid-template-columns: 1fr 75% 1fr;

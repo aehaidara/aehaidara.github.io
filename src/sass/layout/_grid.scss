@@ -13,7 +13,7 @@
   @include mq.mq($until: mobileLandscape) {
     grid-template-columns: 1fr 90% 1fr;
   }
-  
+        
   // mobile-landscape
   @include mq.mq($from: mobileLandscape, $until: tablet) {
     grid-template-columns: 1fr 95% 1fr;
@@ -22,7 +22,7 @@
   }
   // tablet
   @include mq.mq($from: tablet, $until: desktop) {
-    // grid-template-columns: 1fr 95% 1fr;
+    grid-template-columns: 1fr 95% 1fr;
   }
   // mobile-large-landscape
   @include mq.mq($from: tablet, $until: desktop, $and: '(orientation: landscape)') {
