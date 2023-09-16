@@ -25,39 +25,68 @@
         <script src="./js/scripts.js" defer></script>
 
         <title>Dara coaching</title>
-        <link rel="icon" href="./assets/logos/logo-white.png" type="image/x-icon">
+        <link
+            rel="icon"
+            href="./assets/logos/logo-white.png"
+            type="image/x-icon"
+        />
     </head>
     <body class="page-bg-beige">
         <!-- HERO -->
-        <nav>
-            <img
-                class="logo"
-                src="./assets/logos/logo-sm.png"
-                alt="dara-coaching-logo"
-            />
-            <div role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Prise</li></a>
-                        <a href="#"><li>Services</li></a>
-                        <a href="#"><li>Business</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>Booking</li></a>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="hero">
-            <img src="./assets/images/hero-img.jpg" alt="" />
-        </div>
+
         <div>
             <main class="layout">
+                <nav>
+                    <img
+                        class="logo"
+                        src="./assets/logos/logo-sm.png"
+                        alt="dara-coaching-logo"
+                    />
+                    <div role="navigation">
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul id="menu">
+                                <a href="#"><li>Home</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Prise</li></a>
+                                <a href="#"><li>Services</li></a>
+                                <a href="#"><li>Business</li></a>
+                                <a href="#"><li>Contact</li></a>
+                                <a href="#"><li>Booking</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <section class="hero">
+                    <picture class="hero__images">
+                        <img src="./assets/images/hero-img.jpg" alt="" />
+                        <source
+                            media="(min-width: 740px)"
+                            srcset="./assets/hero/hero-tablet.jpg"
+                        />
+                        <source
+                            class="xx"
+                            media="(min-width: 400px)"
+                            srcset="./assets/hero/hero-img-mobile-landscape.jpg"
+                        />
+                    </picture>
+
+                    <div class="hero__be-your-best-self">
+                        <div class="hero__content">
+                            <h4>Become Your</h4>
+                            <h1>Best Self</h1>
+                            <a class="welcome__btn-brown btn-brown" href="#"
+                                >Booking
+                                <img src="./assets/svg/btn-arrow.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- WELCOME -->
                 <section class="welcome">
                     <h1 class="welcome__title">Welcome to DARA Coaching</h1>

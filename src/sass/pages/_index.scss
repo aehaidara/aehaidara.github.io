@@ -3,16 +3,72 @@
 @use "../abstracts" as *;
 
 .hero {
-    background: blue;
+    grid-column: 1/4;
     width: 100%;
     height: 100vh;
     z-index: 1;
+
+    @include mq.mq($from: mobileLandscape) {
+        margin-top: $nav-mobile-height + 1rem !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        gap: 1rem;
+        &__images {
+            width: 100%;
+            height: 370px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 2rem;
+            }
+        }
+    }
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         filter: saturate(80%);
+
+        @include mq.mq($from: mobileLandscape) {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__be-your-best-self {
+        display: none; 
+
+        @include mq.mq($from: mobileLandscape) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $color-primary-brown;
+            border-radius: 2rem;
+            
+        }
+    }
+
+    &__content {
+        color: $color-primary-brown;
+        font-family: $font-family-hind;
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+        h1 {
+            font-size: 4rem;
+            font-family: $font-family-hind;
+            font-weight: 600;
+            
+        }
+        @include mq.mq($from: mobileLandscape) {       
+            @include flex-col-center;
+            gap: 1rem;
+        }
+        
     }
 }
 
@@ -101,7 +157,6 @@
 
 .company-logos {
     grid-column: 1/4;
-
 }
 
 /*  */

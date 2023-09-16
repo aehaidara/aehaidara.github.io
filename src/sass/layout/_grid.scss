@@ -16,7 +16,7 @@
         
   // mobile-landscape
   @include mq.mq($from: mobileLandscape, $until: tablet) {
-    grid-template-columns: 1fr 95% 1fr;
+    grid-template-columns: 1fr 80% 1fr;
     
     // background-color: #778DA9;
   }

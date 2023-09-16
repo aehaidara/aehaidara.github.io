@@ -21,6 +21,9 @@ MARGIN
 /* ==========================================================================
 BORDER RADIUS
 ========================================================================== */
+/* ==========================================================================
+HEIGHTS
+========================================================================== */
 body:before {
   background-color: #fcf8e3;
   border-bottom: 1px solid #fbeed5;
@@ -171,6 +174,7 @@ body p {
 nav {
   position: fixed;
   width: 100%;
+  height: 3.6rem;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem 0 1rem;
@@ -464,7 +468,7 @@ nav .logo {
 }
 @media (min-width: 30em) and (max-width: 47.99em) {
   .layout {
-    grid-template-columns: 1fr 95% 1fr;
+    grid-template-columns: 1fr 80% 1fr;
   }
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
@@ -505,16 +509,73 @@ section {
 
 /* ------------ /end main block  ------------ */
 .hero {
-  background: blue;
+  grid-column: 1/4;
   width: 100%;
   height: 100vh;
   z-index: 1;
+}
+@media (min-width: 30em) {
+  .hero {
+    margin-top: 4.6rem !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    gap: 1rem;
+  }
+  .hero__images {
+    width: 100%;
+    height: 370px;
+  }
+  .hero__images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+  }
 }
 .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: saturate(80%);
+}
+@media (min-width: 30em) {
+  .hero img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+.hero__be-your-best-self {
+  display: none;
+}
+@media (min-width: 30em) {
+  .hero__be-your-best-self {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #946A57;
+    border-radius: 2rem;
+  }
+}
+.hero__content {
+  color: #946A57;
+  font-family: "Hind", sans-serif;
+}
+.hero__content h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.hero__content h1 {
+  font-size: 4rem;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+}
+@media (min-width: 30em) {
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .welcome {

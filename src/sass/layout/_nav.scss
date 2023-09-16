@@ -2,3 +2,17 @@
 @use "../base" as *;
 @use "../abstracts" as *;
 
+nav {
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
+        
+    }
+    @include mq.mq($from: tablet, $until: desktop) {
+        //  border: 1px dashed black;
+    }
+    @include mq.mq($from: desktop, $until: wide) {
+    
+    }
+    @include mq.mq($from: wide) {
+    
+    }
+}
