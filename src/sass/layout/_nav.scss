@@ -3,16 +3,24 @@
 @use "../abstracts" as *;
 
 nav {
+    position: fixed;
+    width: 100%;
+    height: $nav-mobile-height;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0 1rem;
+
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         
     }
     @include mq.mq($from: tablet, $until: desktop) {
-        //  border: 1px dashed black;
+        height: $nav-tablet-height;
     }
     @include mq.mq($from: desktop, $until: wide) {
-    
+
     }
     @include mq.mq($from: wide) {
-    
+        padding: 0 10rem;
+        height: $nav-desktop-height;
     }
 }

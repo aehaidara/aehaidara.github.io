@@ -10,7 +10,7 @@
     gap: 3rem;
     text-align: center;
 
-    @include mq.mq($from: mobileLandscape) {       
+    @include mq.mq($from: mobileLandscape) {
         width: 100%;
         padding: 3rem 10rem;
     }
@@ -27,7 +27,13 @@
     }
 
     &__text {
-        text-align: center
+        text-align: center;
+    }
+
+    /* mobile-land */
+    @include mq.mq($from: desktop) {
+        flex-direction: row;
+        gap: 5rem;
     }
 }
 
@@ -35,4 +41,3 @@
     @include flex-col-center;
     gap: 1rem;
 }
-

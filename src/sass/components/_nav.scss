@@ -3,25 +3,11 @@
 @use "../abstracts" as *;
 
 nav {
-    position: fixed;
-    width: 100%;
-    height: $nav-mobile-height;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 1rem 0 1rem;
-    // background: rgb(217, 217, 217);
-    background: $color-primary-beige;
-
     box-shadow: 2px 0px 21px -2px rgba(0, 0, 0, 0.53);
     -webkit-box-shadow: 2px 0px 21px -2px rgba(0, 0, 0, 0.53);
     -moz-box-shadow: 2px 0px 21px -2px rgba(0, 0, 0, 0.53);
-
+    font-family: $font-family-hind;
     z-index: 2;
-
-    // tablet
-    @include mq.mq($from: tablet, $until: desktop) {
-        height: $nav-tablet-height;
-    }
 
     .logo {
         width: 136px;
@@ -34,11 +20,37 @@ nav {
     }
 }
 
+#home-humburger {
+    background: $color-primary-beige;
+    .navigation {
+        @include mq.mq($from: desktop) {
+            display: none;
+        }
+    }
+}
+
+#home-navigation-bar {
+    color: $color-primary-brown;
+    a:hover {
+        font-weight: bold;
+    }
+}
+
+.navigation-bar-menu {
+    display: none;
+    @include mq.mq($from: desktop) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.8rem;
+        font-size: 1.1rem;
+    }
+}
+
 #menu a {
     text-decoration: none;
     color: $color-primary-brown;
     font-family: $font-family-hind;
-
     transition: color 0.3s ease;
 }
 
