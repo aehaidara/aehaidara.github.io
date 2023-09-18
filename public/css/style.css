@@ -977,11 +977,17 @@ section {
   padding: 3rem 1rem;
   margin-bottom: 0;
   /* mobile-land */
+  /* mobile-land */
 }
 @media (min-width: 30em) {
   .for-businesses {
     width: 100%;
     padding: 3rem 5rem;
+  }
+}
+@media (min-width: 48em) {
+  .for-businesses {
+    padding: 6rem 5rem;
   }
 }
 

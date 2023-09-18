@@ -342,6 +342,11 @@
         width: 100%;
         padding: 3rem 5rem;
     }
+
+    /* mobile-land */
+    @include mq.mq($from: tablet) {
+        padding: 6rem 5rem;
+    }
 }
 
 /*  */
