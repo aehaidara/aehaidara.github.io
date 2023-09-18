@@ -5,15 +5,15 @@
 .hero {
     grid-column: 1/4;
     width: 100%;
-    // height: 100vh;
+    height: 100vh;
 
     z-index: 1;
 
     /* mobile-land */
     @include mq.mq($from: mobileLandscape) {
-        margin-top: $nav-mobile-height + 1rem !important;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-top: $nav-mobile-height + 1rem !important;
         gap: 1rem;
         &__images {
             width: 100%;
@@ -28,14 +28,15 @@
     @include mq.mq($from: tablet, $until: desktop) {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: auto;
         &__images {
             width: 100%;
-            height: 66vh;
+            height: 950px;
             img {
-                border-radius: 2rem;
-                padding: 0 1rem;
+                width: 100%;
+                height: 100%;
+                border-radius: 3rem;
+                padding: 1rem 1rem;
             }
         }
     }
@@ -46,11 +47,11 @@
         object-fit: cover;
         filter: saturate(80%);
 
-        // mobile-land
-        @include mq.mq($from: mobileLandscape) {
-            max-width: 100%;
-            height: 100%;
-        }
+        // mobile-land  - TO BE DELETED
+        // @include mq.mq($from: mobileLandscape) {
+        //     max-width: 100%;
+        //     height: 100%;
+        // }
     }
 
     &__be-your-best-self {
@@ -102,6 +103,11 @@
     &__text {
         text-align: center;
     }
+
+    // tablet
+    @include mq.mq($from: tablet, $until: desktop) {
+        padding: 6rem; // put this to a variable
+    }
 }
 
 .meet-your-coach-container {
@@ -113,12 +119,6 @@
         display: flex;
         flex-direction: row-reverse;
     }
-
-    //tablet
-    @include mq.mq($from: tablet, $until: desktop) {
-
-    }
-    
 }
 
 .meet-your-coach {
@@ -143,8 +143,6 @@
             align-self: center;
             width: 35% !important;
             position: relative;
-
-            
         }
     }
 
@@ -164,7 +162,11 @@
             object-fit: cover;
             border-radius: 2rem;
         }
-        
+        // tablet
+        @include mq.mq($from: tablet) {
+            width: 450px;
+            height: 700px;
+        }
     }
 }
 
@@ -203,7 +205,7 @@
     /* mobile-land */
     @include mq.mq($from: mobileLandscape) {
         width: 100%;
-        padding: 3rem;
+        padding: 6rem
     }
 }
 
@@ -268,6 +270,10 @@
             object-fit: contain;
         }
     }
+    //tablet
+    @include mq.mq($from: tablet, $until: desktop) {
+        padding: 6rem;
+    }
 }
 
 /*  */
@@ -276,8 +282,13 @@
     grid-column: 1/4;
     color: $color-primary-brown;
 
-     /* mobile-land */
-     @include mq.mq($from: mobileLandscape) {
+    /* mobile-land */
+    @include mq.mq($from: mobileLandscape) {
         padding: 0 3rem;
+    }
+
+    //tablet
+    @include mq.mq($from: tablet, $until: desktop) {
+        padding: 6rem;
     }
 }

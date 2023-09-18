@@ -4,6 +4,7 @@
 
 .btn-brown, .btn-transparent {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
     color: $color-primary-white;
     font-family: $font-family-hind;
