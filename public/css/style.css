@@ -177,6 +177,7 @@ nav {
   -webkit-box-shadow: 2px 0px 21px -2px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 2px 0px 21px -2px rgba(0, 0, 0, 0.53);
   font-family: "Hind", sans-serif;
+  background: #F4EEE3;
   z-index: 2;
 }
 nav .logo {
@@ -189,18 +190,24 @@ nav .logo img {
   object-fit: contain;
 }
 
-#home-humburger {
-  background: #F4EEE3;
+.nav-color-brown {
+  color: #946A57;
 }
+
+.nav-color-white {
+  color: #FFFFFF;
+}
+
+.nav-bg-color-brown {
+  background: #946A57;
+}
+
 @media (min-width: 61.25em) {
   #home-humburger .navigation {
     display: none;
   }
 }
 
-#home-navigation-bar {
-  color: #946A57;
-}
 #home-navigation-bar a:hover {
   font-weight: bold;
 }
@@ -546,6 +553,7 @@ nav .logo img {
   object-fit: contain;
 }
 .footer__copywrite {
+  text-align: center;
   font-size: 0.8rem;
   font-weight: lighter;
   padding-bottom: 1rem;
@@ -848,7 +856,7 @@ section {
 }
 @media (min-width: 81.25em) {
   .meet-your-coach img {
-    width: 511px;
+    width: 600px;
     height: 700px;
     border-radius: 2rem;
   }

@@ -49,8 +49,8 @@ function removeOpen(index1) {
 // Initialize Swiper
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    // loop: true,                         //loop
-    // autoplay: {                         //autoplay
+    // loop: true,
+    // autoplay: {
     //     delay: 2000,
     // },
     pagination: {

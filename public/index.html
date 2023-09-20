@@ -33,42 +33,8 @@
     </head>
     <body class="page-bg-beige">
         <main class="layout">
-
             <!-- NAVIGATION -->
-            <nav id="home-humburger">
-                <div class="logo">
-                    <img
-                        src="./assets/logos/logo-sm.png"
-                        alt="dara-coaching-logo"
-                    />
-                </div>
-                <div role="navigation" class="navigation">
-                    <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <ul id="menu">
-                            <a class="menu-item" href="#"><li>Home</li></a>
-                            <a class="menu-item" href="#"><li>About</li></a>
-                            <a class="menu-item" href="#"><li>Prise</li></a>
-                            <a class="menu-item" href="#"><li>Services</li></a>
-                            <a class="menu-item" href="#"><li>Business</li></a>
-                            <a class="menu-item" href="#"><li>Contact</li></a>
-                            <a class="menu-item" href="#"><li>Booking</li></a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="navigation-bar-menu" id="home-navigation-bar">
-                    <a href="">Home</a>
-                    <a href="">Services</a>
-                    <a href="">About</a>
-                    <a href="">Business</a>
-                    <a href="">Prise</a>
-                    <a href="">Booking</a>
-                    <a href="">Contact</a>
-                </div>
-            </nav>
+            <main-nav></main-nav>
 
             <!-- HERO -->
             <section class="hero">
@@ -98,8 +64,9 @@
                         </a>
                     </div>
                     <p class="hero__welcome-text">
-                        Welcome to <span>DARA Coaching</span>, a <span>non-judgmental space</span>, where
-                        you can feel <span>understood</span>.
+                        Welcome to <span>DARA Coaching</span>, a
+                        <span>non-judgmental space</span>, where you can feel
+                        <span>understood</span>.
                     </p>
                 </div>
             </section>
@@ -142,7 +109,11 @@
                         <h2 class="aicha-info__title">MEET</h2>
                         <h3 class="aicha-info__sub-title">YOUR COACH</h3>
                     </div>
-                    <img class="aicha-info__name" src="./assets/svg/name.svg" alt="" />
+                    <img
+                        class="aicha-info__name"
+                        src="./assets/svg/name.svg"
+                        alt=""
+                    />
                     <p class="aicha-info__text">
                         While I am based in Copenhagen I offer coaching
                         in-person and online where ever you might be. I am
@@ -451,52 +422,15 @@
 
             <!-- FOOTER -->
             <section class="footer">
-                <h1>Get in touch</h1>
-
-                <div class="footer__wrapper">
-                    <div class="footer__left-side">
-                        <div class="footer__image-container">
-                            <img src="./assets/images/footer-img.jpg" alt="" />
-                        </div>
-                        <div class="footer__text-and-btn">
-                            <p>
-                                It all starts with a conversatin, don't hesitate
-                                to reach out
-                            </p>
-                            <a class="btn-transparent" href="#"
-                                >Booking
-                                <img src="./assets/svg/btn-arrow.svg" alt="" />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="footer__contacts">
-                        <div class="footer__logo">
-                            <img
-                                src="./assets/logos/logo-white.png"
-                                alt="dara-coaching-logo"
-                            />
-                        </div>
-                        <div>
-                            <p class="">contact@daracoaching.com</p>
-                            <p>+45 93 93 55 38</p>
-                            <p>CVR 38955462</p>
-                        </div>
-                        <div class="footer__icons">
-                            <img src="./assets/svg/instagram-icon.svg" alt="" />
-                            <img src="./assets/svg/facebook-icon.svg" alt="" />
-                            <img src="./assets/svg/linkedin-icon.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-
-                <p class="footer__copywrite">
-                    Copyright &copy; <span id="copyrightYear"></span> DARA
-                    Coaching
-                </p>
+                <main-footer></main-footer>
             </section>
+
         </main>
 
+        <!-- components -->
+        <script src="./js/components/header.js"></script>
+        <script src="./js/components/footer.js"></script>
+        <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

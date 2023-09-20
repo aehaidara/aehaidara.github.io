@@ -7,6 +7,8 @@ nav {
     -webkit-box-shadow: 2px 0px 21px -2px rgba(0, 0, 0, 0.53);
     -moz-box-shadow: 2px 0px 21px -2px rgba(0, 0, 0, 0.53);
     font-family: $font-family-hind;
+    background: $color-primary-beige;
+
     z-index: 2;
 
     .logo {
@@ -20,8 +22,18 @@ nav {
     }
 }
 
+// nav color
+.nav-color-brown {
+    color: $color-primary-brown;
+}
+.nav-color-white {
+    color: $color-primary-white;
+}
+.nav-bg-color-brown {
+    background: $color-primary-brown;
+}
+
 #home-humburger {
-    background: $color-primary-beige;
     .navigation {
         @include mq.mq($from: desktop) {
             display: none;
@@ -30,7 +42,7 @@ nav {
 }
 
 #home-navigation-bar {
-    color: $color-primary-brown;
+    // color: $color-primary-brown;
     a:hover {
         font-weight: bold;
     }

@@ -225,7 +225,7 @@
         }
         // destop
         @include mq.mq($from: wide) {
-            width: 511px;
+            width: 600px;
             height: 700px;
             border-radius: 2rem;
         }
@@ -370,7 +370,6 @@
     h1 {
         color: $color-secondary-dark-green;
     }
-
     &__wrapper {
         @include flex-col-center;
         gap: 0.5rem;
