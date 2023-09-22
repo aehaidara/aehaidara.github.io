@@ -4,3 +4,44 @@
 .page-bg-beige {
     background-color: $color-primary-beige;
 }
+
+.page-bg-brown {
+    background-color: $color-primary-brown;
+}
+
+.layer-back-brown {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 250px;
+    color: $color-primary-white;
+    z-index: 1;
+    margin-left: 1rem;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__title {
+        text-align: left;
+        font-size: $font-size-x3;
+    }
+    &__sub-title {
+        font-size: $font-size-x2;
+    }
+}
+
+.layer-front-beige {
+    grid-column: 1/4;
+    margin-top: 300px;
+    // height: 100vh;
+    background: $color-primary-beige;
+    border-radius: 2.5rem 2.5rem 0 0;
+    z-index: 2;
+    
+    box-shadow: 1px 4px 21px -3px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 1px 4px 21px -3px rgba(0,0,0,0.8);
+    -moz-box-shadow: 1px 4px 21px -3px rgba(0,0,0,0.8);
+}

@@ -20,7 +20,7 @@ nav {
 
     }
     @include mq.mq($from: wide) {
-        padding: 0 10rem;
+        padding: 0 9rem;
         height: $nav-desktop-height;
     }
 }

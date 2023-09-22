@@ -12,16 +12,24 @@ const _NAV_COLOR_WHTIE = "nav-color-white";
 /** NAV BACKGROUND COLOR */
 const _NAV_BACKGROUND_COLOR = "nav-bg-color-brown";
 
+/** HAMBURGER COLOR */
+const _HAMBURGER_COLOR_BROWN = "hamburger-brown";
+const _HAMBURGER_COLOR_WHITE = "hamburger-white";
+
 let navBackgroundColor = "";
 let navColor = "";
+let hamburgerColor = "";
+let humb
 let logo = "";
 
 if (currentPage === "/" || currentPage === "/index.html") {
     logo = _LOGO_DEFAULT;
     navColor = _NAV_COLOR_BROWN;
+    hamburgerColor = _HAMBURGER_COLOR_BROWN;
 } else {
     logo = _LOGO_WHITE;
     navColor = _NAV_COLOR_WHTIE;
+    hamburgerColor = _HAMBURGER_COLOR_WHITE;
     if (currentPage === "/meet-your-coach.html") {
         navBackgroundColor = _NAV_BACKGROUND_COLOR;
     }
@@ -32,22 +40,24 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
 
-      <nav id="home-humburger" class="default-humburger ${navBackgroundColor}">
+      <nav id="hamburger" class="${navBackgroundColor}">
           <div class="logo">
-              <img
-                  src="${logo}"
-                  alt="dara-coaching-logo"
-              />
+          <a href="/">
+            <img
+                src="${logo}"
+                alt="dara-coaching-logo"
+            />
+          </a>
           </div>
           <div role="navigation" class="navigation">
-              <div id="menuToggle">
+              <div class="${hamburgerColor}" id="menuToggle">
                   <input type="checkbox" />
                   <span></span>
                   <span></span>
                   <span></span>
                   <ul id="menu">
-                      <a class="menu-item" href="#"><li>Home</li></a>
-                      <a class="menu-item" href="#"><li>About</li></a>
+                      <a class="menu-item" href="/"><li>Home</li></a>
+                      <a class="menu-item" href="./meet-your-coach.html"><li>About</li></a>
                       <a class="menu-item" href="#"><li>Prise</li></a>
                       <a class="menu-item" href="#"><li>Services</li></a>
                       <a class="menu-item" href="#"><li>Business</li></a>
@@ -56,7 +66,7 @@ class Header extends HTMLElement {
                   </ul>
               </div>
           </div>
-          <div class="navigation-bar-menu ${navColor}" id="home-navigation-bar">
+          <div class="navigation-bar-menu ${navColor}" id="navigation-items">
               <a href="./index.html">Home</a>
               <a href="">Services</a>
               <a href="./meet-your-coach.html">About</a>
