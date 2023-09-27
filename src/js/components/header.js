@@ -35,14 +35,13 @@ if (currentPage === "/" || currentPage === "/index.html") {
     }
 }
 
-
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
 
       <nav id="hamburger" class="${navBackgroundColor}">
           <div class="logo">
-          <a href="/">
+          <a href="./index.html">
             <img
                 src="${logo}"
                 alt="dara-coaching-logo"

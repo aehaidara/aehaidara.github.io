@@ -18,10 +18,12 @@ body {
     }
   
     @include mq.mq($from: mobileLandscape, $until: tablet) {
-
+        
     }
     @include mq.mq($from: tablet, $until: desktop) {
-     
+        h1 {
+            font-size: $font-size-x3;
+        }
     }
     @include mq.mq($from: desktop, $until: wide) {
     

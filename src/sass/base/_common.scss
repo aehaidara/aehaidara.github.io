@@ -9,39 +9,114 @@
     background-color: $color-primary-brown;
 }
 
-.layer-back-brown {
+.layer-back {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: fixed;
-    height: 250px;
+    width: 100%;
+
     color: $color-primary-white;
     z-index: 1;
     margin-left: 1rem;
 
+    @include mq.mq($from: tablet, $until: desktop) {
+        margin-top: $nav-tablet-height + 21rem !important;
+
+    }
+  
     &__wrapper {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+
+        @include mq.mq($from: mobileLandscape) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        @include mq.mq($from: desktop) {
+        }
+    }
+
+    .page-image-back {
+        display: none;
+        @include mq.mq($from: mobileLandscape, $until: desktop) {
+            display: block;
+            margin-top: 16rem;
+            width: 100%;
+        }
+        @include mq.mq($from: desktop) {
+            display: block;
+            width: 620px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 2rem 2rem 0 0;
+        }
+        
+    }
+
+    &__title-wrapper {
+        @include mq.mq($from: tablet, $until: desktop) {
+            display: none;
+        }
     }
 
     &__title {
         text-align: left;
         font-size: $font-size-x3;
+        @include mq.mq($from: mobileLandscape) {
+            font-size: 6rem;
+        }
     }
     &__sub-title {
         font-size: $font-size-x2;
+        @include mq.mq($from: mobileLandscape) {
+            font-size: 3rem;
+        }
+    }
+
+    &__text {
+        @include mq.mq($from: mobileLandscape) {
+            display: none;
+        }
     }
 }
 
-.layer-front-beige {
+.layer-front {
     grid-column: 1/4;
     margin-top: 300px;
     // height: 100vh;
     background: $color-primary-beige;
     border-radius: 2.5rem 2.5rem 0 0;
     z-index: 2;
-    
-    box-shadow: 1px 4px 21px -3px rgba(0,0,0,0.8);
-    -webkit-box-shadow: 1px 4px 21px -3px rgba(0,0,0,0.8);
-    -moz-box-shadow: 1px 4px 21px -3px rgba(0,0,0,0.8);
+
+    // box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
+    // -webkit-box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
+    // -moz-box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
+
+    @include mq.mq($from: mobileLandscape) {
+        margin-top: 320px;
+    }
+    @include mq.mq($from: tablet, $until: desktop) {
+        margin-top: 1200px;
+    }
+    @include mq.mq($from: desktop) {
+        margin-top: 1200px;
+    }
+
+    &__wrapper {
+        @include mq.mq($from: mobileLandscape) {
+            padding: 0 1rem;
+        }
+    }
+    .page-image-front {
+        @include mq.mq($from: mobileLandscape) {
+            display: none;
+        }
+    }
 }
