@@ -596,15 +596,16 @@ nav .logo img {
   gap: 3rem;
   text-align: center;
 }
-@media (min-width: 30em) {
+@media (min-width: 30em) and (max-width: 61.24em) {
   .card-regular {
-    width: 100%;
-    padding: 3rem 10rem;
+    padding: 3rem 3rem;
   }
 }
 @media (min-width: 61.25em) {
   .card-regular {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 3rem 1rem;
     gap: 2rem;
   }
@@ -612,7 +613,8 @@ nav .logo img {
 @media (min-width: 81.25em) {
   .card-regular {
     flex-direction: row;
-    gap: 5rem;
+    padding: 3rem 5rem;
+    gap: 4rem;
   }
 }
 .card-regular__icon {
@@ -1251,7 +1253,7 @@ section {
   /* mobile-land */
   /* mobile-land */
 }
-@media (min-width: 30em) {
+@media (min-width: 30em) and (max-width: 47.99em) {
   .for-businesses {
     width: 100%;
     padding: 3rem 5rem;
@@ -1262,7 +1264,7 @@ section {
     padding: 6rem 5rem;
   }
 }
-@media (min-width: 61.25em) and (max-width: 81.24em) {
+@media (min-width: 61.25em) {
   .for-businesses {
     padding: 6rem 3rem;
   }

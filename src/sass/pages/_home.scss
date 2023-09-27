@@ -370,7 +370,7 @@
     padding: 3rem 1rem;
     margin-bottom: 0;
     /* mobile-land */
-    @include mq.mq($from: mobileLandscape) {
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
         width: 100%;
         padding: 3rem 5rem;
     }
@@ -380,7 +380,7 @@
         padding: 6rem 5rem;
     }
 
-    @include mq.mq($from: desktop, $until: wide) {
+    @include mq.mq($from: desktop) {
         padding: 6rem 3rem;
     }
 }

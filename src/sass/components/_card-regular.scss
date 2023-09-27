@@ -10,20 +10,22 @@
     gap: 3rem;
     text-align: center;
 
-    @include mq.mq($from: mobileLandscape) {
-        width: 100%;
-        padding: 3rem 10rem;
+    @include mq.mq($from: mobileLandscape, $until: desktop) {
+        padding: 3rem 3rem;
     }
 
     @include mq.mq($from: desktop) {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         padding: 3rem 1rem;
         gap: 2rem;
     }
 
     @include mq.mq($from: wide) {
         flex-direction: row;
-        gap: 5rem;
+        padding: 3rem 5rem;
+        gap: 4rem;
     }
 
     &__icon {
