@@ -17,19 +17,18 @@ const _HAMBURGER_COLOR_BROWN = "hamburger-brown";
 const _HAMBURGER_COLOR_WHITE = "hamburger-white";
 
 let navBackgroundColor = "";
-let navColor = "";
-let hamburgerColor = "";
-let humb
+let navTextColor = "";
+let hamburgerIconColor = "";
 let logo = "";
 
 if (currentPage === "/" || currentPage === "/index.html") {
     logo = _LOGO_DEFAULT;
-    navColor = _NAV_COLOR_BROWN;
-    hamburgerColor = _HAMBURGER_COLOR_BROWN;
+    navTextColor = _NAV_COLOR_BROWN;
+    hamburgerIconColor = _HAMBURGER_COLOR_BROWN;
 } else {
     logo = _LOGO_WHITE;
-    navColor = _NAV_COLOR_WHTIE;
-    hamburgerColor = _HAMBURGER_COLOR_WHITE;
+    navTextColor = _NAV_COLOR_WHTIE;
+    hamburgerIconColor = _HAMBURGER_COLOR_WHITE;
     if (currentPage === "/meet-your-coach.html") {
         navBackgroundColor = _NAV_BACKGROUND_COLOR;
     }
@@ -49,7 +48,7 @@ class Header extends HTMLElement {
           </a>
           </div>
           <div role="navigation" class="navigation">
-              <div class="${hamburgerColor}" id="menuToggle">
+              <div class="${hamburgerIconColor}" id="menuToggle">
                   <input type="checkbox" />
                   <span></span>
                   <span></span>
@@ -65,7 +64,7 @@ class Header extends HTMLElement {
                   </ul>
               </div>
           </div>
-          <div class="navigation-bar-menu ${navColor}" id="navigation-items">
+          <div class="navigation-bar-menu ${navTextColor}" id="navigation-items">
               <a href="./index.html">Home</a>
               <a href="">Services</a>
               <a href="./meet-your-coach.html">About</a>

@@ -46,7 +46,7 @@ nav {
 }
 
 .hamburger-white span {
-    background: $color-primary-white;
+    background: $color-primary-white !important;
 }
 
 #navigation-items {
@@ -88,6 +88,10 @@ nav {
 
     -webkit-user-select: none;
     user-select: none;
+
+    @include mq.mq($from: tablet, $until: desktop) {
+        margin-top: 1rem;
+    }
 }
 
 #menuToggle input {

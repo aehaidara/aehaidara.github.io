@@ -6,7 +6,7 @@
 
 section {
     grid-column: 2/3;
-    border: 1px dashed darkmagenta;
+    // border: 1px dashed darkmagenta;
 
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         border: 1px dashed darkblue;

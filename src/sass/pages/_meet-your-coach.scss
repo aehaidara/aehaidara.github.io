@@ -4,7 +4,7 @@
 
 .page-image-front {
     width: 100%;
-    
+
     img {
         width: 100%;
         height: 100%;
@@ -23,14 +23,27 @@
     @include mq.mq($from: mobileLandscape) {
         padding: 0 5rem;
     }
+    @include mq.mq($from: desktop) {
+        padding: 0 20rem;
+    }
 
     h1 {
         padding-bottom: 2rem;
+        @include mq.mq($from: mobileLandscape, $until: tablet) {
+            display: none;
+        }
+        @include mq.mq($from: desktop) {
+            display: none;
+        }
     }
 }
 
 //***** timeline
 .timeline-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: $color-primary-brown;
 
     h1 {
@@ -53,8 +66,12 @@
         gap: 5rem;
     }
 
+    @include mq.mq($from: desktop) {
+        gap: 4rem;
+    }
+
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 1px;
         background-color: $color-secondary-orange;
@@ -72,7 +89,7 @@
     }
 
     &__item::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 20px;
         height: 20px;
@@ -103,6 +120,11 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+        @include mq.mq($from: desktop) {
+            flex-direction: row;
+            gap: 2rem;
+        }
     }
 
     &__text {
@@ -112,16 +134,22 @@
         @include mq.mq($from: tablet, $until: desktop) {
             max-width: 550px;
         }
+        @include mq.mq($from: desktop) {
+            max-width: 400px;
+        }
     }
 
     &__image {
         position: relative;
-        max-width: 400px;
+
         height: 300px;
 
         @include mq.mq($from: tablet, $until: desktop) {
             max-width: 550px;
             height: 400px;
+        }
+        @include mq.mq($from: desktop) {
+            width: 300px;
         }
 
         img {
