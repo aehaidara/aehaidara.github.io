@@ -118,7 +118,7 @@ body:before {
 }
 @media (min-width: 30em) and (max-width: 61.24em) {
   .layer-back__title-wrapper {
-    margin-top: 3rem;
+    margin-top: 4rem;
     gap: 0;
   }
 }
@@ -136,9 +136,9 @@ body:before {
   text-align: left;
   font-size: 3.5rem;
 }
-@media (min-width: 30em) {
+@media (min-width: 30em) and (max-width: 47.99em) {
   .layer-back__title {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media (min-width: 61.25em) and (max-width: 81.24em) {
@@ -155,9 +155,9 @@ body:before {
   font-size: 2rem;
   font-family: "Lora", serif;
 }
-@media (min-width: 30em) {
+@media (min-width: 30em) and (max-width: 47.99em) {
   .layer-back__sub-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 61.25em) and (max-width: 81.24em) {
@@ -595,12 +595,24 @@ nav .logo img {
   border-radius: 3rem;
   gap: 3rem;
   text-align: center;
-  /* mobile-land */
 }
 @media (min-width: 30em) {
   .card-regular {
     width: 100%;
     padding: 3rem 10rem;
+  }
+}
+@media (min-width: 61.25em) {
+  .card-regular {
+    flex-direction: row;
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+}
+@media (min-width: 81.25em) {
+  .card-regular {
+    flex-direction: row;
+    gap: 5rem;
   }
 }
 .card-regular__icon {
@@ -616,12 +628,6 @@ nav .logo img {
 }
 .card-regular__text {
   text-align: center;
-}
-@media (min-width: 61.25em) {
-  .card-regular {
-    flex-direction: row;
-    gap: 5rem;
-  }
 }
 
 .card-regular__wrapper {
@@ -838,6 +844,11 @@ section {
     border: 1px dashed darkblue;
   }
 }
+@media (min-width: 61.25em) and (max-width: 81.24em) {
+  section {
+    border: 1px dashed green;
+  }
+}
 /* ------------ /end main block  ------------ */
 @media (min-width: 48em) {
   section {
@@ -993,7 +1004,7 @@ section {
     padding: 2rem 6rem;
   }
 }
-@media (min-width: 61.25em) {
+@media (min-width: 81.25em) {
   .welcome {
     padding: 0 10rem;
   }
@@ -1019,12 +1030,19 @@ section {
   .meet-your-coach-container {
     display: flex;
     justify-content: center;
+    gap: 1rem;
+  }
+}
+@media (min-width: 81.25em) {
+  .meet-your-coach-container {
     gap: 5rem;
   }
 }
 
 .meet-your-coach {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .meet-your-coach__title-wrapper {
   position: absolute;
@@ -1066,10 +1084,17 @@ section {
     border-radius: 2rem;
   }
 }
-@media (min-width: 48em) and (max-width: 81.24em) {
+@media (min-width: 48em) and (max-width: 61.24em) {
   .meet-your-coach img {
-    width: 420px;
-    height: 700px;
+    width: 400px;
+    height: 600px;
+    border-radius: 2rem;
+  }
+}
+@media (min-width: 61.25em) {
+  .meet-your-coach img {
+    width: 450px;
+    height: 600px;
     border-radius: 2rem;
   }
 }
@@ -1122,10 +1147,15 @@ section {
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
   .aicha-info__title {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 @media (min-width: 61.25em) {
+  .aicha-info__title {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 81.25em) {
   .aicha-info__title {
     font-size: 6rem;
   }
@@ -1140,7 +1170,12 @@ section {
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
   .aicha-info__sub-title {
-    font-size: 3.2rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 81.24em) {
+  .aicha-info__sub-title {
+    font-size: 3rem;
   }
 }
 .aicha-info__name {
@@ -1163,7 +1198,6 @@ section {
   background: #946A57;
   color: #FFFFFF;
   /* mobile-land */
-  /* mobile-land */
 }
 @media (min-width: 30em) {
   .what-is-life-coaching {
@@ -1171,9 +1205,14 @@ section {
     padding: 6rem;
   }
 }
-@media (min-width: 61.25em) {
+@media (min-width: 61.25em) and (max-width: 81.24em) {
   .what-is-life-coaching {
-    padding: 6rem 20rem;
+    padding: 6rem 10rem;
+  }
+}
+@media (min-width: 81.25em) {
+  .what-is-life-coaching {
+    padding: 6rem 15rem;
   }
 }
 
@@ -1218,9 +1257,14 @@ section {
     padding: 3rem 5rem;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 48em) and (max-width: 61.24em) {
   .for-businesses {
     padding: 6rem 5rem;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 81.24em) {
+  .for-businesses {
+    padding: 6rem 3rem;
   }
 }
 

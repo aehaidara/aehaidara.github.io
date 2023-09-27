@@ -15,6 +15,17 @@
         padding: 3rem 10rem;
     }
 
+    @include mq.mq($from: desktop) {
+        flex-direction: row;
+        padding: 3rem 1rem;
+        gap: 2rem;
+    }
+
+    @include mq.mq($from: wide) {
+        flex-direction: row;
+        gap: 5rem;
+    }
+
     &__icon {
         @include flex;
         width: 5rem;
@@ -28,12 +39,6 @@
 
     &__text {
         text-align: center;
-    }
-
-    /* mobile-land */
-    @include mq.mq($from: desktop) {
-        flex-direction: row;
-        gap: 5rem;
     }
 }
 

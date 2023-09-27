@@ -58,7 +58,7 @@
         flex-direction: column;
         margin-top: 1.5rem;
         @include mq.mq($from: mobileLandscape, $until: desktop) {
-            margin-top: 3rem;
+            margin-top: 4rem;
             gap: 0;
         }
         @include mq.mq($from: tablet, $until: desktop) {
@@ -72,8 +72,8 @@
     &__title {
         text-align: left;
         font-size: $font-size-x3;
-        @include mq.mq($from: mobileLandscape) {
-            font-size: 6rem;
+        @include mq.mq($from: mobileLandscape, $until: tablet) {
+            font-size: 5rem;
         }
         @include mq.mq($from: desktop, $until: wide) {
             font-size: 7rem;
@@ -85,8 +85,8 @@
     &__sub-title {
         font-size: $font-size-x2;
         font-family: $font-family-lora;
-        @include mq.mq($from: mobileLandscape) {
-            font-size: 3rem;
+        @include mq.mq($from: mobileLandscape, $until: tablet) {
+            font-size: 2.5rem;
         }
         @include mq.mq($from: desktop, $until: wide) {
             font-size: 4rem;

@@ -15,7 +15,7 @@ section {
         //  border: 1px dashed black;
     }
     @include mq.mq($from: desktop, $until: wide) {
-        // border: 1px dashed green;
+        border: 1px dashed green;
     }
     @include mq.mq($from: wide) {
         // border: 1px dashed red;

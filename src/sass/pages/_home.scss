@@ -152,7 +152,7 @@
     }
 
     // desktop
-    @include mq.mq($from: desktop) {
+    @include mq.mq($from: wide) {
         padding: 0 10rem;
     }
 }
@@ -177,6 +177,9 @@
     @include mq.mq($from: desktop) {
         display: flex;
         justify-content: center;
+        gap: 1rem;
+    }
+    @include mq.mq($from: wide) {
         gap: 5rem;
     }
 }
@@ -184,6 +187,8 @@
 .meet-your-coach {
     position: relative;
     // grid-column: 1/4; // occupy full width
+    display: flex;
+    align-items: center;
 
     &__title-wrapper {
         position: absolute;
@@ -226,9 +231,14 @@
             border-radius: 2rem;
         }
         // tablet
-        @include mq.mq($from: tablet, $until: wide) {
-            width: 420px;
-            height: 700px;
+        @include mq.mq($from: tablet, $until: desktop) {
+            width: 400px;
+            height: 600px;
+            border-radius: 2rem;
+        }
+        @include mq.mq($from: desktop) {
+            width: 450px;
+            height: 600px;
             border-radius: 2rem;
         }
         // destop
@@ -280,9 +290,12 @@
         font-size: 3.5rem;
         // destop
         @include mq.mq($from: tablet, $until: desktop) {
-            font-size: 5rem;
+            font-size: 4rem;
         }
         @include mq.mq($from: desktop) {
+            font-size: 4rem;
+        }
+        @include mq.mq($from: wide) {
             font-size: 6rem;
         }
     }
@@ -292,7 +305,10 @@
             font-size: 3.8rem;
         }
         @include mq.mq($from: tablet, $until: desktop) {
-            font-size: 3.2rem;
+            font-size: 2rem;
+        }
+        @include mq.mq($from: desktop, $until: wide) {
+            font-size: 3rem;
         }
     }
 
@@ -319,9 +335,11 @@
         padding: 6rem;
     }
 
-    /* mobile-land */
-    @include mq.mq($from: desktop) {
-        padding: 6rem 20rem;
+    @include mq.mq($from: desktop, $until: wide) {
+        padding: 6rem 10rem;
+    }
+    @include mq.mq($from: wide) {
+        padding: 6rem 15rem;
     }
 }
 
@@ -358,8 +376,12 @@
     }
 
     /* mobile-land */
-    @include mq.mq($from: tablet) {
+    @include mq.mq($from: tablet, $until: desktop) {
         padding: 6rem 5rem;
+    }
+
+    @include mq.mq($from: desktop, $until: wide) {
+        padding: 6rem 3rem;
     }
 }
 
