@@ -23,7 +23,10 @@
     @include mq.mq($from: mobileLandscape) {
         padding: 0 5rem;
     }
-    @include mq.mq($from: desktop) {
+    @include mq.mq($from: desktop, $until: wide) {
+        padding: 0 10rem;
+    }
+    @include mq.mq($from: wide) {
         padding: 0 20rem;
     }
 

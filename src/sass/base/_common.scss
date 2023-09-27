@@ -24,9 +24,12 @@
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         height: 300px;
     }
-    @include mq.mq($from: desktop) {
-        height: 100vh;
-    }
+    // @include mq.mq($from: desktop, $until: wide) {
+    //     height: 100vh;
+    // }
+    // @include mq.mq($from: wide) {
+    //     height: 100vh;
+    // }
 
     &__wrapper {
         @include mq.mq($from: mobileLandscape, $until: tablet) {
@@ -37,11 +40,16 @@
         @include mq.mq($from: tablet, $until: desktop) {
             margin-top: 3rem;
         }
-        @include mq.mq($from: desktop) {
+        @include mq.mq($from: desktop, $until: wide) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;   
+        }
+        @include mq.mq($from: wide) {
             display: flex;
             justify-content: space-between;
             padding: 0 8rem;
-            margin-top: 4rem;
+            margin-top: 3rem;
         }
     }
 
@@ -67,7 +75,10 @@
         @include mq.mq($from: mobileLandscape) {
             font-size: 6rem;
         }
-        @include mq.mq($from: desktop) {
+        @include mq.mq($from: desktop, $until: wide) {
+            font-size: 7rem;
+        }
+        @include mq.mq($from: wide) {
             font-size: 8rem;
         }
     }
@@ -77,8 +88,11 @@
         @include mq.mq($from: mobileLandscape) {
             font-size: 3rem;
         }
-        @include mq.mq($from: desktop) {
-            font-size: 5rem;
+        @include mq.mq($from: desktop, $until: wide) {
+            font-size: 4rem;
+        }
+        @include mq.mq($from: wide) {
+            font-size: 4.5rem;
         }
     }
 
@@ -101,7 +115,12 @@
         display: block;
         width: 100%;
     }
-    @include mq.mq($from: desktop) {
+    
+    @include mq.mq($from: desktop, $until: wide) {
+        display: block;
+        width: 540px;
+    }
+    @include mq.mq($from: wide) {
         display: block;
         width: 620px;
     }
@@ -115,6 +134,11 @@
             width: 100%;
         }
         @include mq.mq($from: desktop) {
+            width: 100%;
+            float: right;
+        }
+
+        @include mq.mq($from: wide) {
             width: 88%;
             float: right;
         }
