@@ -2,7 +2,6 @@
 @use "../abstracts" as *;
 
 body {
-
     // font
     h1 {
         font-family: $font-family-lora;
@@ -14,11 +13,9 @@ body {
         font-weight: $font-weight-400;
         line-height: $line-height-sm;
         letter-spacing: $letter-spacing-sm;
-
     }
-  
+
     @include mq.mq($from: mobileLandscape, $until: tablet) {
-        
     }
     @include mq.mq($from: tablet, $until: desktop) {
         h1 {
@@ -26,10 +23,15 @@ body {
         }
     }
     @include mq.mq($from: desktop, $until: wide) {
-    
     }
     @include mq.mq($from: wide) {
-    
     }
 }
 
+.paragraph-brown {
+    font-family: $font-family-hind;
+    font-weight: $font-weight-400;
+    line-height: $line-height-sm;
+    letter-spacing: $letter-spacing-sm;
+    color: $color-primary-brown;
+}

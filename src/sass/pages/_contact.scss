@@ -2,6 +2,7 @@
 @use "../base" as *;
 @use "../abstracts" as *;
 
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -12,7 +13,14 @@
     padding: 0 1rem;
 
     @include mq.mq($from: desktop) {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 5rem;
+
+    }
+
+    @include mq.mq($from: wide) {
+        padding: 0 10rem;
     }
 
     &__image {
@@ -20,6 +28,13 @@
             width: 400px;
         }
         @include mq.mq($from: tablet, $until: desktop) {
+            width: 500px;
+        }
+
+        @include mq.mq($from: desktop) {
+            width: 500px;
+        }
+        @include mq.mq($from: wide) {
             width: 500px;
         }
 
@@ -74,6 +89,8 @@
             border: 1px solid $color-secondary-orange;
             border-radius: 0.5rem;
             background: $color-primary-beige;
+            resize: none;
+            padding-left: 1rem;
         }
 
         input {
@@ -94,7 +111,10 @@
     align-items: center;
     gap: 2rem;
     margin-bottom: 4rem;
-    padding: 0 1rem;
+
+    @include mq.mq($from: wide) {
+        padding: 0 10rem;
+    }
 
     &__text {
         color: $color-primary-brown;
@@ -106,6 +126,7 @@
         @include mq.mq($from: tablet, $until: desktop) {
             width: 600px;
         }
+        
     }
 
     &__posts {
@@ -123,6 +144,13 @@
             width: 200px;
         }
         @include mq.mq($from: tablet, $until: desktop) {
+            width: 300px;
+        }
+        @include mq.mq($from: desktop) {
+            width: 250px;
+        }
+    
+        @include mq.mq($from: wide) {
             width: 300px;
         }
         img {

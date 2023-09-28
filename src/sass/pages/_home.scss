@@ -9,7 +9,6 @@
 
     z-index: 1;
 
-    /* mobile-land */
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -24,7 +23,6 @@
         }
     }
 
-    // tablet
     @include mq.mq($from: tablet, $until: desktop) {
         display: flex;
         flex-direction: column;
@@ -42,7 +40,6 @@
         }
     }
 
-    // Desktop
     @include mq.mq($from: desktop) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -87,12 +84,10 @@
             align-items: center;
             gap: 1rem;
         }
-        // tablet
         @include mq.mq($from: tablet, $until: desktop) {
             width: 50%;
         }
 
-        // desktop
         @include mq.mq($from: desktop) {
             padding: 4rem 0;
         }
@@ -103,7 +98,6 @@
         padding: 3rem 0;
         border: 1px solid $color-primary-brown;
         border-radius: 2rem;
-        // mobile-landscape
         @include mq.mq($from: mobileLandscape) {
             @include flex-col-center;
             gap: 1rem;

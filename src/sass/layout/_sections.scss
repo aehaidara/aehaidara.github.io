@@ -1,9 +1,0 @@
-@use "../mq";
-@use "../base" as *;
-@use "../abstracts" as *;
-
-section {
-    @include mq.mq($from: tablet) {
-        margin: 3rem 0;
-    }
-}

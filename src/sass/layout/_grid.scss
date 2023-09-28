@@ -3,40 +3,46 @@
 @use "../abstracts" as *;
 
 .layout {
-  display: grid;
-  
-  section {
-    margin-top: $section-margin-top-mobile;
-  }
+    display: grid;
 
-  // mobile
-  @include mq.mq($until: mobileLandscape) {
-    grid-template-columns: 1fr 90% 1fr;
-  }
-        
-  // mobile-landscape
-  @include mq.mq($from: mobileLandscape, $until: tablet) {
-    grid-template-columns: 1fr 80% 1fr;
-    
-    // background-color: #778DA9;
-  }
-  // tablet
-  @include mq.mq($from: tablet, $until: desktop) {
-    grid-template-columns: 1fr 95% 1fr;
-  }
-  // mobile-large-landscape
-  @include mq.mq($from: tablet, $until: desktop, $and: '(orientation: landscape)') {
-    // background-color: aqua;
-  }
-  // desktop
-  @include mq.mq(desktop, $until: wide) {
-    grid-template-columns: 1fr 75% 1fr;
-    // background-color: #CBC9AD;
-  }
-  // wide
-  @include mq.mq($from: wide) {
-    grid-template-columns: 1fr 80% 1fr;
-    // background-color: #335C81;
-  }
-  
+    section {
+        margin-top: $section-margin-top-mobile;
+        @include mq.mq($from: tablet) {
+            margin: 3rem 0;
+        }
+    }
+
+    // mobile
+    @include mq.mq($until: mobileLandscape) {
+        grid-template-columns: 1fr 90% 1fr;
+    }
+
+    // mobile-landscape
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
+        grid-template-columns: 1fr 80% 1fr;
+
+        // background-color: #778DA9;
+    }
+    // tablet
+    @include mq.mq($from: tablet, $until: desktop) {
+        grid-template-columns: 1fr 95% 1fr;
+    }
+    // mobile-large-landscape
+    @include mq.mq(
+        $from: tablet,
+        $until: desktop,
+        $and: "(orientation: landscape)"
+    ) {
+        // background-color: aqua;
+    }
+    // desktop
+    @include mq.mq(desktop, $until: wide) {
+        grid-template-columns: 1fr 75% 1fr;
+        // background-color: #CBC9AD;
+    }
+    // wide
+    @include mq.mq($from: wide) {
+        grid-template-columns: 1fr 80% 1fr;
+        // background-color: #335C81;
+    }
 }

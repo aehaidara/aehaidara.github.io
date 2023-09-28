@@ -410,6 +410,14 @@ body p {
     font-size: 3.5rem;
   }
 }
+.paragraph-brown {
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.06rem;
+  color: #946A57;
+}
+
 .btn-brown, .btn-transparent {
   display: flex;
   justify-content: space-between;
@@ -876,6 +884,11 @@ nav {
 .layout section {
   margin-top: 3rem;
 }
+@media (min-width: 48em) {
+  .layout section {
+    margin: 3rem 0;
+  }
+}
 @media (max-width: 29.99em) {
   .layout {
     grid-template-columns: 1fr 90% 1fr;
@@ -917,17 +930,10 @@ section {
   }
 }
 /* ------------ /end main block  ------------ */
-@media (min-width: 48em) {
-  section {
-    margin: 3rem 0;
-  }
-}
-
 .hero {
   grid-column: 1/4;
   width: 100%;
   z-index: 1;
-  /* mobile-land */
 }
 @media (min-width: 30em) and (max-width: 47.99em) {
   .hero {
@@ -1419,7 +1425,14 @@ section {
 }
 @media (min-width: 61.25em) {
   .contact {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 81.25em) {
+  .contact {
+    padding: 0 10rem;
   }
 }
 @media (min-width: 30em) and (max-width: 47.99em) {
@@ -1428,6 +1441,16 @@ section {
   }
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
+  .contact__image {
+    width: 500px;
+  }
+}
+@media (min-width: 61.25em) {
+  .contact__image {
+    width: 500px;
+  }
+}
+@media (min-width: 81.25em) {
   .contact__image {
     width: 500px;
   }
@@ -1481,6 +1504,8 @@ section {
   border: 1px solid #CF7C29;
   border-radius: 0.5rem;
   background: #F4EEE3;
+  resize: none;
+  padding-left: 1rem;
 }
 .contact__input-wrapper input {
   height: 2.5rem;
@@ -1497,7 +1522,11 @@ section {
   align-items: center;
   gap: 2rem;
   margin-bottom: 4rem;
-  padding: 0 1rem;
+}
+@media (min-width: 81.25em) {
+  .instagram {
+    padding: 0 10rem;
+  }
 }
 .instagram__text {
   color: #946A57;
@@ -1529,6 +1558,16 @@ section {
   }
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
+  .instagram__image {
+    width: 300px;
+  }
+}
+@media (min-width: 61.25em) {
+  .instagram__image {
+    width: 250px;
+  }
+}
+@media (min-width: 81.25em) {
   .instagram__image {
     width: 300px;
   }
