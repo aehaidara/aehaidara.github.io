@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
             <div class="footer__wrapper">
                 <div class="footer__left-side">
                     <div class="footer__image-container">
-                        <img src="./assets/images/footer-img.jpg" alt="" />
+                        <img src="./assets/images/home/footer-img.jpg" alt="" />
                     </div>
                     <div class="footer__text-and-btn">
                         <p>

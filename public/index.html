@@ -6,50 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="" />
         <meta name="theme-color" content="#F4EEE3" />
-
         <!-- fontawsome -->
         <script
             src="https://kit.fontawesome.com/f47357e038.js"
             crossorigin="anonymous"
         ></script>
-
         <!-- sytles.css -->
         <link rel="stylesheet" href="./css/style.css" />
-
         <!-- swiper -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         />
-
         <!-- script -->
         <script src="./js/scripts.js" defer></script>
-
         <!-- favicon dara logo -->
         <link
             rel="icon"
+            type="image/svg"
             href="./assets/svg/logos/logo-white.svg"
-            type="image/x-icon"
         />
-
         <title>Dara coaching</title>
     </head>
     <body class="page-bg-beige">
         <main class="layout">
-            <!-- NAVIGATION -->
+            <!-- *********************************  NAVIGATION   ********************************* -->
             <main-nav></main-nav>
 
-            <!-- HERO -->
+            <!-- *********************************  HERO  ********************************* -->
             <section class="hero">
                 <picture class="hero__images">
-                    <img src="./assets/images/hero-img.jpg" alt="" />
+                    <img src="./assets/images/home/hero-img.jpg" alt="" />
                     <source
                         media="(min-width: 740px)"
-                        srcset="./assets/images/hero-img.jpg"
+                        srcset="./assets/images/home/hero-img.jpg"
                     />
                     <source
                         media="(min-width: 740px)"
-                        srcset="./assets/images/hero-img.jpg"
+                        srcset="./assets/images/home/hero-img.jpg"
                     />
                     <source
                         media="(min-width: 400px)"
@@ -71,7 +65,7 @@
                 </div>
             </section>
 
-            <!-- WELCOME -->
+            <!-- *********************************  WELCOME  ********************************* -->
             <section class="welcome">
                 <h1 class="welcome__title">Welcome to DARA Coaching</h1>
                 <p class="welcome__text">
@@ -81,11 +75,11 @@
                     dedicated to helping you break the cycle of problematic
                     beliefs & behaviours by analysing your language & supporting
                     you to update your restrictions into beliefs that serve you.
-                </p>
+                </p> 
                 <custom-button path="#" label="Read more"></custom-button>
             </section>
 
-            <!-- MEET YOUR COACH -->
+            <!-- *********************************  MEET YOUR COACH  ********************************* -->
             <section class="meet-your-coach-container">
                 <section class="meet-your-coach">
                     <div class="meet-your-coach__title-wrapper">
@@ -97,10 +91,10 @@
                             alt=""
                         />
                     </div>
-                    <img src="./assets/images/met-your-coach.jpg" alt="" />
+                    <img src="./assets/images/home/met-your-coach.jpg" alt="" />
                 </section>
 
-                <!-- AICHA INFO -->
+                <!-- *********************************  AICHA INFO  ********************************* -->
                 <section class="aicha-info">
                     <div class="aicha-info__title-wrapper">
                         <h2 class="aicha-info__title">MEET</h2>
@@ -123,7 +117,7 @@
                 </section>
             </section>
 
-            <!-- WHAT IS LIFE COACHING -->
+            <!-- *********************************  WHAT IS LIFE COACHING  ********************************* -->
             <section class="what-is-life-coaching">
                 <h1>What is life coaching</h1>
                 <p class="what-is-life-coaching__text">
@@ -141,7 +135,7 @@
                 ></custom-button>
             </section>
 
-            <!-- MY SERVICES -->
+            <!-- *********************************  MY SERVICES  ********************************* -->
             <section class="my-services">
                 <h1>My Services</h1>
 
@@ -273,7 +267,7 @@
                 <custom-button path="#" label="Read more"></custom-button>
             </section>
 
-            <!-- FOR BUSINESSES -->
+            <!-- *********************************  FOR BUSINESSES  ********************************* -->
             <section class="for-businesses">
                 <h1>For Businesses</h1>
 
@@ -328,10 +322,11 @@
                         </p>
                     </div>
                 </div>
-                <a class="btn-transparent" href="#"
-                    >Read more
-                    <img src="./assets/svg/btn-arrow.svg" alt="" />
-                </a>
+                <custom-button
+                path="#"
+                label="Read more"
+                background="btn-transparent"
+            ></custom-button>
             </section>
 
             <div class="company-logos">
@@ -342,20 +337,20 @@
                     </div>
                     <div class="company-logos__item">
                         <img
-                            src="./assets/images/mixed-finns-logo.png"
+                            src="./assets/images/home/mixed-finns-logo.png"
                             alt=""
                         />
                     </div>
                     <div class="company-logos__item">
                         <img
-                            src="./assets/images/ticketbutler-logo.png"
+                            src="./assets/images/home/ticketbutler-logo.png"
                             alt=""
                         />
                     </div>
                 </div>
             </div>
 
-            <!-- TESTIMONIALS - Swiper -->
+            <!-- *********************************  TESTIMONIALS - (Swiper)  ********************************* -->
 
             <section class="testimonial">
                 <h1>Testimonials</h1>
@@ -412,7 +407,7 @@
                 </div>
             </section>
 
-            <!-- FOOTER -->
+            <!-- *********************************  FOOTER  ********************************* -->
             <section class="footer">
                 <main-footer></main-footer>
             </section>
