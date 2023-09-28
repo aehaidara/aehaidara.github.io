@@ -30,12 +30,31 @@
         padding: 0 20rem;
     }
 
-    h1 {
+    &__main-title {
+        display: none;
         padding-bottom: 1rem;
+        @include mq.mq($from: tablet, $until: desktop) {
+            display: block;
+        }
+        
+    }
+
+    &__alternative-title {
+        @include mq.mq($from: tablet, $until: desktop) {
+            display: none;
+        }
     }
     
     p {
         text-align: center;
+    }
+
+    span {
+        display: none;
+        @include mq.mq($from: tablet, $until: desktop) {
+            display: inline-block;
+            font-weight: $font-weight-600;
+        }
     }
 }
 
