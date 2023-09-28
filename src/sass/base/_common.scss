@@ -9,11 +9,38 @@
     background-color: $color-primary-brown;
 }
 
-// /////////
+.page-bg-green {
+    background: $color-secondary-dark-green;
+}
+
+.page-main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: $color-primary-brown;
+    padding: 0 1rem 0 1rem;
+
+    @include mq.mq($from: mobileLandscape) {
+        padding: 0 5rem;
+    }
+    @include mq.mq($from: desktop, $until: wide) {
+        padding: 0 10rem;
+    }
+    @include mq.mq($from: wide) {
+        padding: 0 20rem;
+    }
+
+    h1 {
+        padding-bottom: 1rem;
+    }
+    
+    p {
+        text-align: center;
+    }
+}
+
+// ***********  LAYER BACK *********** //
 .layer-back {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     position: fixed;
     height: 200px;
     padding: 0 1rem;
@@ -24,13 +51,6 @@
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         height: 300px;
     }
-    // @include mq.mq($from: desktop, $until: wide) {
-    //     height: 100vh;
-    // }
-    // @include mq.mq($from: wide) {
-    //     height: 100vh;
-    // }
-
     &__wrapper {
         @include mq.mq($from: mobileLandscape, $until: tablet) {
             display: grid;
@@ -56,7 +76,7 @@
     &__title-wrapper {
         display: flex;
         flex-direction: column;
-        margin-top: 1.5rem;
+        margin-top: 2.5rem;
         @include mq.mq($from: mobileLandscape, $until: desktop) {
             margin-top: 4rem;
             gap: 0;
@@ -104,6 +124,49 @@
     }
 }
 
+// ***********  LAYER FRONT *********** //
+.layer-front {
+    grid-column: 1/4;
+    margin-top: 250px;
+    // height: 100vh;
+    background: $color-primary-beige;
+    border-radius: 2.5rem 2.5rem 0 0;
+    z-index: 2;
+
+    // box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
+    // -webkit-box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
+    // -moz-box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
+
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
+        margin-top: 350px;
+    }
+    @include mq.mq($from: tablet, $until: desktop) {
+        margin-top: 1200px;
+    }
+    @include mq.mq($from: desktop) {
+        margin-top: 600px;
+    }
+
+    &__wrapper {
+        @include mq.mq($from: mobileLandscape) {
+            padding: 0 1rem;
+        }
+    }
+    .page-image-front {
+        @include mq.mq($from: mobileLandscape) {
+            display: none;
+        }
+    }
+    .page-main-title {
+        display: none;
+        @include mq.mq($from: tablet, $until: desktop) {
+            display: block;
+        }
+    }
+    
+}
+
+// ***********  PAGE IMAGE BACK *********** //
 .page-image-back {
     display: none;
     overflow: hidden;
@@ -141,40 +204,6 @@
         @include mq.mq($from: wide) {
             width: 88%;
             float: right;
-        }
-    }
-}
-
-.layer-front {
-    grid-column: 1/4;
-    margin-top: 250px;
-    // height: 100vh;
-    background: $color-primary-beige;
-    border-radius: 2.5rem 2.5rem 0 0;
-    z-index: 2;
-
-    // box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
-    // -webkit-box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
-    // -moz-box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
-
-    @include mq.mq($from: mobileLandscape, $until: tablet) {
-        margin-top: 350px;
-    }
-    @include mq.mq($from: tablet, $until: desktop) {
-        margin-top: 1200px;
-    }
-    @include mq.mq($from: desktop) {
-        margin-top: 600px;
-    }
-
-    &__wrapper {
-        @include mq.mq($from: mobileLandscape) {
-            padding: 0 1rem;
-        }
-    }
-    .page-image-front {
-        @include mq.mq($from: mobileLandscape) {
-            display: none;
         }
     }
 }

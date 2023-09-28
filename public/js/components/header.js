@@ -1,5 +1,5 @@
 const currentPage = window.location.pathname;
-console.log(currentPage);
+// console.log(currentPage);
 
 /** LOGO */
 const _LOGO_DEFAULT = "./assets/svg/logos/logo-default.svg";
@@ -10,7 +10,8 @@ const _NAV_COLOR_BROWN = "nav-color-brown";
 const _NAV_COLOR_WHTIE = "nav-color-white";
 
 /** NAV BACKGROUND COLOR */
-const _NAV_BACKGROUND_COLOR = "nav-bg-color-brown";
+const _NAV_BACKGROUND_COLOR_BROWN = "nav-bg-color-brown";
+const _NAV_BACKGROUND_COLOR_GREEN = "nav-bg-color-green";
 
 /** HAMBURGER COLOR */
 const _HAMBURGER_COLOR_BROWN = "hamburger-brown";
@@ -30,7 +31,9 @@ if (currentPage === "/" || currentPage === "/index.html") {
     navTextColor = _NAV_COLOR_WHTIE;
     hamburgerIconColor = _HAMBURGER_COLOR_WHITE;
     if (currentPage === "/meet-your-coach.html") {
-        navBackgroundColor = _NAV_BACKGROUND_COLOR;
+        navBackgroundColor = _NAV_BACKGROUND_COLOR_BROWN;
+    } else if (currentPage === "/contact.html") {
+        navBackgroundColor = _NAV_BACKGROUND_COLOR_GREEN;
     }
 }
 
@@ -59,19 +62,19 @@ class Header extends HTMLElement {
                       <a class="menu-item" href="#"><li>Prise</li></a>
                       <a class="menu-item" href="#"><li>Services</li></a>
                       <a class="menu-item" href="#"><li>Business</li></a>
-                      <a class="menu-item" href="#"><li>Contact</li></a>
+                      <a class="menu-item" href="./contact.html"><li>Contact</li></a>
                       <a class="menu-item" href="#"><li>Booking</li></a>
                   </ul>
               </div>
           </div>
           <div class="navigation-bar-menu ${navTextColor}" id="navigation-items">
               <a href="./index.html">Home</a>
-              <a href="">Services</a>
+              <a href="#">Services</a>
               <a href="./meet-your-coach.html">About</a>
-              <a href="">Business</a>
-              <a href="">Prise</a>
-              <a href="">Booking</a>
-              <a href="">Contact</a>
+              <a href="#">Business</a>
+              <a href="#">Prise</a>
+              <a href="#">Booking</a>
+              <a href="./contact.html">Contact</a>
           </div>
       </nav>
       `;

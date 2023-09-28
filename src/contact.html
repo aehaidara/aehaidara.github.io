@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#403A2C" />
+        <!-- fontawesome -->
+        <script
+            src="https://kit.fontawesome.com/f47357e038.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- sytles.css -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- script -->
+        <script src="./js/scripts.js" defer></script>
+        <!-- favicon dara logo -->
+        <link
+            rel="icon"
+            href="./assets/svg/logos/logo-white.svg"
+            type="image/x-icon"
+        />
+        <title>Contact</title>
+    </head>
+    <body class="page-bg-green">
+        <main class="layout">
+            <!-- #################################  NAVIGATION  ################################# -->
+            <main-nav></main-nav>
+
+            <!-- BACK-LAYER -->
+            <section class="layer-back">
+                <div class="layer-back__wrapper">
+                    <div class="layer-back__title-wrapper">
+                        <h1 class="layer-back__title">Contact</h1>
+                        <p class="layer-back__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="page-image-back">
+                        <img src="./assets/images/contact/contact.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- #################################  FRONT-LAYER  ################################# -->
+            <div class="layer-front">
+                <div class="layer-front__wrapper">
+                    <div class="page-image-front">
+                        <img src="./assets/images/contact/contact.jpg" alt="" />
+                    </div>
+
+                    <section class="page-main-section">
+                        <h1>Let's talk</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Unde eveniet iusto et minima doloribus odio.
+                        </p>
+                    </section>
+
+                    <!-- *********************************  CONTACT FORM - SECTION  ********************************* -->
+                    <section class="contact">
+                        <!-- image -->
+                        <div class="contact__image">
+                            <img
+                                src="./assets/images/contact/form.jpg"
+                                alt=""
+                            />
+                        </div>
+
+                        <!-- form -->
+                        <form class="contact__form">
+                            <div class="contact__input-wrapper">
+                                <label for="fullName">Full Name *</label>
+                                <input id="fullName" type="text" />
+                            </div>
+                            <div class="contact__input-wrapper">
+                                <label for="companyName">Company Name</label>
+                                <input id="companyName" type="text" />
+                            </div>
+                            <div class="contact__input-wrapper">
+                                <label for="email">Email *</label>
+                                <input id="email" type="text" />
+                            </div>
+                            <div class="contact__input-wrapper">
+                                <label for="phone">Phone *</label>
+                                <input id="phone" type="text" />
+                            </div>
+                            <div class="contact__input-wrapper">
+                                <label for="subject">Subject</label>
+                                <textarea
+                                    id="subject"
+                                    name=""
+                                    id=""
+                                    cols="15"
+                                    rows="10"
+                                ></textarea>
+                            </div>
+
+                            <!-- submit-button -->
+                            <div class="contact__submit-btn">
+                                <custom-button
+                                    path="#"
+                                    label="Submit"
+                                    className=""
+                                ></custom-button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- *********************************  INSTAGRAM - SECTION  ********************************* -->
+                    <section class="instagram">
+                        <div class="instagram__title">
+                            <img
+                                src="./assets/svg/instagram-title.svg"
+                                alt=""
+                            />
+                        </div>
+                        <p class="instagram__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Provident nulla illo beatae reprehenderit
+                        </p>
+
+                        <div class="instagram__posts">
+                            <div class="instagram__image">
+                                <img
+                                    src="./assets/images/contact/insta-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="instagram__image">
+                                <img
+                                    src="./assets/images/contact/insta-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="instagram__image">
+                                <img
+                                    src="./assets/images/contact/insta-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="instagram__image">
+                                <img
+                                    src="./assets/images/contact/insta-4.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="instagram__image">
+                                <img
+                                    src="./assets/images/contact/insta-5.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="instagram__image">
+                                <img
+                                    src="./assets/images/contact/insta-6.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- *********************************  FOOTER  ********************************* -->
+                <div class="footer meet-your-coach-footer">
+                    <main-footer></main-footer>
+                </div>
+            </div>
+        </main>
+
+        <!-- components -->
+        <script src="./js/components/footer.js"></script>
+        <script src="./js/components/header.js"></script>
+        <script src="./js/components/button.js"></script>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </body>
+</html>

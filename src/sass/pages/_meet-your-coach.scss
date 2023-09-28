@@ -13,34 +13,6 @@
     }
 }
 
-.about-me {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    color: $color-primary-brown;
-    padding: 0 1rem 0 1rem;
-
-    @include mq.mq($from: mobileLandscape) {
-        padding: 0 5rem;
-    }
-    @include mq.mq($from: desktop, $until: wide) {
-        padding: 0 10rem;
-    }
-    @include mq.mq($from: wide) {
-        padding: 0 20rem;
-    }
-
-    h1 {
-        padding-bottom: 2rem;
-        @include mq.mq($from: mobileLandscape, $until: tablet) {
-            display: none;
-        }
-        @include mq.mq($from: desktop) {
-            display: none;
-        }
-    }
-}
-
 //***** timeline
 .timeline-section {
     display: flex;

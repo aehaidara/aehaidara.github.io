@@ -66,4 +66,4 @@ var swiper = new Swiper(".mySwiper", {
 // Copywright
 // Get the current year
 const currentYear = new Date().getFullYear();
-document.getElementById('copyrightYear').textContent = `${currentYear}`;
+document.getElementById("copyrightYear").textContent = `${currentYear}`;

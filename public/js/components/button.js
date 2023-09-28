@@ -1,5 +1,3 @@
-
-
 const _BUTTON_BACKGROUND_BROWN = 'btn-brown';
 const _BUTTON_BACKGROUND_TRANSPARENT = 'btn-transparent';
 
