@@ -1,5 +1,5 @@
 const currentPage = window.location.pathname;
-// console.log(currentPage);
+console.log(currentPage);
 
 /** LOGO */
 const _LOGO_DEFAULT = "./assets/svg/logos/logo-default.svg";

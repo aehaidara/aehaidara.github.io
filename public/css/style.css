@@ -1397,6 +1397,11 @@ section {
   width: 100%;
   padding: 0 1rem;
 }
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .contact__image {
+    width: 400px;
+  }
+}
 .contact__image img {
   width: 100%;
   height: 100%;
@@ -1408,6 +1413,11 @@ section {
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .contact__form {
+    width: 400px;
+  }
 }
 .contact__input-wrapper {
   display: flex;
@@ -1446,6 +1456,11 @@ section {
   color: #946A57;
   text-align: center;
 }
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .instagram__text {
+    width: 400px;
+  }
+}
 .instagram__posts {
   display: flex;
   justify-content: center;
@@ -1455,6 +1470,11 @@ section {
 }
 .instagram__image {
   width: 163px;
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .instagram__image {
+    width: 200px;
+  }
 }
 .instagram__image img {
   width: 100%;
