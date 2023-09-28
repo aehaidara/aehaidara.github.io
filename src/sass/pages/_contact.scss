@@ -61,8 +61,11 @@
     }
 
     &__full-name-and-company {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
         @include mq.mq($from: tablet) {
-            display: flex;
+            flex-direction: row;
             gap: 0.5rem;
         }
         .contact__input-wrapper {

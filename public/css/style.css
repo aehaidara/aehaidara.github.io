@@ -1477,9 +1477,14 @@ section {
     width: 600px;
   }
 }
+.contact__full-name-and-company {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 @media (min-width: 48em) {
   .contact__full-name-and-company {
-    display: flex;
+    flex-direction: row;
     gap: 0.5rem;
   }
 }
