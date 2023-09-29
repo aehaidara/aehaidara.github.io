@@ -337,24 +337,6 @@
     }
 }
 
-.my-services {
-    @include flex-col-center;
-    gap: 3rem;
-    width: 100%;
-    color: $color-primary-brown;
-
-    /* mobile-land */
-    @include mq.mq($from: mobileLandscape) {
-        width: 100%;
-        padding: 0 5rem;
-    }
-
-    /* mobile-desktop */
-    @include mq.mq($from: desktop) {
-        padding: 0 15rem;
-    }
-}
-
 .for-businesses {
     @include flex-col-center;
     grid-column: 1/4;

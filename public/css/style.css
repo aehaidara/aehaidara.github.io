@@ -621,6 +621,33 @@ nav .logo img {
   opacity: 1;
 }
 
+.my-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  color: #946A57;
+  /* mobile-desktop */
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .my-services {
+    width: 100%;
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .my-services {
+    width: 100%;
+    padding: 0 5.5rem;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 47.99em) {
+  .my-services {
+    padding: 0 15rem;
+  }
+}
+
 .my-services__options {
   display: flex;
   flex-direction: column;
@@ -1297,28 +1324,6 @@ section {
   }
 }
 
-.my-services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  width: 100%;
-  color: #946A57;
-  /* mobile-land */
-  /* mobile-desktop */
-}
-@media (min-width: 30em) {
-  .my-services {
-    width: 100%;
-    padding: 0 5rem;
-  }
-}
-@media (min-width: 61.25em) {
-  .my-services {
-    padding: 0 15rem;
-  }
-}
-
 .for-businesses {
   display: flex;
   flex-direction: column;
@@ -1600,10 +1605,9 @@ section {
   gap: 4rem;
   margin-bottom: 3rem;
 }
-@media (min-width: 61.25em) {
+@media (min-width: 81.25em) {
   .service {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 0 10rem;
   }
 }
 .service__option {
@@ -1611,6 +1615,13 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  width: 100%;
+}
+@media (min-width: 61.25em) {
+  .service__option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .service__wrapper {
   display: flex;
@@ -1631,6 +1642,12 @@ section {
     height: 680px;
   }
 }
+@media (min-width: 61.25em) {
+  .service__background {
+    width: 400px;
+    height: 560px;
+  }
+}
 .service__image-wrapper {
   position: absolute;
   margin-top: 1rem;
@@ -1648,6 +1665,11 @@ section {
 @media (min-width: 48em) and (max-width: 61.24em) {
   .service__image {
     width: 500px;
+  }
+}
+@media (min-width: 61.25em) {
+  .service__image {
+    width: 400px;
   }
 }
 .service__image img {
