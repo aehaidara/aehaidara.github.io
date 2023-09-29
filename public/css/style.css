@@ -926,7 +926,6 @@ nav {
 /* ------------ main block  ------------ */
 section {
   grid-column: 2/3;
-  border: 1px dashed darkmagenta;
 }
 @media (min-width: 30em) and (max-width: 47.99em) {
   section {
@@ -1598,14 +1597,20 @@ section {
   align-items: center;
   overflow: hidden;
   width: 100%;
-  gap: 2rem;
+  gap: 4rem;
   margin-bottom: 3rem;
 }
-@media (min-width: 48em) {
+@media (min-width: 61.25em) {
   .service {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+.service__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 .service__wrapper {
   display: flex;
@@ -1620,6 +1625,12 @@ section {
   margin-left: 6rem;
   border-radius: 1.5rem;
 }
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .service__background {
+    width: 500px;
+    height: 680px;
+  }
+}
 .service__image-wrapper {
   position: absolute;
   margin-top: 1rem;
@@ -1633,6 +1644,11 @@ section {
 }
 .service__image {
   width: 300px;
+}
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .service__image {
+    width: 500px;
+  }
 }
 .service__image img {
   width: 100%;
