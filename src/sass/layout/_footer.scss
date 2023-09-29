@@ -45,8 +45,8 @@
 
         /* mobile-land */
         @include mq.mq($from: mobileLandscape, $until: tablet) {
-            width: 21rem;
-            height: 21rem;
+            width: 15rem;
+            height: 15rem;
         }
         //tablet
         @include mq.mq($from: tablet) {

@@ -156,13 +156,8 @@
     border-radius: 2.5rem 2.5rem 0 0;
     z-index: 2;
 
-    // box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
-    // -webkit-box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
-    // -moz-box-shadow: 1px 4px 21px -3px rgba(0, 0, 0, 0.8);
-
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         margin-top: 350px;
-        // width: 800px;
     }
     @include mq.mq($from: tablet, $until: desktop) {
         margin-top: 1200px;
