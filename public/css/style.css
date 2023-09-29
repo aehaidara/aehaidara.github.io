@@ -1605,6 +1605,11 @@ section {
   gap: 4rem;
   margin-bottom: 3rem;
 }
+@media (min-width: 70em) and (max-width: 81.24em) {
+  .service {
+    padding: 0 3rem;
+  }
+}
 @media (min-width: 81.25em) {
   .service {
     padding: 0 10rem;
