@@ -1,0 +1,60 @@
+@use "../mq";
+@use "../base" as *;
+@use "../abstracts" as *;
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    @include mq.mq($from: tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__wrapper {
+        display: flex;
+        // justify-content: center;
+        position: relative;
+        display: flex;
+        padding: 0 1rem;
+    }
+
+    &__background {
+        width: 250px;
+        height: 440px;
+        background: rgba(207, 124, 41, 8%);
+        margin-left: 6rem;
+        border-radius: 1.5rem;
+    }
+
+    &__image-wrapper {
+        position: absolute;
+        margin-top: 1rem;
+        h2 {
+            font-family: $font-family-lora;
+            font-size: $font-size-x2;
+
+            color: $color-primary-brown;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__image {
+        width: 300px;
+        img {
+            width: 100%;
+            object-fit: contain;
+            border-radius: 1.5rem;
+        }
+    }
+
+    &__content-wrapper {
+        padding: 0 1rem;
+    }
+}
