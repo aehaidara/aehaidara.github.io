@@ -130,7 +130,7 @@ body:before {
 
 .layer-back {
   position: fixed;
-  height: 200px;
+  height: 100%;
   padding: 0 1rem;
   width: 100%;
   color: #FFFFFF;

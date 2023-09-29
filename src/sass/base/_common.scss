@@ -65,7 +65,7 @@
 // ***********  LAYER BACK *********** //
 .layer-back {
     position: fixed;
-    height: 200px;
+    height: 100%; //before 200px
     padding: 0 1rem;
     width: 100%;
     color: $color-primary-white;
@@ -86,7 +86,7 @@
         @include mq.mq($from: desktop, $until: wide) {
             display: flex;
             justify-content: space-between;
-            margin-top: 2rem;   
+            margin-top: 2rem;  
         }
         @include mq.mq($from: wide) {
             display: flex;
