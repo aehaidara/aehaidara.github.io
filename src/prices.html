@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- fontawesome -->
+        <script
+            src="https://kit.fontawesome.com/f47357e038.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- sytles.css -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- swiper -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <!-- script -->
+        <script src="./js/scripts/scripts.js" defer></script>
+        <script src="./js/scripts/price.js" defer></script>
+        <!-- favicon dara logo -->
+        <link
+            rel="icon"
+            href="./assets/svg/logos/logo-white.svg"
+            type="image/x-icon"
+        />
+        <title>Meet-your-coach</title>
+    </head>
+    <body class="page-bg-brown">
+        <main class="layout">
+            <!-- *********************************  NAVIGATION  ********************************* -->
+            <main-nav></main-nav>
+
+            <!-- #################################  BACK-LAYER  ################################# -->
+            <section class="layer-back">
+                <div class="layer-back__wrapper">
+                    <div class="layer-back__title-wrapper">
+                        <h1 class="layer-back__title">Prices</h1>
+                        <p class="layer-back__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="page-image-back">
+                        <img src="./assets/images/prices/price.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- #################################  FRONT-LAYER  ################################# -->
+            <div class="layer-front">
+                <div class="layer-front__wrapper">
+                    <div class="page-image-front">
+                        <img src="./assets/images/prices/price.jpg" alt="" />
+                    </div>
+
+                    <section class="page-main-section">
+                        <h1 class="page-main-section__main-title">Services</h1>
+                        <h1 class="page-main-section__alternative-title">
+                            What's in the menu
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Unde eveniet iusto et minima doloribus odio
+                            itaque, eius nesciunt labore modi enim recusandae.
+                        </p>
+                    </section>
+
+                    <!-- *********************************  CARDS  ********************************* -->
+                    <section class="prices">
+                        <!-- toggle btn -->
+                        <div class="prices__currency-wrapper">
+                            <h2 class="prices__choose-curruncy-title">Choose Currency</h2>
+                            <div class="prices__currency-btn">
+                                <button id="kr-button" class="active">kr</button>
+                                <button id="eur-button">€</button>
+                            </div>
+                        </div>
+
+                        <!-- toggle btn -->
+                        <div class="prices__card">
+                            <div class="prices__body">
+                                <h2 class="prices__title">Introduction Call</h2>
+                                <div class="prices__description">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Modi enim recusandae</li>
+                                        <li>Nesciunt labor iusto iusto</li>
+                                        <li>adipisicing elit labore modi</li>
+                                    </ul>
+                                    <!-- <a href="">Read more</a> -->
+                                </div>
+                            </div>
+                            <div class="prices__price">
+                                <p class="prices__price-in-kr price">FREE</p>
+                            </div>
+                            <div class="prices__btn">
+                                <custom-button path="#" label="Read more"></custom-button>
+                            </div>
+                        </div>
+
+                        <!-- 60 - minute session -->
+                        <div class="prices__card">
+                            <div class="prices__body">
+                                <h2 class="prices__title">60 - minute session</h2>
+                                <div class="prices__description">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Modi enim recusandae</li>
+                                        <li>Nesciunt labor iusto iusto</li>
+                                        <li>adipisicing elit labore modi</li>
+                                    </ul>
+                                    <!-- <a href="">Read more</a> -->
+                                </div>
+                            </div>
+                            <div class="prices__price">
+                                <p class="prices__price-in-kr price" data-kr="717" data-eur="96">717<span>kr</span></p>
+                                <p class="prices__price-in-eur price" data-kr="551" data-eur="74">551<span>€ / Online</span></p>
+                            </div>
+                            <div class="prices__btn">
+                                <custom-button path="#" label="Read more"></custom-button>
+                            </div>
+                        </div>
+
+                        <!-- 90 - minute session -->
+                        <div class="prices__card">
+                            <div class="prices__body">
+                                <h2 class="prices__title">90 - minute session</h2>
+                                <div class="prices__description">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Modi enim recusandae</li>
+                                        <li>Nesciunt labor iusto iusto</li>
+                                        <li>adipisicing elit labore modi</li>
+                                    </ul>
+                                    <!-- <a href="">Read more</a> -->
+                                </div>
+                            </div>
+                            <div class="prices__price">
+                                <p class="prices__price-in-kr price" data-kr="827" data-eur="111">827<span>kr</span></p>
+                                <p class="prices__price-in-eur price" data-kr="630" data-eur="85">630<span>€ / Online</span></p>
+                            </div>
+                            <div class="prices__btn">
+                                <custom-button path="#" label="Read more"></custom-button>
+                            </div>
+                        </div>
+
+                        <!-- 4x 60 - minute session -->
+                        <div class="prices__card">
+                            <div class="prices__body">
+                                <h2 class="prices__title">4 x 60 - minute session</h2>
+                                <div class="prices__description">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Modi enim recusandae</li>
+                                        <li>Nesciunt labor iusto iusto</li>
+                                        <li>adipisicing elit labore modi</li>
+                                    </ul>
+                                    <!-- <a href="">Read more</a> -->
+                                </div>
+                            </div>
+                            <div class="prices__price">
+                                <p class="prices__price-in-kr price" data-kr="2725" data-eur="365">2725<span>kr</span></p>
+                                <p class="prices__price-in-eur price" data-kr="2100" data-eur="281">2100<span>€ / Online</span></p>
+                            </div>
+                            <div class="prices__btn">
+                                <custom-button path="#" label="Read more"></custom-button>
+                            </div>
+                        </div>
+
+                        <!-- 4x 90 - minute session -->
+                        <div class="prices__card">
+                            <div class="prices__body">
+                                <h2 class="prices__title">4 x 90 - minute session</h2>
+                                <div class="prices__description">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Modi enim recusandae</li>
+                                        <li>Nesciunt labor iusto iusto</li>
+                                        <li>adipisicing elit labore modi</li>
+                                    </ul>
+                                    <!-- <a href="">Read more</a> -->
+                                </div>
+                            </div>
+                            <div class="prices__price">
+                                <p class="prices__price-in-kr price" data-kr="3144" data-eur="422">3144<span>kr</span></p>
+                                <p class="prices__price-in-eur price" data-kr="2400" data-eur="322">2400<span>€ / Online</span></p>
+                            </div>
+                            <div class="prices__btn">
+                                <custom-button path="#" label="Read more"></custom-button>
+                            </div>
+                        </div>
+
+                        <!-- Be Your Best Self -->
+                        <div class="prices__card">
+                            <div class="prices__body">
+                                <h2 class="prices__title">Be Your Best Self</h2>
+                                <div class="prices__description">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Modi enim recusandae</li>
+                                        <li>Nesciunt labor iusto iusto</li>
+                                        <li>adipisicing elit labore modi</li>
+                                    </ul>
+                                    <!-- <a href="">Read more</a> -->
+                                </div>
+                            </div>
+                            <div class="prices__price">
+                                <p class="prices__price-in-kr price" data-kr="2496" data-eur="334">2496<span>kr</span></p>
+                                <p class="prices__price-in-eur price" data-kr="2246" data-eur="301">2246<span>€ / Online</span></p>
+                            </div>
+                            <div class="prices__btn">
+                                <custom-button path="#" label="Read more"></custom-button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- *********************************  FOR BUSINESSES  ********************************* -->
+                    <section class="businesses">
+                        <div class="businesses__image-wide-screen">
+                            <img src="" alt="">
+                        </div>
+                        <div class="businesses__wrapper">
+                            <h1 class="businesses__title">For Businesses</h1>
+                            <div class="businesses__image-small-screen">
+                                <img src="./assets/images/prices/businesses.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Et expedita, 
+                                repellendus dolore odit deleniti rerum 
+                                nisi amet, sed
+                            </p>
+                            <custom-button
+                                path="#"
+                                label="Read more"
+                                background="btn-transparent"
+                            ></custom-button>
+                        </div>
+                    </section>
+
+                    <section class="quote">
+                        <div class="quote__wrapper">
+                            <img src="./assets/svg/quote-icon.svg" alt="" />
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Voluptatem est sed explicabo
+                                maiores, sunt iure fugiat, laboriosam odio vitae
+                                perferendis illum excepturi tempora obcaecati
+                                magnam debitis esse reprehenderit! Ipsa,
+                                repellat.
+                            </p>
+                            <span class="auther"> Erik Garcia </span>
+                        </div>
+                    </section>
+
+                </div>
+                <!-- *********************************  FOOTER  ********************************* -->
+                <div class="footer meet-your-coach-footer">
+                    <main-footer></main-footer>
+                </div>
+            </div>
+        </main>
+
+        <!-- components -->
+        <script src="./js/components/footer.js"></script>
+        <script src="./js/components/header.js"></script>
+        <script src="./js/components/button.js"></script>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </body>
+</html>

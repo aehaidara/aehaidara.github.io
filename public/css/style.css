@@ -6,6 +6,7 @@ COLOR
 ========================================================================== */
 /* ------------ color-primary ------------ */
 /* ------------ color-secondary ------------ */
+/* ------------ color-tertiary ------------ */
 /* ==========================================================================
 FONTS 
 ========================================================================== */
@@ -1698,6 +1699,154 @@ section {
   .service__content-wrapper {
     padding: 0 6rem;
   }
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+.prices__currency-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 70%;
+}
+.prices__choose-curruncy-title {
+  font-family: "Hind", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.06rem;
+  color: #946A57;
+  font-weight: 600;
+}
+.prices__currency-btn {
+  display: flex;
+  justify-content: center;
+  background: rgba(207, 124, 41, 0.08);
+  width: 100%;
+  border-radius: 2rem;
+}
+.prices__currency-btn button {
+  width: 100%;
+  padding: 0.8rem 0;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  color: #946A57;
+  border-radius: 2rem;
+}
+.prices__currency-btn button.active {
+  background: #946A57;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.prices__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid #946A57;
+  border-radius: 1.5rem;
+  gap: 1.5rem;
+}
+.prices__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.prices__title {
+  font-family: "Hind", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.06rem;
+  background: #946A57;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem 0;
+  border-radius: 1rem;
+}
+.prices__description {
+  color: #946A57;
+  font-family: "Hind", sans-serif;
+  letter-spacing: 0.06rem;
+  background: rgba(207, 124, 41, 0.08);
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+.prices__description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style-type: disc;
+}
+.prices__description li {
+  margin-left: 1rem;
+}
+.prices__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  color: #CF7C29;
+}
+.prices__price-in-kr {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.prices__price-in-kr span {
+  font-size: 1.5rem;
+  margin-left: 0.2rem;
+}
+.prices__price-in-eur {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.prices__price-in-eur span {
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+.businesses {
+  background: #403A2C;
+  color: #FFFFFF;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.businesses__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.businesses__image-small-screen {
+  width: 100%;
+}
+.businesses__image-small-screen img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1.5rem;
+}
+
+.quote {
+  color: #946A57;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+.quote__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.quote__wrapper span {
+  color: #CF7C29;
 }
 
 .page-image-front {
