@@ -10,7 +10,7 @@
     width: 100%;
     gap: 4rem;
     margin-bottom: 3rem;
-
+    
     // custom mq
     @include mq.mq($from: 1120px, $until: wide) {
         padding: 0 3rem; 

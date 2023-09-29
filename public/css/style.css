@@ -628,7 +628,6 @@ nav .logo img {
   gap: 3rem;
   width: 100%;
   color: #946A57;
-  /* mobile-desktop */
 }
 @media (min-width: 30em) and (max-width: 47.99em) {
   .my-services {
@@ -642,7 +641,12 @@ nav .logo img {
     padding: 0 5.5rem;
   }
 }
-@media (min-width: 61.25em) and (max-width: 47.99em) {
+@media (min-width: 61.25em) and (max-width: 81.24em) {
+  .my-services {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 81.25em) {
   .my-services {
     padding: 0 15rem;
   }
@@ -1201,7 +1205,7 @@ section {
 }
 @media (min-width: 61.25em) {
   .meet-your-coach img {
-    width: 450px;
+    width: 360px;
     height: 600px;
     border-radius: 2rem;
   }

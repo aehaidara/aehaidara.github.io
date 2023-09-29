@@ -224,18 +224,18 @@
             height: 100%;
             border-radius: 2rem;
         }
-        // tablet
+
         @include mq.mq($from: tablet, $until: desktop) {
             width: 400px;
             height: 600px;
             border-radius: 2rem;
         }
         @include mq.mq($from: desktop) {
-            width: 450px;
+            width: 360px;
             height: 600px;
             border-radius: 2rem;
         }
-        // destop
+
         @include mq.mq($from: wide) {
             width: 450px;
             height: 700px;
