@@ -173,7 +173,7 @@
 
     &__wrapper {
         @include mq.mq($from: mobileLandscape) {
-            padding: 0 1rem;
+            // padding: 0 1rem;
         }
     }
     .page-image-front {
