@@ -2120,7 +2120,32 @@ section {
     padding: 0 5rem;
   }
 }
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .about-life-coaching {
+    padding: 0 10rem;
+  }
+}
+@media (min-width: 61.25em) {
+  .about-life-coaching {
+    padding: 0 6rem;
+  }
+}
+@media (min-width: 81.25em) {
+  .about-life-coaching {
+    padding: 0 15rem;
+  }
+}
+@media (min-width: 61.25em) {
+  .about-life-coaching__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+}
 .about-life-coaching__number-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2128,12 +2153,26 @@ section {
   gap: 2rem;
   width: 100%;
 }
+@media (min-width: 61.25em) {
+  .about-life-coaching__number-wrapper {
+    flex-direction: row;
+    width: 50%;
+  }
+}
 .about-life-coaching__number-wrapper hr {
   border: none;
   border-top: 1px solid #946A57;
   width: 60px;
   transform: rotate(90deg);
   margin-bottom: 2.5rem;
+}
+@media (min-width: 61.25em) {
+  .about-life-coaching__number-wrapper hr {
+    transform: rotate(0deg);
+    margin-bottom: 0;
+    margin-left: 3.5rem;
+    width: 150px;
+  }
 }
 .about-life-coaching__number-item {
   display: flex;
@@ -2148,6 +2187,13 @@ section {
   font-family: "Hind", sans-serif;
   font-weight: 600;
 }
+@media (min-width: 61.25em) {
+  .about-life-coaching__number-item {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+}
 .about-life-coaching__content {
   display: flex;
   flex-direction: column;
@@ -2155,11 +2201,21 @@ section {
   gap: 1rem;
   text-align: center;
 }
+@media (min-width: 61.25em) {
+  .about-life-coaching__content {
+    text-align: left;
+  }
+}
 .about-life-coaching__content h2 {
   font-family: "Hind", sans-serif;
   font-weight: 600;
   letter-spacing: 0.06rem;
   font-size: 1.1rem;
+}
+@media (min-width: 61.25em) {
+  .about-life-coaching__content h2 {
+    align-self: flex-start;
+  }
 }
 .about-life-coaching__description {
   display: flex;
@@ -2242,9 +2298,4 @@ section {
   height: 0;
   overflow: hidden;
   transition: all 0.2s linear;
-}
-@media (min-width: 48em) {
-  .faq__description {
-    padding: 0 3rem;
-  }
 }
