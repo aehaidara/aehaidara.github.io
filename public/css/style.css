@@ -605,6 +605,12 @@ nav .logo img {
   -webkit-box-shadow: -7px 15px 17px -7px rgba(0, 0, 0, 0.68);
   -moz-box-shadow: -7px 15px 17px -7px rgba(0, 0, 0, 0.68);
 }
+@media (min-width: 30em) and (max-width: 47.99em) {
+  #menu {
+    overflow-y: auto;
+    max-height: calc(100vh - 60px);
+  }
+}
 
 #menu li {
   padding: 10px 2rem;

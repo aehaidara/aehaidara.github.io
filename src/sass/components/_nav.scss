@@ -181,6 +181,11 @@ nav {
     box-shadow: -7px 15px 17px -7px rgba(0, 0, 0, 0.68);
     -webkit-box-shadow: -7px 15px 17px -7px rgba(0, 0, 0, 0.68);
     -moz-box-shadow: -7px 15px 17px -7px rgba(0, 0, 0, 0.68);
+
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
+        overflow-y: auto;
+        max-height: calc(100vh - 60px);
+    }
 }
 
 #menu li {

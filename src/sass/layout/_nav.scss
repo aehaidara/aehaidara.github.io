@@ -17,7 +17,6 @@ nav {
         height: $nav-tablet-height;
     }
     @include mq.mq($from: desktop, $until: wide) {
-
     }
     @include mq.mq($from: wide) {
         padding: 0 9rem;
