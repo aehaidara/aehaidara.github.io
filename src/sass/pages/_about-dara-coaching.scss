@@ -8,7 +8,6 @@
     color: $color-primary-brown;
     padding: 0 1rem;
 
-
     &__number-wrapper {
         display: flex;
         flex-direction: column;
@@ -54,17 +53,84 @@
     &__description {
         @include flex-col-center;
         gap: 2rem;
+    }
+}
 
+// FAQ
+
+.faq {
+    @include flex-col-center;
+    gap: 3rem;
+    width: 100%;
+    color: $color-primary-brown;
+    padding: 0 1rem;
+
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
+        width: 100%;
+        padding: 0 5rem;
+    }
+
+    @include mq.mq($from: tablet, $until: desktop) {
+        width: 100%;
+        padding: 0 5.5rem;
+    }
+
+    @include mq.mq($from: desktop, $until: wide) {
+        padding: 0 5rem;
+    }
+
+    @include mq.mq($from: wide) {
+        padding: 0 15rem;
+    }
+}
+
+.faq__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: $color-primary-brown;
+    border-top: 1px solid $color-primary-brown;
+    padding-top: 1rem; // <--- top
+}
+
+.faq__item {
+    padding: 0 1rem;
+    font-size: 1.1rem; // create variable
+    border-bottom: 1px solid $color-primary-brown;
+    color: $color-primary-brown;
+    padding-top: 1rem; // <--- bottom
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.faq__title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    h2 {
+        font-family: $font-family-hind;
+        font-weight: $font-weight-600;
+        letter-spacing: $letter-spacing-sm;
+        font-size: 1.1rem;
     }
 }
 
 
+.faq__description {
+    margin: 1rem 0;
+    @include flex-col;
+    gap: 1rem;
+    font-size: 1rem;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
 
-
-
-
-
-
+    @include mq.mq($from: tablet) {
+        padding: 0 3rem;
+    }
+}
 
 // &__number-wrapper {
 //     position: relative;
