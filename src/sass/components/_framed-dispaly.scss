@@ -10,13 +10,12 @@
     color: $color-primary-beige;
     padding: 3rem 1rem;
     margin-bottom: 0 !important;
-    /* mobile-land */
+
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         width: 100%;
         padding: 3rem 5rem;
     }
 
-    /* mobile-land */
     @include mq.mq($from: tablet, $until: desktop) {
         padding: 6rem 5rem;
     }
@@ -75,4 +74,8 @@
 .card-regular__wrapper {
     @include flex-col-center;
     gap: 1rem;
+
+    @include mq.mq($from: tablet, $until: desktop) {
+        padding: 0 8rem;
+    }
 }

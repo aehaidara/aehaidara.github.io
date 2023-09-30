@@ -742,8 +742,6 @@ nav .logo img {
   color: #F4EEE3;
   padding: 3rem 1rem;
   margin-bottom: 0 !important;
-  /* mobile-land */
-  /* mobile-land */
 }
 @media (min-width: 30em) and (max-width: 47.99em) {
   .framed-display {
@@ -817,6 +815,11 @@ nav .logo img {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .card-regular__wrapper {
+    padding: 0 8rem;
+  }
 }
 
 .footer {
@@ -1428,13 +1431,24 @@ section {
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
   .testimonial {
-    padding: 6rem;
+    padding: 6rem 5rem;
   }
 }
 @media (min-width: 61.25em) {
   .testimonial {
+    padding: 6rem 15rem;
+    margin: 0;
+  }
+}
+@media (min-width: 81.25em) {
+  .testimonial {
     padding: 6rem 20rem;
     margin: 0;
+  }
+}
+@media (min-width: 30em) {
+  .testimonial p {
+    padding: 0 3rem;
   }
 }
 
@@ -2100,6 +2114,11 @@ section {
   gap: 2rem;
   color: #946A57;
   padding: 0 1rem;
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .about-life-coaching {
+    padding: 0 5rem;
+  }
 }
 .about-life-coaching__number-wrapper {
   display: flex;

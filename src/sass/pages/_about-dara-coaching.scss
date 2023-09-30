@@ -8,6 +8,10 @@
     color: $color-primary-brown;
     padding: 0 1rem;
 
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
+        padding: 0 5rem;
+    }
+
     &__number-wrapper {
         display: flex;
         flex-direction: column;
@@ -116,7 +120,6 @@
         font-size: 1.1rem;
     }
 }
-
 
 .faq__description {
     margin: 1rem 0;
