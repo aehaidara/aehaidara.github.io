@@ -344,7 +344,7 @@
     background: $color-secondary-dark-green;
     color: $color-primary-beige;
     padding: 3rem 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
     /* mobile-land */
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         width: 100%;
@@ -414,6 +414,7 @@
 .testimonial {
     grid-column: 1/4;
     color: $color-primary-brown;
+    margin-bottom: 0 !important;
 
     /* mobile-land */
     @include mq.mq($from: mobileLandscape) {

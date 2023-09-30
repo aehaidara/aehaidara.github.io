@@ -919,7 +919,7 @@ nav {
 .layout section {
   margin-top: 3rem;
 }
-@media (min-width: 48em) {
+@media (min-width: 48em) and (max-width: 81.24em) {
   .layout section {
     margin: 3rem 0;
     margin-bottom: 6rem;
@@ -1334,7 +1334,7 @@ section {
   background: #403A2C;
   color: #F4EEE3;
   padding: 3rem 1rem;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   /* mobile-land */
   /* mobile-land */
 }
@@ -1408,6 +1408,7 @@ section {
 .testimonial {
   grid-column: 1/4;
   color: #946A57;
+  margin-bottom: 0 !important;
   /* mobile-land */
   /* mobile-desktop */
 }

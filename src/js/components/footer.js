@@ -2,7 +2,7 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         
-            <h1>Get in touch</h1>
+            <h1 classe="footer__title">Get in touch</h1>
 
             <div class="footer__wrapper">
                 <div class="footer__left-side">

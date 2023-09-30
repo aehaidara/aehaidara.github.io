@@ -24,10 +24,12 @@
         @include mq.mq($from: mobileLandscape) {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            
         }
 
         //tablet
-        @include mq.mq($from: tablet) {
+        @include mq.mq($from: wide) {
+
         }
     }
 
