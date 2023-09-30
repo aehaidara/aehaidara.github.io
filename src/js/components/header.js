@@ -31,7 +31,11 @@ if (currentPage === "/" || currentPage === "/index.html") {
     logo = _LOGO_WHITE;
     navTextColor = _NAV_COLOR_WHTIE;
     hamburgerIconColor = _HAMBURGER_COLOR_WHITE;
-    if (currentPage === "/meet-your-coach.html" || currentPage === "/prices.html") {
+    if (
+        currentPage === "/meet-your-coach.html" ||
+        currentPage === "/prices.html" ||
+        currentPage === "/about-dara-coaching.html"
+    ) {
         navBackgroundColor = _NAV_BACKGROUND_COLOR_BROWN;
     } else if (currentPage === "/contact.html") {
         navBackgroundColor = _NAV_BACKGROUND_COLOR_GREEN;
@@ -65,6 +69,8 @@ class Header extends HTMLElement {
                       <a class="menu-item" href="./prices.html"><li>Prise</li></a>
                       <a class="menu-item" href="./services.html"><li>Services</li></a>
                       <a class="menu-item" href="#"><li>Business</li></a>
+                      <a class="menu-item" href="./about-dara-coaching.html"><li>About Dara Coaching</li></a>
+                      <a class="menu-item" href="./meet-your-coach.html"><li>Meet your coach</li></a>
                       <a class="menu-item" href="#"><li>Booking</li></a>
                       <a class="menu-item" href="./contact.html"><li>Contact</li></a>
                   </ul>

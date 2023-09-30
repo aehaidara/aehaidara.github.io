@@ -1,0 +1,83 @@
+@use "../mq";
+@use "../base" as *;
+@use "../abstracts" as *;
+
+.about-life-coaching {
+    @include flex-col-center;
+    gap: 2rem;
+    color: $color-primary-brown;
+    padding: 0 1rem;
+
+
+    &__number-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        hr {
+            border: none;
+            border-top: 1px solid $color-primary-brown;
+            width: 60px;
+            transform: rotate(90deg);
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__number-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background: $color-primary-brown;
+        color: $color-primary-white;
+        font-size: 2rem;
+        border-radius: 50%;
+        font-family: $font-family-hind;
+        font-weight: $font-weight-600;
+    }
+
+    &__content {
+        @include flex-col-center;
+        gap: 1rem;
+        text-align: center;
+        h2 {
+            font-family: $font-family-hind;
+            font-weight: $font-weight-600;
+            letter-spacing: $letter-spacing-sm;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__description {
+        @include flex-col-center;
+        gap: 2rem;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+// &__number-wrapper {
+//     position: relative;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 1rem;
+//     width: 100%;
+//     hr {
+//         position: absolute;
+//         border: none;
+//         border-top: 1px solid $color-primary-brown;
+//         width: 80px;
+//     }
+// }

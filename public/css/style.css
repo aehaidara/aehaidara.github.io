@@ -694,6 +694,72 @@ nav .logo img {
   align-self: flex-end;
 }
 
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Hind", sans-serif;
+  padding: 2rem 3rem;
+  height: auto !important;
+}
+.swiper-slide span {
+  font-style: italic;
+  color: #CF7C29;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+
+.swiper-pagination {
+  color: #946A57 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: #946A57 !important;
+}
+
+.framed-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1/4;
+  gap: 3rem;
+  background: #403A2C;
+  color: #F4EEE3;
+  padding: 3rem 1rem;
+  margin-bottom: 0 !important;
+  /* mobile-land */
+  /* mobile-land */
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .framed-display {
+    width: 100%;
+    padding: 3rem 5rem;
+  }
+}
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .framed-display {
+    padding: 6rem 5rem;
+  }
+}
+@media (min-width: 61.25em) {
+  .framed-display {
+    padding: 6rem 3rem;
+  }
+}
+
+#dark-brown {
+  background: #442E24;
+}
+
 .card-regular {
   display: flex;
   flex-direction: column;
@@ -745,38 +811,6 @@ nav .logo img {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}
-
-.swiper-slide {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 1rem;
-  text-align: center;
-  font-size: 1rem;
-  font-family: "Hind", sans-serif;
-  padding: 2rem 3rem;
-  height: auto !important;
-}
-.swiper-slide span {
-  font-style: italic;
-  color: #CF7C29;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: "" !important;
-}
-
-.swiper-pagination {
-  color: #946A57 !important;
-}
-
-.swiper-pagination-bullet {
-  width: 10px !important;
-  height: 10px !important;
-  background: #946A57 !important;
 }
 
 .footer {
@@ -1325,37 +1359,6 @@ section {
   }
 }
 
-.for-businesses {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 1/4;
-  gap: 3rem;
-  background: #403A2C;
-  color: #F4EEE3;
-  padding: 3rem 1rem;
-  margin-bottom: 0 !important;
-  /* mobile-land */
-  /* mobile-land */
-}
-@media (min-width: 30em) and (max-width: 47.99em) {
-  .for-businesses {
-    width: 100%;
-    padding: 3rem 5rem;
-  }
-}
-@media (min-width: 48em) and (max-width: 61.24em) {
-  .for-businesses {
-    padding: 6rem 5rem;
-  }
-}
-@media (min-width: 61.25em) {
-  .for-businesses {
-    padding: 6rem 3rem;
-  }
-}
-
-/*  */
 .company-logos {
   grid-column: 1/4;
   display: flex;
@@ -2082,4 +2085,60 @@ section {
 .meet-your-coach-footer {
   padding: 2rem 1rem !important;
   height: auto;
+}
+
+.about-life-coaching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: #946A57;
+  padding: 0 1rem;
+}
+.about-life-coaching__number-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.about-life-coaching__number-wrapper hr {
+  border: none;
+  border-top: 1px solid #946A57;
+  width: 60px;
+  transform: rotate(90deg);
+  margin-bottom: 2.5rem;
+}
+.about-life-coaching__number-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: #946A57;
+  color: #FFFFFF;
+  font-size: 2rem;
+  border-radius: 50%;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+}
+.about-life-coaching__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.about-life-coaching__content h2 {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+  font-size: 1.1rem;
+}
+.about-life-coaching__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
