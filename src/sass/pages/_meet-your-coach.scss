@@ -45,6 +45,10 @@
         gap: 4rem;
     }
 
+    @include mq.mq($from: wide) {
+        margin-bottom: 4rem;
+    }
+
     &::before {
         content: "";
         position: absolute;

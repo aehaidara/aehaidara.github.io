@@ -1,6 +1,7 @@
 @use "../mq";
 @use "../abstracts" as *;
 
+//////  PAGE - BACKGROUND ############
 .page-bg-beige {
     background-color: $color-primary-beige;
 }
@@ -14,6 +15,26 @@
 }
 
 .page-bg-dark-brown {
+    background: $color-primary-dark-brown;
+}
+
+//////  NAVIGATION - COLOR ############
+// nav color
+.nav-color-brown {
+    color: $color-primary-brown;
+}
+.nav-color-white {
+    color: $color-primary-white;
+}
+
+// nav bg color
+.nav-bg-color-brown {
+    background: $color-primary-brown;
+}
+.nav-bg-color-green {
+    background: $color-secondary-dark-green;
+}
+.nav-bg-color-dark-brown {
     background: $color-primary-dark-brown;
 }
 
@@ -40,7 +61,6 @@
         @include mq.mq($from: tablet, $until: desktop) {
             display: block;
         }
-        
     }
 
     &__alternative-title {
@@ -48,7 +68,7 @@
             display: none;
         }
     }
-    
+
     p {
         text-align: center;
     }
@@ -86,7 +106,7 @@
         @include mq.mq($from: desktop, $until: wide) {
             display: flex;
             justify-content: space-between;
-            margin-top: 2rem;  
+            margin-top: 2rem;
         }
         @include mq.mq($from: wide) {
             display: flex;
@@ -161,9 +181,17 @@
     }
     @include mq.mq($from: tablet, $until: desktop) {
         margin-top: 1200px;
+
+        p {
+            padding: 1rem 3rem;
+        }
     }
     @include mq.mq($from: desktop) {
         margin-top: 600px;
+
+        p {
+            padding: 1rem 3rem;
+        }
     }
 
     &__wrapper {
@@ -182,7 +210,6 @@
             display: block;
         }
     }
-    
 }
 
 // ***********  PAGE IMAGE BACK *********** //
@@ -197,7 +224,7 @@
         display: block;
         width: 100%;
     }
-    
+
     @include mq.mq($from: desktop, $until: wide) {
         display: block;
         width: 540px;

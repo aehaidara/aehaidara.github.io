@@ -1,0 +1,75 @@
+@use "../mq";
+@use "../base" as *;
+@use "../abstracts" as *;
+
+.mh-professional-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+
+    @include mq.mq($from: desktop) {
+        flex-direction: row;
+
+    }
+
+    li {
+        @include flex-col-center;
+        gap: 1.5rem;
+        @include mq.mq($from: mobileLandscape, $until: tablet) {
+            padding: 4rem;
+        }
+        @include mq.mq($from: tablet, $until: desktop) {
+            padding: 0 4rem;
+        }
+    }
+}
+
+.statistics__title {
+    margin-bottom: 2rem;
+}
+
+
+.progressbar-text {
+    font-family: $font-family-hind;
+    font-weight: $font-weight-600;
+    letter-spacing: $letter-spacing-sm;
+    font-size: 3rem;
+    color: $color-primary-white !important;
+}
+
+.mh-progress.mh-progress-circle {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.mh-progress path:nth-child(1) {
+    stroke: rgba(0, 0, 0, 0.7);
+}
+
+.mh-progress path:nth-child(2) {
+    stroke: $color-primary-white !important;
+}
+
+.download-btn {
+    background: $color-primary-white;
+    color: $color-secondary-dark-green;
+}
+
+.business-contact {
+    @include flex-col-center;
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    color: $color-secondary-dark-green;
+    @include mq.mq($from: tablet, $until: desktop) {
+        padding-bottom: 0;
+    }
+    &__btn {
+        background: $color-secondary-dark-green;
+        color: $color-primary-white;
+    }
+}

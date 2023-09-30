@@ -21,25 +21,6 @@ nav {
     }
 }
 
-// nav color
-.nav-color-brown {
-    color: $color-primary-brown;
-}
-.nav-color-white {
-    color: $color-primary-white;
-}
-
-// nav bg color
-.nav-bg-color-brown {
-    background: $color-primary-brown;
-}
-.nav-bg-color-green {
-    background: $color-secondary-dark-green;
-}
-.nav-bg-color-dark-brown {
-    background: $color-primary-dark-brown;
-}
-
 #hamburger {
     .navigation {
         @include mq.mq($from: desktop) {
