@@ -1795,6 +1795,7 @@ section {
   font-size: 1.2rem;
   color: #946A57;
   border-radius: 2rem;
+  cursor: pointer;
 }
 .prices__currency-btn button.active {
   background: #946A57;

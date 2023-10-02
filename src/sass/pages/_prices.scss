@@ -47,6 +47,7 @@
             font-size: 1.2rem;
             color: $color-primary-brown;
             border-radius: 2rem;
+            cursor: pointer;
         }
 
         button.active {
@@ -80,9 +81,7 @@
             width: calc(50% - 17px);
         }
         @include mq.mq($from: wide) {
-
         }
-
     }
 
     &__body {
@@ -161,7 +160,6 @@
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
         padding: 2rem 1rem;
-        
     }
     @include mq.mq($from: wide) {
         display: flex;
@@ -170,7 +168,7 @@
         align-items: flex-end;
         padding: 5rem 0;
     }
-    
+
     &__wrapper {
         @include flex-col-center;
         gap: 2rem;
@@ -178,10 +176,10 @@
         @include mq.mq($from: mobileLandscape) {
             justify-content: center;
         }
-       
+
         @include mq.mq($from: wide) {
-           width: 30%;
-           margin-right: 12rem;
+            width: 30%;
+            margin-right: 12rem;
         }
     }
 
@@ -240,7 +238,7 @@
     }
 
     @include mq.mq($from: wide) {
-       padding: 3rem 25rem;
+        padding: 3rem 25rem;
     }
 
     &__wrapper {
