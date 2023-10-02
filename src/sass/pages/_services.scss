@@ -10,10 +10,10 @@
     width: 100%;
     gap: 4rem;
     margin-bottom: 3rem;
-    
+
     // custom mq
     @include mq.mq($from: 1120px, $until: wide) {
-        padding: 0 3rem; 
+        padding: 0 3rem;
     }
 
     @include mq.mq($from: wide) {
@@ -28,8 +28,11 @@
         width: 100%;
 
         @include mq.mq($from: desktop) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            flex-direction: row;
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
         }
     }
 
@@ -100,5 +103,17 @@
         @include mq.mq($from: tablet, $until: desktop) {
             padding: 0 6rem;
         }
+    }
+}
+
+.service__option:nth-child(even) .service__image-wrapper {
+    @include mq.mq($from: desktop) {
+        margin-left: 6rem;
+    }
+}
+.service__option:nth-child(even) .service__background {
+    @include mq.mq($from: desktop) {
+        position: relative;
+        right: 6rem;
     }
 }

@@ -114,13 +114,13 @@
             max-width: 550px;
         }
         @include mq.mq($from: desktop) {
-            max-width: 400px;
+            align-self: center; 
+            max-width: 500px;
         }
     }
 
     &__image {
         position: relative;
-
         height: 300px;
 
         @include mq.mq($from: tablet, $until: desktop) {

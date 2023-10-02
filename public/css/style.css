@@ -273,15 +273,19 @@ body:before {
   .layer-front {
     margin-top: 1200px;
   }
-  .layer-front p {
-    padding: 1rem 3rem;
-  }
 }
 @media (min-width: 61.25em) {
   .layer-front {
     margin-top: 600px;
   }
-  .layer-front p {
+}
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .layer-front__intro-text {
+    padding: 1rem 3rem;
+  }
+}
+@media (min-width: 61.25em) {
+  .layer-front__intro-text {
     padding: 1rem 3rem;
   }
 }
@@ -1225,14 +1229,15 @@ section {
 .meet-your-coach__title-wrapper img {
   margin-top: 0.5rem;
   align-self: center;
-  width: 35% !important;
+  width: 40% !important;
   position: relative;
+  right: 1rem;
 }
 .meet-your-coach__title {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .meet-your-coach__sub-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .meet-your-coach img {
   width: 100%;
@@ -1659,8 +1664,10 @@ section {
 }
 @media (min-width: 61.25em) {
   .service__option {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+  }
+  .service__option:nth-child(even) {
+    flex-direction: row-reverse;
   }
 }
 .service__wrapper {
@@ -1728,6 +1735,19 @@ section {
 @media (min-width: 48em) and (max-width: 61.24em) {
   .service__content-wrapper {
     padding: 0 6rem;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .service__option:nth-child(even) .service__image-wrapper {
+    margin-left: 6rem;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .service__option:nth-child(even) .service__background {
+    position: relative;
+    right: 6rem;
   }
 }
 
@@ -2092,7 +2112,8 @@ section {
 }
 @media (min-width: 61.25em) {
   .timeline__text {
-    max-width: 400px;
+    align-self: center;
+    max-width: 500px;
   }
 }
 .timeline__image {

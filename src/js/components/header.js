@@ -68,7 +68,7 @@ class Header extends HTMLElement {
                       <a class="menu-item" href="./meet-your-coach.html"><li>About</li></a>
                       <a class="menu-item" href="./prices.html"><li>Prise</li></a>
                       <a class="menu-item" href="./services.html"><li>Services</li></a>
-                      <a class="menu-item" href="./for-businesses.html"><li>Business</li></a>
+                      <a class="menu-item" href="./for-businesses.html"><li>For Business</li></a>
                       <a class="menu-item" href="./about-dara-coaching.html"><li>About Dara Coaching</li></a>
                       <a class="menu-item" href="./meet-your-coach.html"><li>Meet your coach</li></a>
                       <a class="menu-item" href="#"><li>Booking</li></a>
@@ -80,7 +80,7 @@ class Header extends HTMLElement {
               <a href="./index.html">Home</a>
               <a href="./services.html">Services</a>
               <a href="./meet-your-coach.html">About</a>
-              <a href="./for-businesses.html">Business</a>
+              <a href="./for-businesses.html">For Business</a>
               <a href="./prices.html">Prise</a>
               <a href="#">Booking</a>
               <a href="./contact.html">Contact</a>

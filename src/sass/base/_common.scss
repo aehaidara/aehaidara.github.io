@@ -181,17 +181,9 @@
     }
     @include mq.mq($from: tablet, $until: desktop) {
         margin-top: 1200px;
-
-        p {
-            padding: 1rem 3rem;
-        }
     }
     @include mq.mq($from: desktop) {
         margin-top: 600px;
-
-        p {
-            padding: 1rem 3rem;
-        }
     }
 
     &__wrapper {
@@ -199,6 +191,16 @@
             // padding: 0 1rem;
         }
     }
+
+    &__intro-text {
+        @include mq.mq($from: tablet, $until: desktop) {
+            padding: 1rem 3rem;
+        }
+        @include mq.mq($from: desktop) {
+            padding: 1rem 3rem;
+        }
+    }
+
     .page-image-front {
         @include mq.mq($from: mobileLandscape) {
             display: none;

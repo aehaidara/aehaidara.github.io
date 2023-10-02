@@ -201,17 +201,18 @@
         img {
             margin-top: 0.5rem;
             align-self: center;
-            width: 35% !important;
+            width: 40% !important;
             position: relative;
+            right: 1rem;
         }
     }
 
     &__title {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     &__sub-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     img {
