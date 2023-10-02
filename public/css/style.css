@@ -699,7 +699,7 @@ nav .logo img {
 }
 @media (min-width: 48em) {
   .my-services__description {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 }
 
@@ -1734,7 +1734,7 @@ section {
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
   .service__content-wrapper {
-    padding: 0 6rem;
+    padding: 0 8rem;
   }
 }
 

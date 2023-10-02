@@ -101,7 +101,7 @@
         }
 
         @include mq.mq($from: tablet, $until: desktop) {
-            padding: 0 6rem;
+            padding: 0 8rem;
         }
     }
 }
