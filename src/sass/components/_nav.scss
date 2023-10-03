@@ -181,11 +181,34 @@ nav {
     opacity: 1;
 }
 
-// @media screen and (max-width: 768px) {
-//     #menu {
-//         transform: none;
-//         opacity: 0;
 
-//         transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-//     }
-// }
+////// DROPDOWN
+
+/* dropdown container */
+.nav-with-dropdown:hover .dropdown {
+    display: block; /* Show the dropdown when the parent is hovered */
+}
+
+/* dropdown items */
+.dropdown {
+    display: none; 
+    position: absolute;
+    background: $color-primary-beige;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: $color-primary-brown;
+    text-decoration: none;
+}
+
+/* dropdown links on hover */
+.dropdown a:hover {
+    // background-color: #ddd;
+    // color: #333; 
+}

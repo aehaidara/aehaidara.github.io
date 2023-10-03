@@ -633,6 +633,30 @@ nav .logo img {
   opacity: 1;
 }
 
+/* dropdown container */
+.nav-with-dropdown:hover .dropdown {
+  display: block; /* Show the dropdown when the parent is hovered */
+}
+
+/* dropdown items */
+.dropdown {
+  display: none;
+  position: absolute;
+  background: #F4EEE3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #946A57;
+  text-decoration: none;
+}
+
+/* dropdown links on hover */
 .my-services {
   display: flex;
   flex-direction: column;

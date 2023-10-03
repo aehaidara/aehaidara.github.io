@@ -37,7 +37,10 @@ if (currentPage === "/" || currentPage === "/index.html") {
         currentPage === "/about-dara-coaching.html"
     ) {
         navBackgroundColor = _NAV_BACKGROUND_COLOR_BROWN;
-    } else if (currentPage === "/contact.html" || currentPage === "/for-businesses.html") {
+    } else if (
+        currentPage === "/contact.html" ||
+        currentPage === "/for-businesses.html"
+    ) {
         navBackgroundColor = _NAV_BACKGROUND_COLOR_GREEN;
     } else if (currentPage === "/services.html") {
         navBackgroundColor = _NAV_BACKGROUND_COLOR_DARK_BROWN;
@@ -78,12 +81,23 @@ class Header extends HTMLElement {
           </div>
           <div class="navigation-bar-menu ${navTextColor}" id="navigation-items">
               <a href="./index.html">Home</a>
-              <a href="./services.html">Services</a>
-              <a href="./meet-your-coach.html">About</a>
-              <a href="./for-businesses.html">For Business</a>
-              <a href="./prices.html">Prise</a>
-              <a href="#">Booking</a>
+              <div class="nav-with-dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown">
+                    <a href="./services.html">For Individuals</a>
+                    <a href="./for-businesses.html">For Businesses</a>
+                </div>
+              </div>
+              <div class="nav-with-dropdown">
+                <a href="#">About</a>
+                <div class="dropdown">
+                    <a href="./about-dara-coaching.html">About DARA Coaching</a>
+                    <a href="./meet-your-coach.html">Meet Your Coach</a>
+                </div>
+              </div>
+              <a href="./prices.html">Prices</a>
               <a href="./contact.html">Contact</a>
+              <a href="#">Booking</a>
           </div>
       </nav>
       `;
