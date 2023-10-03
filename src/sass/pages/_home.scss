@@ -134,6 +134,7 @@
     &__title,
     &__text {
         color: $color-primary-brown;
+        max-width: 900px;
     }
 
     &__text {
@@ -256,6 +257,8 @@
     text-align: center;
     padding: 0 1rem;
     font-family: $font-family-lora;
+    max-width: 550px;
+
 
     // mobile-land
     @include mq.mq($from: mobileLandscape) {
@@ -336,6 +339,10 @@
     @include mq.mq($from: wide) {
         padding: 6rem 15rem;
     }
+
+    &__text {
+        max-width: 1000px;
+    }
 }
 
 
@@ -385,36 +392,3 @@
     }
 }
 
-/*  */
-
-.testimonial {
-    grid-column: 1/4;
-    color: $color-primary-brown;
-    margin-bottom: 0 !important;
-
-    /* mobile-land */
-    @include mq.mq($from: mobileLandscape) {
-        padding: 0 3rem;
-    }
-
-    //tablet
-    @include mq.mq($from: tablet, $until: desktop) {
-        padding: 6rem 5rem;
-    }
-
-    /* mobile-desktop */
-    @include mq.mq($from: desktop) {
-        padding: 6rem 15rem;
-        margin: 0;
-    }
-    @include mq.mq($from: wide) {
-        padding: 6rem 20rem;
-        margin: 0;
-    }
-
-    p {
-        @include mq.mq($from: mobileLandscape) {
-            padding: 0 3rem;
-        }
-    }
-}
