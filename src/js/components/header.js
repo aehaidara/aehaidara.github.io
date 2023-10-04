@@ -42,7 +42,7 @@ if (currentPage === "/" || currentPage === "/index.html") {
         currentPage === "/for-businesses.html"
     ) {
         navBackgroundColor = _NAV_BACKGROUND_COLOR_GREEN;
-    } else if (currentPage === "/services.html") {
+    } else if (currentPage === "/for-individuals.html") {
         navBackgroundColor = _NAV_BACKGROUND_COLOR_DARK_BROWN;
     }
 }
@@ -70,7 +70,7 @@ class Header extends HTMLElement {
                       <a class="menu-item" href="/"><li>Home</li></a>
                       <a class="menu-item" href="./meet-your-coach.html"><li>About</li></a>
                       <a class="menu-item" href="./prices.html"><li>Prise</li></a>
-                      <a class="menu-item" href="./services.html"><li>Services</li></a>
+                      <a class="menu-item" href="./for-individuals.html"><li>Services</li></a>
                       <a class="menu-item" href="./for-businesses.html"><li>For Business</li></a>
                       <a class="menu-item" href="./about-dara-coaching.html"><li>About Dara Coaching</li></a>
                       <a class="menu-item" href="./meet-your-coach.html"><li>Meet your coach</li></a>
@@ -84,7 +84,7 @@ class Header extends HTMLElement {
               <div class="nav-with-dropdown">
                 <a href="#">Services</a>
                 <div class="dropdown">
-                    <a href="./services.html">For Individuals</a>
+                    <a href="./for-individuals.html">For Individuals</a>
                     <a href="./for-businesses.html">For Businesses</a>
                 </div>
               </div>
