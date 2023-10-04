@@ -207,6 +207,14 @@
     }
 
     .page-image-front {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 2rem 2rem 0 0;
+        }
         @include mq.mq($from: mobileLandscape) {
             display: none;
         }

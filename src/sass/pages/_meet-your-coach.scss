@@ -2,16 +2,6 @@
 @use "../base" as *;
 @use "../abstracts" as *;
 
-.page-image-front {
-    width: 100%;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 2rem 2rem 0 0;
-    }
-}
 
 //***** timeline
 .timeline-section {
@@ -20,13 +10,12 @@
     justify-content: center;
     align-items: center;
     color: $color-primary-brown;
+    margin-bottom: 4rem;
 
     h1 {
         padding-bottom: 2rem;
     }
-    @include mq.mq($from: mobileLandscape) {
-        padding: 0 5rem;
-    }
+    
 }
 
 .timeline {
@@ -37,16 +26,17 @@
     margin-top: 2rem;
     margin-left: 2rem;
 
-    @include mq.mq($from: tablet, $until: desktop) {
-        gap: 5rem;
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
+        max-width: 550px;
     }
 
     @include mq.mq($from: desktop) {
+        max-width: 1000px;
         gap: 4rem;
     }
 
     @include mq.mq($from: wide) {
-        margin-bottom: 4rem;
+        width: 1100px;
     }
 
     &::before {
@@ -115,8 +105,8 @@
         }
         @include mq.mq($from: desktop) {
             align-self: center; 
-            max-width: 500px;
         }
+        
     }
 
     &__image {
@@ -128,7 +118,7 @@
             height: 400px;
         }
         @include mq.mq($from: desktop) {
-            width: 300px;
+            width: 800px;
         }
 
         img {

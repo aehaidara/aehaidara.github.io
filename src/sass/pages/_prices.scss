@@ -11,17 +11,17 @@
     padding: 0 1rem;
     gap: 2rem;
 
-    @include mq.mq($from: mobileLandscape) {
-    }
     @include mq.mq($from: wide) {
-        padding: 0 10rem;
         padding-bottom: 4rem;
     }
 
     &__currency-wrapper {
         @include flex-col-center;
         gap: 1rem;
-        width: 70%;
+
+        @include mq.mq($from: mobileLandscape) {
+            width: 400px;
+        }
     }
 
     &__choose-curruncy-title {
@@ -65,6 +65,10 @@
 
         width: 100%;
         gap: 2rem;
+        
+        @include mq.mq($from: wide) {
+            max-width: 1000px;
+        }
     }
 
     &__card {
