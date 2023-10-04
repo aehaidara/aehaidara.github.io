@@ -41,6 +41,7 @@
 .page-main-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     color: $color-primary-brown;
     padding: 0 1rem 0 1rem;
@@ -71,6 +72,9 @@
 
     p {
         text-align: center;
+        @include mq.mq($from: wide) {
+            max-width: 1000px;
+        }
     }
 
     span {
@@ -110,7 +114,7 @@
         }
         @include mq.mq($from: wide) {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             padding: 0 8rem;
             margin-top: 3rem;
         }
@@ -196,9 +200,10 @@
         @include mq.mq($from: tablet, $until: desktop) {
             padding: 1rem 3rem;
         }
-        @include mq.mq($from: desktop) {
+        @include mq.mq($from: desktop,  $until: wide) {
             padding: 1rem 3rem;
         }
+
     }
 
     .page-image-front {

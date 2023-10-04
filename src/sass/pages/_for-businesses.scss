@@ -14,6 +14,9 @@
         flex-direction: row;
 
     }
+    @include mq.mq($from: wide) {
+        max-width: 1300px;
+    }
 
     li {
         @include flex-col-center;

@@ -103,6 +103,7 @@ body:before {
 .page-main-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   color: #946A57;
   padding: 0 1rem 0 1rem;
@@ -138,6 +139,11 @@ body:before {
 }
 .page-main-section p {
   text-align: center;
+}
+@media (min-width: 81.25em) {
+  .page-main-section p {
+    max-width: 1000px;
+  }
 }
 .page-main-section span {
   display: none;
@@ -184,7 +190,7 @@ body:before {
 @media (min-width: 81.25em) {
   .layer-back__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 8rem;
     margin-top: 3rem;
   }
@@ -284,7 +290,7 @@ body:before {
     padding: 1rem 3rem;
   }
 }
-@media (min-width: 61.25em) {
+@media (min-width: 61.25em) and (max-width: 81.24em) {
   .layer-front__intro-text {
     padding: 1rem 3rem;
   }
@@ -2388,6 +2394,11 @@ section {
 @media (min-width: 61.25em) {
   .mh-professional-progress {
     flex-direction: row;
+  }
+}
+@media (min-width: 81.25em) {
+  .mh-professional-progress {
+    max-width: 1300px;
   }
 }
 .mh-professional-progress li {
