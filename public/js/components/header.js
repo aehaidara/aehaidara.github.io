@@ -67,15 +67,30 @@ class Header extends HTMLElement {
                   <span></span>
                   <span></span>
                   <ul id="menu">
-                      <a class="menu-item" href="/"><li>Home</li></a>
-                      <a class="menu-item" href="./meet-your-coach.html"><li>About</li></a>
-                      <a class="menu-item" href="./prices.html"><li>Prise</li></a>
-                      <a class="menu-item" href="./for-individuals.html"><li>Services</li></a>
-                      <a class="menu-item" href="./for-businesses.html"><li>For Business</li></a>
-                      <a class="menu-item" href="./about-dara-coaching.html"><li>About Dara Coaching</li></a>
-                      <a class="menu-item" href="./meet-your-coach.html"><li>Meet your coach</li></a>
-                      <a class="menu-item" href="#"><li>Booking</li></a>
-                      <a class="menu-item" href="./contact.html"><li>Contact</li></a>
+                      <a class="menu-item" href="/">
+                        <li>Home</li>
+                      </a>
+                      <a class="menu-item" href="./for-individuals.html">
+                        <li>For Individuals</li>
+                      </a>
+                      <a class="menu-item" href="./for-businesses.html">
+                        <li>For Business</li>
+                      </a>
+                      <a class="menu-item" href="./about-dara-coaching.html">
+                        <li>About Dara Coaching</li>
+                      </a>
+                      <a class="menu-item" href="./meet-your-coach.html">
+                        <li>Meet your coach</li>
+                      </a>
+                      <a class="menu-item" href="./prices.html">
+                        <li>Prises</li>
+                      </a>
+                      <a class="menu-item" href="./contact.html">
+                        <li>Contact</li>
+                      </a>
+                      <a class="menu-item" href="#">
+                        <li>Booking</li>
+                      </a>
                   </ul>
               </div>
           </div>

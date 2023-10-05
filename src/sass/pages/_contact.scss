@@ -2,7 +2,6 @@
 @use "../base" as *;
 @use "../abstracts" as *;
 
-
 .contact {
     display: flex;
     flex-direction: column;
@@ -12,9 +11,22 @@
     width: 100%;
     padding: 0 1rem;
 
-    
-    @include mq.mq($from: wide) {
-        padding: 0 10rem;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include mq.mq($from: tablet, $until: desktop) {
+            max-width: 600px;
+        }
+        @include mq.mq($from: desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 940px;
+            gap: 2rem;
+        }
     }
 
     &__image {
@@ -22,15 +34,8 @@
             width: 400px;
         }
         @include mq.mq($from: tablet, $until: desktop) {
-            width: 500px;
-        }
 
-        // @include mq.mq($from: desktop) {
-        //     width: 900px;
-        // }
-        // @include mq.mq($from: wide) {
-        //     width: 500px;
-        // }
+        }
 
         img {
             width: 100%;
@@ -40,17 +45,6 @@
         }
     }
 
-    &__wrapper {
-        @include mq.mq($from: desktop) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            max-width: 900px;
-            gap: 1rem;
-        }    
-    }
 
     &__form {
         display: flex;
@@ -60,9 +54,6 @@
 
         @include mq.mq($from: mobileLandscape, $until: tablet) {
             width: 400px;
-        }
-        @include mq.mq($from: tablet, $until: desktop) {
-            width: 600px;
         }
     }
 
@@ -115,14 +106,18 @@
 
 .instagram {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 4rem;
-
-    @include mq.mq($from: wide) {
-        padding: 0 10rem;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        max-width: 1200px;
+        @include mq.mq($from: desktop) {
+            max-width: 1000px;
+        }
     }
 
     &__text {
@@ -135,7 +130,6 @@
         @include mq.mq($from: tablet, $until: desktop) {
             width: 600px;
         }
-        
     }
 
     &__posts {
@@ -158,7 +152,7 @@
         @include mq.mq($from: desktop) {
             width: 250px;
         }
-    
+
         @include mq.mq($from: wide) {
             width: 300px;
         }

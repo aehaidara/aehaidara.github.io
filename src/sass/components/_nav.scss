@@ -78,7 +78,7 @@ nav {
     user-select: none;
 
     @include mq.mq($from: tablet, $until: desktop) {
-        margin-top: 1rem;
+        top: 2.5rem;
     }
 }
 
@@ -141,7 +141,7 @@ nav {
 
 #menu {
     position: absolute;
-    width: 280px;
+    width: 400px;
     margin: 10px 0 0 0;
     padding: 50px;
     padding-top: 1rem;
@@ -167,6 +167,11 @@ nav {
         overflow-y: auto;
         max-height: calc(100vh - 60px);
     }
+
+    @include mq.mq($from: tablet, $until: desktop) {
+        width: 500px;
+        top: 1.9rem;
+    }
 }
 
 #menu li {
@@ -174,13 +179,16 @@ nav {
     font-size: 22px;
 
     text-align: right;
+    @include mq.mq($from: tablet, $until: desktop) {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
 }
 
 #menuToggle input:checked ~ ul {
     transform: none;
     opacity: 1;
 }
-
 
 ////// DROPDOWN
 
@@ -191,7 +199,7 @@ nav {
 
 /* dropdown items */
 .dropdown {
-    display: none; 
+    display: none;
     position: absolute;
     background: $color-primary-beige;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -210,5 +218,5 @@ nav {
 /* dropdown links on hover */
 .dropdown a:hover {
     // background-color: #ddd;
-    // color: #333; 
+    // color: #333;
 }
