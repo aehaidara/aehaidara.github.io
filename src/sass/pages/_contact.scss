@@ -12,12 +12,7 @@
     width: 100%;
     padding: 0 1rem;
 
-    @include mq.mq($from: desktop) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 0 5rem;
-    }
-
+    
     @include mq.mq($from: wide) {
         padding: 0 10rem;
     }
@@ -30,12 +25,12 @@
             width: 500px;
         }
 
-        @include mq.mq($from: desktop) {
-            width: 500px;
-        }
-        @include mq.mq($from: wide) {
-            width: 500px;
-        }
+        // @include mq.mq($from: desktop) {
+        //     width: 900px;
+        // }
+        // @include mq.mq($from: wide) {
+        //     width: 500px;
+        // }
 
         img {
             width: 100%;
@@ -43,6 +38,18 @@
             object-fit: contain;
             border-radius: 1rem;
         }
+    }
+
+    &__wrapper {
+        @include mq.mq($from: desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 900px;
+            gap: 1rem;
+        }    
     }
 
     &__form {

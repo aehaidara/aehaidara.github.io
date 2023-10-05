@@ -16,7 +16,7 @@
         <!-- favicon dara logo -->
         <link
             rel="icon"
-            href="./assets/svg/logos/logo-white.svg"
+            href="./assets/svg/logos/favicon.ico"
             type="image/x-icon"
         />
         <title>Contact</title>
@@ -51,7 +51,9 @@
 
                     <section class="page-main-section">
                         <h1 class="page-main-section__main-title">Contact</h1>
-                        <h1 class="page-main-section__alternative-title">Let's talk</h1>
+                        <h1 class="page-main-section__alternative-title">
+                            Let's talk
+                        </h1>
                         <p class="layer-front__intro-text">
                             <span>Let's talk,</span>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -61,54 +63,60 @@
 
                     <!-- *********************************  CONTACT FORM - SECTION  ********************************* -->
                     <section class="contact">
-                        <!-- image -->
-                        <div class="contact__image">
-                            <img
-                                src="./assets/images/contact/form.jpg"
-                                alt=""
-                            />
+                        <div class="contact__wrapper">
+                            <!-- image -->
+                            <div class="contact__image">
+                                <img
+                                    src="./assets/images/contact/form.jpg"
+                                    alt=""
+                                />
+                            </div>
+
+                            <!-- form -->
+                            <form class="contact__form">
+                                <div class="contact__full-name-and-company">
+                                    <div class="contact__input-wrapper">
+                                        <label for="fullName"
+                                            >Full Name *</label
+                                        >
+                                        <input id="fullName" type="text" />
+                                    </div>
+                                    <div class="contact__input-wrapper">
+                                        <label for="companyName"
+                                            >Company Name</label
+                                        >
+                                        <input id="companyName" type="text" />
+                                    </div>
+                                </div>
+                                <div class="contact__input-wrapper">
+                                    <label for="email">Email *</label>
+                                    <input id="email" type="text" />
+                                </div>
+                                <div class="contact__input-wrapper">
+                                    <label for="phone">Phone *</label>
+                                    <input id="phone" type="text" />
+                                </div>
+                                <div class="contact__input-wrapper">
+                                    <label for="subject">Subject</label>
+                                    <textarea
+                                        id="subject"
+                                        name=""
+                                        id=""
+                                        cols="15"
+                                        rows="8"
+                                    ></textarea>
+                                </div>
+
+                                <!-- submit-button -->
+                                <div class="contact__submit-btn">
+                                    <custom-button
+                                        path="#"
+                                        label="Submit"
+                                        className=""
+                                    ></custom-button>
+                                </div>
+                            </form>
                         </div>
-
-                        <!-- form -->
-                        <form class="contact__form">
-                            <div class="contact__full-name-and-company">
-                                <div class="contact__input-wrapper">
-                                    <label for="fullName">Full Name *</label>
-                                    <input id="fullName" type="text" />
-                                </div>
-                                <div class="contact__input-wrapper">
-                                    <label for="companyName">Company Name</label>
-                                    <input id="companyName" type="text" />
-                                </div>
-                            </div>
-                            <div class="contact__input-wrapper">
-                                <label for="email">Email *</label>
-                                <input id="email" type="text" />
-                            </div>
-                            <div class="contact__input-wrapper">
-                                <label for="phone">Phone *</label>
-                                <input id="phone" type="text" />
-                            </div>
-                            <div class="contact__input-wrapper">
-                                <label for="subject">Subject</label>
-                                <textarea
-                                    id="subject"
-                                    name=""
-                                    id=""
-                                    cols="15"
-                                    rows="10"
-                                ></textarea>
-                            </div>
-
-                            <!-- submit-button -->
-                            <div class="contact__submit-btn">
-                                <custom-button
-                                    path="#"
-                                    label="Submit"
-                                    className=""
-                                ></custom-button>
-                            </div>
-                        </form>
                     </section>
 
                     <!-- *********************************  INSTAGRAM - SECTION  ********************************* -->

@@ -1531,13 +1531,6 @@ section {
   width: 100%;
   padding: 0 1rem;
 }
-@media (min-width: 61.25em) {
-  .contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 5rem;
-  }
-}
 @media (min-width: 81.25em) {
   .contact {
     padding: 0 10rem;
@@ -1553,21 +1546,22 @@ section {
     width: 500px;
   }
 }
-@media (min-width: 61.25em) {
-  .contact__image {
-    width: 500px;
-  }
-}
-@media (min-width: 81.25em) {
-  .contact__image {
-    width: 500px;
-  }
-}
 .contact__image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 1rem;
+}
+@media (min-width: 61.25em) {
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    gap: 1rem;
+  }
 }
 .contact__form {
   display: flex;
