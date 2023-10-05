@@ -53,12 +53,12 @@ class Header extends HTMLElement {
 
       <nav id="hamburger" class="${navBackgroundColor}">
           <div class="logo">
-          <a href="./index.html">
-            <img
-                src="${logo}"
-                alt="dara-coaching-logo"
-            />
-          </a>
+            <a href="./index.html">
+              <img
+                  src="${logo}"
+                  alt="dara-coaching-logo"
+              />
+            </a>
           </div>
           <div role="navigation" class="navigation">
               <div class="${hamburgerIconColor}" id="menuToggle">

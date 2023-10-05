@@ -7,7 +7,7 @@
 
     section {
         margin-top: $section-margin-top-mobile;
-        @include mq.mq($from: tablet, $until: wide) {
+        @include mq.mq($from: tablet) {
             margin: 3rem 0;
             margin-bottom: 6rem;
         }

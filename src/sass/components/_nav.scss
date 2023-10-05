@@ -13,6 +13,12 @@ nav {
 
     .logo {
         width: 6rem;
+        @include mq.mq($from: tablet, $until: desktop) {
+            width: 8rem;
+        }
+        @include mq.mq($from: desktop) {
+            width: 7rem;
+        }
         img {
             width: 100%;
             height: 100%;
