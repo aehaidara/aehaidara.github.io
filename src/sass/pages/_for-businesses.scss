@@ -22,7 +22,7 @@
         @include flex-col-center;
         gap: 1.5rem;
         @include mq.mq($from: mobileLandscape, $until: tablet) {
-            padding: 4rem;
+            max-width: 450px;
         }
         @include mq.mq($from: tablet, $until: desktop) {
             padding: 0 4rem;
