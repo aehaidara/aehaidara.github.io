@@ -21,6 +21,23 @@
     border: 1px solid $color-primary-white;
 }
 
+.submit-btn {
+    display: flex;
+    color: $color-primary-white;
+    font-family: $font-family-hind;
+    font-size: $font-size-x1;
+    border: none;
+    padding: 0.5rem 3rem;
+    border-radius: 2rem;
+    background: $color-primary-brown;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        background: darken($color-primary-brown, 5%);
+    }
+}
+
 @include mq.mq($from: desktop) {
     .btn-brown:hover, .btn-transparent:hover {
         transition: 0.2s ease-in-out;

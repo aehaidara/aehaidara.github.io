@@ -137,61 +137,81 @@
 
                     <section class="testimonial">
                         <h1>Company Testimonials</h1>
-        
+
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets/svg/quote-icon.svg" alt="" />
-        
+                                    <img
+                                        src="./assets/svg/quote-icon.svg"
+                                        alt=""
+                                    />
+
                                     <p>
                                         Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Voluptatem est sed explicabo
-                                        maiores, sunt iure fugiat, laboriosam odio vitae
-                                        perferendis illum excepturi tempora obcaecati
-                                        magnam debitis esse reprehenderit! Ipsa,
+                                        adipisicing elit. Voluptatem est sed
+                                        explicabo maiores, sunt iure fugiat,
+                                        laboriosam odio vitae perferendis illum
+                                        excepturi tempora obcaecati magnam
+                                        debitis esse reprehenderit! Ipsa,
                                         repellat.
                                     </p>
-        
+
                                     <span class="auther"> Erik Garcia </span>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/svg/quote-icon.svg" alt="" />
-        
+                                    <img
+                                        src="./assets/svg/quote-icon.svg"
+                                        alt=""
+                                    />
+
                                     <p>
                                         Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Voluptatem est sed explicabo
-                                        maiores, sunt iure fugiat, laboriosam odio vitae
-                                        perferendis illum excepturi
+                                        adipisicing elit. Voluptatem est sed
+                                        explicabo maiores, sunt iure fugiat,
+                                        laboriosam odio vitae perferendis illum
+                                        excepturi
                                     </p>
-        
-                                    <span class="auther"> Ronaldo tsuuuuh </span>
+
+                                    <span class="auther">
+                                        Ronaldo tsuuuuh
+                                    </span>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/svg/quote-icon.svg" alt="" />
-        
+                                    <img
+                                        src="./assets/svg/quote-icon.svg"
+                                        alt=""
+                                    />
+
                                     <p>
                                         Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Voluptatem est sed explicabo
-                                        maiores, sunt iure fugiat, laboriosam odio vitae
-                                        perferendis illum excepturi Lorem ipsum dolor,
-                                        sit amet consectetur
+                                        adipisicing elit. Voluptatem est sed
+                                        explicabo maiores, sunt iure fugiat,
+                                        laboriosam odio vitae perferendis illum
+                                        excepturi Lorem ipsum dolor, sit amet
+                                        consectetur
                                     </p>
-        
+
                                     <span class="auther"> Leo Messi </span>
                                 </div>
                             </div>
                             <div class="swiper-button-next">
-                                <img src="./assets/svg/next-button.svg" alt="" />
+                                <img
+                                    src="./assets/svg/next-button.svg"
+                                    alt=""
+                                />
                             </div>
                             <div class="swiper-button-prev">
-                                <img src="./assets/svg/prev-button.svg" alt="" />
+                                <img
+                                    src="./assets/svg/prev-button.svg"
+                                    alt=""
+                                />
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </section>
 
                     <!-- *********************************  SERVICES  ********************************* -->
-                    <section class="framed-display">
+                    <section class="framed-display" id="download-btn">
                         <h1>Services</h1>
 
                         <div class="card-regular">
@@ -252,7 +272,7 @@
                             </div>
                         </div>
                         <custom-button
-                            path="#"
+                            path="#download-btn"
                             label="Download Sheet"
                             className="download-btn"
                             isArrow="false"
@@ -262,7 +282,7 @@
                     <section class="business-contact">
                         <h1>Would you like to get a quote?</h1>
                         <custom-button
-                            path="#"
+                            path="./contact.html"
                             label="Contact Me"
                             className="business-contact__btn"
                         ></custom-button>
@@ -283,6 +303,24 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        
+
+        <script>
+            // JavaScript code to handle the download
+            document
+                .getElementById("download-btn")
+                .addEventListener("click", function () {
+                    // Replace 'path/to/your.pdf' with the actual path to your PDF file
+                    const pdfFilePath =
+                        "./assets/pdf/DARA-Handbook-For-Your-Organsitation.pdf";
+
+                    // Create an anchor element to open the PDF in another window
+                    const anchor = document.createElement("a");
+                    anchor.href = pdfFilePath;
+                    anchor.target = "_blank"; // Open in a new window or tab
+
+                    // Trigger a click event on the anchor element
+                    anchor.click();
+                });
+        </script>
     </body>
 </html>

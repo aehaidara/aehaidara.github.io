@@ -113,3 +113,18 @@ var swiper = new Swiper(".mySwiper", {
 // Get the current year
 const currentYear = new Date().getFullYear();
 document.getElementById('copyrightYear').textContent = `${currentYear}`;
+
+
+// Srolling to targeted
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("a[href^='#']").addEventListener("click", function(e) {
+        e.preventDefault();
+
+        let targetElement = document.querySelector(this.getAttribute("href"));
+        let targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+            top: targetOffset,
+            behavior: "smooth"
+        });
+    });
+});

@@ -73,47 +73,49 @@
                             </div>
 
                             <!-- form -->
-                            <form class="contact__form">
+                            <form class="contact__form" action="https://formsubmit.co/1eba2b4f9272b9e0651e465f15012396" method="POST">
                                 <div class="contact__full-name-and-company">
                                     <div class="contact__input-wrapper">
-                                        <label for="fullName"
+                                        <label for="name"
                                             >Full Name *</label
                                         >
-                                        <input id="fullName" type="text" />
+                                        <input name="name" id="name" type="text" required />
                                     </div>
                                     <div class="contact__input-wrapper">
                                         <label for="companyName"
                                             >Company Name</label
                                         >
-                                        <input id="companyName" type="text" />
+                                        <input name="companyName" id="companyName" type="text" />
                                     </div>
                                 </div>
                                 <div class="contact__input-wrapper">
                                     <label for="email">Email *</label>
-                                    <input id="email" type="text" />
+                                    <input name="email" id="email" type="email" required />
                                 </div>
                                 <div class="contact__input-wrapper">
                                     <label for="phone">Phone *</label>
-                                    <input id="phone" type="text" />
+                                    <input name="phone" id="phone" type="text" required />
                                 </div>
                                 <div class="contact__input-wrapper">
                                     <label for="subject">Subject</label>
                                     <textarea
                                         id="subject"
-                                        name=""
+                                        name="subject"
+                                        type="text"
                                         id=""
                                         cols="15"
                                         rows="8"
                                     ></textarea>
                                 </div>
 
+                                <!-- thank you - redirect -->
+                                <input type="hidden" name="_next" value="http://localhost:3000/thank-you.html"> <!--change this to the domain later -->
+                                <input type="hidden" name="_autoresponse" value="Thank you for your email, I will reach back to you as soon as possible">
+                                <input type="hidden" name="_template" value="box">
+
                                 <!-- submit-button -->
                                 <div class="contact__submit-btn">
-                                    <custom-button
-                                        path="#"
-                                        label="Submit"
-                                        className=""
-                                    ></custom-button>
+                                    <button class="submit-btn" type="submit">Submit</button>
                                 </div>
                             </form>
                         </div>

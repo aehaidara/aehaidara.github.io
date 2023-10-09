@@ -5,7 +5,7 @@ const _BUTTON_BACKGROUND_TRANSPARENT = 'btn-transparent';
 class CustomButton extends HTMLElement {
 
     connectedCallback() {
-        const path = this.getAttribute("path") || "#";
+        const path = this.getAttribute("path") || "";
         const label = this.getAttribute("label") || "Button";
         const className = this.getAttribute("className");
         const isArrow = this.getAttribute("isArrow");

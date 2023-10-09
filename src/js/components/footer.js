@@ -14,7 +14,7 @@ class Footer extends HTMLElement {
                             It all starts with a conversatin, don't hesitate
                             to reach out
                         </p>
-                        <a class="btn-transparent" href="#"
+                        <a class="btn-transparent" href="https://dara-coaching.planway.com"
                             >Booking
                             <img src="./assets/svg/btn-arrow.svg" alt="" />
                         </a>

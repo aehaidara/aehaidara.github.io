@@ -65,7 +65,7 @@
 
         width: 100%;
         gap: 2rem;
-        
+
         @include mq.mq($from: wide) {
             max-width: 1000px;
         }
@@ -182,8 +182,8 @@
         }
 
         @include mq.mq($from: wide) {
-            width: 30%;
-            margin-right: 12rem;
+            width: 35%;
+            margin-right: 20rem;
         }
     }
 
@@ -192,21 +192,20 @@
         @include mq.mq($from: mobileLandscape) {
             display: block;
             width: 100%;
-            img {
-                width: 100%;
-                object-fit: contain;
-                border-radius: 1.5rem;
-            }
         }
         @include mq.mq($from: wide) {
             position: absolute;
-            left: 12rem;
+            left: 20rem;
             top: -4rem;
             max-width: 500px;
-            img {
-                width: 100%;
-                object-fit: contain;
+        }
+        img {
+            width: 100%;
+            object-fit: contain;
+            @include mq.mq($from: mobileLandscape) {
                 border-radius: 1.5rem;
+            }
+            @include mq.mq($from: wide) {
                 border-radius: 50%;
                 border: 5px solid $color-primary-beige;
             }
@@ -251,6 +250,11 @@
 
         span {
             color: $color-secondary-orange;
+        }
+        p {
+            @include mq.mq($from: wide) {
+                max-width: 700px;
+            }
         }
     }
 }

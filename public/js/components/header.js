@@ -88,7 +88,7 @@ class Header extends HTMLElement {
                       <a class="menu-item" href="./contact.html">
                         <li>Contact</li>
                       </a>
-                      <a class="menu-item" href="#">
+                      <a class="menu-item" href="https://dara-coaching.planway.com/">
                         <li>Booking</li>
                       </a>
                   </ul>
@@ -112,7 +112,7 @@ class Header extends HTMLElement {
               </div>
               <a href="./prices.html">Prices</a>
               <a href="./contact.html">Contact</a>
-              <a href="#">Booking</a>
+              <a href="https://dara-coaching.planway.com">Booking</a>
           </div>
       </nav>
       `;

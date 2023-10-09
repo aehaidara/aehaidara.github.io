@@ -163,6 +163,49 @@
             display: none;
         }
     }
+
+    // ***********  PAGE IMAGE BACK *********** //
+    .page-image-back {
+        display: none;
+        overflow: hidden;
+        @include mq.mq($from: mobileLandscape, $until: tablet) {
+            display: block;
+            width: 100%;
+        }
+        @include mq.mq($from: tablet, $until: desktop) {
+            display: block;
+            width: 100%;
+        }
+
+        @include mq.mq($from: desktop, $until: wide) {
+            display: block;
+            width: 540px;
+        }
+        @include mq.mq($from: wide) {
+            display: block;
+            width: 620px;
+            // width: 720px;
+        }
+        img {
+            width: 100%;
+
+            object-fit: contain;
+            border-radius: 2rem 2rem 0 0;
+            @include mq.mq($from: mobileLandscape, $until: tablet) {
+                display: block;
+                width: 100%;
+            }
+            @include mq.mq($from: desktop) {
+                width: 100%;
+                float: right;
+            }
+
+            @include mq.mq($from: wide) {
+                width: 88%;
+                float: right;
+            }
+        }
+    }
 }
 
 // ***********  LAYER FRONT *********** //
@@ -194,10 +237,9 @@
         @include mq.mq($from: tablet, $until: desktop) {
             padding: 1rem 3rem;
         }
-        @include mq.mq($from: desktop,  $until: wide) {
+        @include mq.mq($from: desktop, $until: wide) {
             padding: 1rem 3rem;
         }
-
     }
 
     .page-image-front {
@@ -217,48 +259,6 @@
         display: none;
         @include mq.mq($from: tablet, $until: desktop) {
             display: block;
-        }
-    }
-}
-
-// ***********  PAGE IMAGE BACK *********** //
-.page-image-back {
-    display: none;
-    overflow: hidden;
-    @include mq.mq($from: mobileLandscape, $until: tablet) {
-        display: block;
-        width: 100%;
-    }
-    @include mq.mq($from: tablet, $until: desktop) {
-        display: block;
-        width: 100%;
-    }
-
-    @include mq.mq($from: desktop, $until: wide) {
-        display: block;
-        width: 540px;
-    }
-    @include mq.mq($from: wide) {
-        display: block;
-        width: 620px;
-    }
-    img {
-        width: 100%;
-
-        object-fit: contain;
-        border-radius: 2rem 2rem 0 0;
-        @include mq.mq($from: mobileLandscape, $until: tablet) {
-            display: block;
-            width: 100%;
-        }
-        @include mq.mq($from: desktop) {
-            width: 100%;
-            float: right;
-        }
-
-        @include mq.mq($from: wide) {
-            width: 88%;
-            float: right;
         }
     }
 }
