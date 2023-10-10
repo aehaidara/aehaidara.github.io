@@ -1,0 +1,59 @@
+@use "../mq";
+@use "../base" as *;
+@use "../abstracts" as *;
+
+.thank-you {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @include mq.mq($from: mobileLandscape, $until: tablet) {
+        height: 100%;
+    }
+    &__logo {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 150px;
+        @include mq.mq($from: mobileLandscape, $until: tablet) {
+            position: relative;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 2rem;
+
+        h1 {
+            font-size: 1.5rem;
+            color: $color-primary-dark-brown;
+        }
+
+        p {
+            text-align: center;
+            color: $color-primary-brown;
+            max-width: 350px;
+            @include mq.mq($from: tablet) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .mh-progress path:nth-child(1) {
+        stroke: $color-primary-white;
+    }
+
+    .mh-progress path:nth-child(2) {
+        stroke: $color-primary-dark-brown !important;
+    }
+
+    .progressbar-text {
+        color: $color-primary-dark-brown !important;
+    }
+}

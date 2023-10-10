@@ -2427,3 +2427,59 @@ section {
   background: #403A2C;
   color: #FFFFFF;
 }
+
+.thank-you {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .thank-you {
+    height: 100%;
+  }
+}
+.thank-you__logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 150px;
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .thank-you__logo {
+    position: relative;
+  }
+}
+.thank-you__logo img {
+  width: 100%;
+}
+.thank-you__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+.thank-you__content h1 {
+  font-size: 1.5rem;
+  color: #442E24;
+}
+.thank-you__content p {
+  text-align: center;
+  color: #946A57;
+  max-width: 350px;
+}
+@media (min-width: 48em) {
+  .thank-you__content p {
+    max-width: 100%;
+  }
+}
+.thank-you .mh-progress path:nth-child(1) {
+  stroke: #FFFFFF;
+}
+.thank-you .mh-progress path:nth-child(2) {
+  stroke: #442E24 !important;
+}
+.thank-you .progressbar-text {
+  color: #442E24 !important;
+}
