@@ -93,11 +93,11 @@
         padding: 0 1rem;
 
         @include mq.mq($from: mobileLandscape, $until: tablet) {
-            padding: 0 4rem;
+            max-width: 500px;
         }
 
         @include mq.mq($from: tablet, $until: desktop) {
-            padding: 0 8rem;
+            max-width: 650px;
         }
     }
 }

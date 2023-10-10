@@ -169,11 +169,14 @@ nav {
     -webkit-box-shadow: -7px 15px 17px -7px rgba(0, 0, 0, 0.68);
     -moz-box-shadow: -7px 15px 17px -7px rgba(0, 0, 0, 0.68);
 
-    @include mq.mq($from: mobileLandscape, $until: tablet) {
+    @include mq.mq($from: mobileLandscape) {
         overflow-y: auto;
         max-height: calc(100vh - 60px);
     }
-
+    @include mq.mq($from: tablet) {
+        overflow-y: auto;
+        max-height: calc(100vh - 60px);
+    }
     @include mq.mq($from: tablet, $until: desktop) {
         width: 500px;
         top: 1.9rem;
