@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Hind:wght@300;400&display=swap");
 /* ==========================================================================
@@ -24,6 +25,45 @@ BORDER RADIUS
 /* ==========================================================================
 HEIGHTS
 ========================================================================== */
+body:before {
+  background-color: #fcf8e3;
+  border-bottom: 1px solid #fbeed5;
+  border-left: 1px solid #fbeed5;
+  color: #c09853;
+  font: small-caption;
+  padding: 3px 6px;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+@media (min-width: 20em) {
+  body:before {
+    content: "mobile ≥ 320px (20em)";
+  }
+}
+@media (min-width: 30em) {
+  body:before {
+    content: "mobileLandscape ≥ 480px (30em)";
+  }
+}
+@media (min-width: 50.625em) {
+  body:before {
+    content: "tablet ≥ 810px (50.625em)";
+  }
+}
+@media (min-width: 61.25em) {
+  body:before {
+    content: "desktop ≥ 980px (61.25em)";
+  }
+}
+@media (min-width: 81.25em) {
+  body:before {
+    content: "wide ≥ 1300px (81.25em)";
+  }
+}
+
 .page-bg-beige {
   background-color: #F4EEE3;
 }
@@ -1953,7 +1993,12 @@ section {
 }
 @media (min-width: 81.25em) {
   .businesses__wrapper {
-    width: 35%;
+    max-width: 35%;
+    margin-right: 10rem;
+  }
+}
+@media (min-width: 117.5em) {
+  .businesses__wrapper {
     margin-right: 20rem;
   }
 }
@@ -1969,9 +2014,14 @@ section {
 @media (min-width: 81.25em) {
   .businesses__image-wide-screen {
     position: absolute;
-    left: 20rem;
+    left: 10rem;
     top: -4rem;
     max-width: 500px;
+  }
+}
+@media (min-width: 117.5em) {
+  .businesses__image-wide-screen {
+    left: 20rem;
   }
 }
 .businesses__image-wide-screen img {

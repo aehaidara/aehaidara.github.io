@@ -182,7 +182,11 @@
         }
 
         @include mq.mq($from: wide) {
-            width: 35%;
+            max-width: 35%;
+            margin-right: 10rem;
+        }
+
+        @include mq.mq($from: 1880px) {
             margin-right: 20rem;
         }
     }
@@ -195,9 +199,12 @@
         }
         @include mq.mq($from: wide) {
             position: absolute;
-            left: 20rem;
+            left: 10rem;
             top: -4rem;
             max-width: 500px;
+        }
+        @include mq.mq($from: 1880px) {
+            left: 20rem;
         }
         img {
             width: 100%;
