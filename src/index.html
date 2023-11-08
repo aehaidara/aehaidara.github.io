@@ -34,44 +34,46 @@
 
             <!-- *********************************  HERO  ********************************* -->
             <section class="hero">
-                <picture class="hero__images">
-                    <img src="./assets/images/home/hero-img.jpg" alt="" />
-                </picture>
+                <div class="hero__image">
+                    <img src="./assets/images/home/hero.png" alt="" />
+                </div>
 
                 <div class="hero__be-your-best-self">
                     <div class="hero__content">
-                        <h4>Become Your</h4>
-                        <h1>Best Self</h1>
+                        <h2>Become Your</h2>
+                        <h3>Best Self</h3>
                         <p>
-                            Unlock your full potential and create lasting progress 
-                            with mindset and life coaching. 
-                            <br>Find out how you can benefit 
-                            from coaching by exploring more below.
+                            Unlock your full potential and create lasting
+                            progress with mindset and life coaching. Find out
+                            how you can benefit from coaching by exploring more
+                            below.
                         </p>
                         <custom-button
-                            path="https://dara-coaching.planway.com/"
+                            path="#explore-now"
                             label="Explore now"
+                            isArrowDown="true"
                         ></custom-button>
                     </div>
-                    <!-- <p class="hero__welcome-text">
-                        Welcome to <span>DARA Coaching</span>, a
-                        <span>non-judgmental space</span>, where you can feel
-                        <span>understood</span>.
-                    </p> -->
                 </div>
             </section>
 
             <!-- *********************************  WELCOME  ********************************* -->
+            <section id="explore-now"></section>
             <section class="welcome">
                 <h1 class="welcome__title">Welcome to DARA Coaching</h1>
-                <p class="welcome__text">
-                    My mission is to guide you in breaking free from limiting beliefs 
-                    and behaviors by creating a safe haven where you can reduce stress 
-                    and anxiety while gaining greater clarity through practical tools. 
-                    <br>Coaching is provided in English, French, and Finnish, 
-                    either in-person in Copenhagen or online.
-                    <br>Dive into the story behind DARA Coaching.
-                </p>
+                <div class="welcome__text">
+                    <p>
+                        My mission is to guide you in breaking free from
+                        limiting beliefs and behaviors by creating a safe haven
+                        where you can reduce stress and anxiety while gaining
+                        greater clarity through practical tools.
+                    </p>
+                    <p>
+                        Coaching is provided in English, French, and Finnish,
+                        <br>either in-person in Copenhagen or online. 
+                        <p class="bold-text">Dive into the story behind DARA Coaching!</p>
+                    </p>
+                </div>
                 <custom-button
                     path="./about-dara-coaching.html"
                     label="Dive into the story"
@@ -80,7 +82,7 @@
 
             <!-- *********************************  MEET YOUR COACH  ********************************* -->
             <section class="meet-your-coach-container">
-                <section class="meet-your-coach">
+                <div class="meet-your-coach">
                     <div class="meet-your-coach__title-wrapper">
                         <h2 class="meet-your-coach__title">MEET</h2>
                         <h3 class="meet-your-coach__sub-title">YOUR COACH</h3>
@@ -90,44 +92,66 @@
                             alt=""
                         />
                     </div>
-                    <img src="./assets/images/home/met-your-coach.jpg" alt="" />
-                </section>
-
-                <!-- ***  AICHA INFO  ******************* -->
-                <section class="aicha-info">
-                    <div class="aicha-info__title-wrapper">
-                        <h2 class="aicha-info__title">MEET</h2>
-                        <h3 class="aicha-info__sub-title">YOUR COACH</h3>
-                    </div>
                     <img
-                        class="aicha-info__name"
-                        src="./assets/svg/name.svg"
+                        class="meet-your-coach__image-mobile"
+                        src="./assets/images/home/met-your-coach.png"
                         alt=""
                     />
-                    <p class="aicha-info__text">
-                        Hey there! I'm Aïcha, a certified life coach specializing in 
-                        personal development, emotional intelligence, & stress management. 
-                        <br>I'm here to guide you on your journey of being your best self. 
-                        <br>Discover my journey and see if you can find similarities with 
-                        your own. 
-                    </p>
-                    <custom-button
-                        path="./meet-your-coach.html"
-                        label="Discover Aïchas journey"
-                    ></custom-button>
-                </section>
+                </div>
+
+                <!-- ***  AICHA INFO  ******************* -->
+                <div class="aicha-info">
+                    <div class="aicha-info__title-wrapper">
+                        <h1>Meet Your Coach</h1>
+                        <!-- <h2 class="aicha-info__title">Your Coach</h2> -->
+                    </div>
+                    <div class="aicha-info__content-wrapper">
+                        <div class="aicha-info__image">
+                            <img
+                                src="./assets/images/home/met-your-coach.png"
+                                alt=""
+                            />
+                        </div>
+                        <!-- name -->
+                        <div class="aicha-info__text-wrapper">
+                            <img
+                                class="aicha-info__name"
+                                src="./assets/svg/name.svg"
+                                alt=""
+                            />
+                            <div class="aicha-info__text">
+                                <p>
+                                    Hey there! I'm Aïcha, a certified life coach
+                                    specializing in personal development, emotional
+                                    intelligence, & stress management.
+                                    I'm here to guide you on your journey of being your
+                                    best self.
+                                </p>
+                                <p class="bold-text">
+                                    Discover my journey and see if you can find
+                                    similarities with your own!
+                                </p>
+                            </div>
+                            <custom-button
+                                path="./meet-your-coach.html"
+                                label="Discover Aïchas journey"
+                            ></custom-button>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- *********************************  WHAT IS LIFE COACHING  ********************************* -->
             <section class="what-is-life-coaching">
                 <h1>Discover life coaching</h1>
-                <p class="what-is-life-coaching__text">
-                    Life coaching is a goal-oriented form of support that equips you with practical 
-                    tools to help you reach your objectives and discover the answers within you.
-                    <br>
-                    <br>Discover how you can benefit from life coaching. 
-
-                </p>
+                <div class="what-is-life-coaching__text">
+                    <p>
+                        Life coaching is a goal-oriented form of support that
+                        equips you with practical tools to help you reach your
+                        objectives and discover the answers within you.
+                    </p>
+                    <p class="bold-text">Discover how you can benefit from life coaching!</p>
+                </div>
                 <custom-button
                     path="about-dara-coaching.html#what-is-life-coaching"
                     label="Discover the benefits"
@@ -137,28 +161,25 @@
 
             <!-- *********************************  For Individuals  ********************************* -->
             <section class="my-services">
-                <h1>Services: For Individuals</h1>
+                <h1>Services For Individuals</h1>
 
                 <div class="my-services__options">
                     <div class="my-services__item-wrapper">
                         <header class="my-services__item">
-                            <p class="my-services__title">
-                                Personal Coaching
-                            </p>
+                            <p class="my-services__title">Personal Coaching</p>
                             <i class="fa-solid fa-arrow-down"></i>
                         </header>
                         <div class="my-services__description">
                             <p class="my-services__text">
-                                <br>Ideal whether you're an individual looking for personal growth 
-                                or a couple aiming to strengthen your relationship, this tailored 
-                                approach provides the guidance you need. 
-                                <br>
-                                <br>
-                                Services 
-                                <br>Free Introduction Call
-                                <br>60-minute Sessions
-                                <br>90-minute Sessions
-                                <br>Bundles
+                                <br />Ideal whether you're an individual looking
+                                for personal growth or a couple aiming to
+                                strengthen your relationship, this tailored
+                                approach provides the guidance you need.
+                                <br />
+                                <br />
+                                Services
+                                <br />Free Introduction Call <br />60-minute
+                                Sessions <br />90-minute Sessions <br />Bundles
                             </p>
                             <a
                                 class="my-services__btn btn-brown"
@@ -176,13 +197,14 @@
                         </header>
                         <div class="my-services__description">
                             <p class="my-services__text">
-                                <br>Ready-set coaching journeys designed for individuals who are 
-                                seeking continuous personal development while gaining valuable 
-                                insights and tools.
-                                <br>
-                                <br>
+                                <br />Ready-set coaching journeys designed for
+                                individuals who are seeking continuous personal
+                                development while gaining valuable insights and
+                                tools.
+                                <br />
+                                <br />
                                 Programs
-                                <br>Be Your Best Self
+                                <br />Be Your Best Self
                             </p>
                             <a
                                 class="my-services__btn btn-brown"
@@ -200,13 +222,14 @@
                         </header>
                         <div class="my-services__description">
                             <p class="my-services__text">
-                                <br>Ideal for you who wish to dive into specific topics and moments of reflection 
-                                while familiarizing yourself with the world of coaching.
-                                <br>
-                                <br>
+                                <br />Ideal for you who wish to dive into
+                                specific topics and moments of reflection while
+                                familiarizing yourself with the world of
+                                coaching.
+                                <br />
+                                <br />
                                 Workshops
-                                <br>Quality Me-Time
-                                <br>Mindful Money
+                                <br />Quality Me-Time <br />Mindful Money
                             </p>
                             <a
                                 class="my-services__btn btn-brown"
@@ -225,7 +248,7 @@
 
             <!-- *********************************  FOR BUSINESSES  ********************************* -->
             <section class="framed-display">
-                <h1>Services: For Businesses</h1>
+                <h1>Services For Businesses</h1>
 
                 <div class="card-regular">
                     <div class="card-regular__wrapper">
@@ -237,10 +260,10 @@
                         </div>
                         <h2 class="card-regular__title">Well-being Survey</h2>
                         <p class="card-regular__text">
-                            Gain deep insights into your team's well-being with this 
-                            survey. Understand their needs to provide vital support. 
-                            I facilitate sessions to help you navigate the results 
-                            effectively.
+                            Gain deep insights into your team's well-being with
+                            this survey. Understand their needs to provide vital
+                            support. I facilitate sessions to help you navigate
+                            the results effectively.
                         </p>
                     </div>
 
@@ -251,13 +274,11 @@
                                 alt=""
                             />
                         </div>
-                        <h2 class="card-regular__title">
-                            Well-being Hour
-                        </h2>
+                        <h2 class="card-regular__title">Well-being Hour</h2>
                         <p class="card-regular__text">
-                            A monthly dedicated hour for each team member to focus on 
-                            their well-being and personal development in a supportive 
-                            environment.
+                            A monthly dedicated hour for each team member to
+                            focus on their well-being and personal development
+                            in a supportive environment.
                         </p>
                     </div>
 
@@ -268,11 +289,14 @@
                                 alt=""
                             />
                         </div>
-                        <h2 class="card-regular__title">Customized Workshops</h2>
+                        <h2 class="card-regular__title">
+                            Customized Workshops
+                        </h2>
                         <p class="card-regular__text">
-                            Tailored to your unique needs, they're perfect for a valuable 
-                            bonding experience as well as empowering teams to reflect on
-                            individual growth or identifying shared goals. 
+                            Tailored to your unique needs, they're perfect for a
+                            valuable bonding experience as well as empowering
+                            teams to reflect on individual growth or identifying
+                            shared goals.
                         </p>
                     </div>
                 </div>
@@ -317,9 +341,10 @@
                             <img src="./assets/svg/quote-icon.svg" alt="" />
 
                             <p>
-                                <span>I had a very good experience!</span> Aïcha is very compassionate, 
-                                listens actively and has huge knowledge on techniques that 
-                                are doable to implement to improve life quality.
+                                <span>I had a very good experience!</span> Aïcha
+                                is very compassionate, listens actively and has
+                                huge knowledge on techniques that are doable to
+                                implement to improve life quality.
                             </p>
 
                             <span class="auther"> Josephine Thestrup </span>
@@ -328,9 +353,13 @@
                             <img src="./assets/svg/quote-icon.svg" alt="" />
 
                             <p>
-                                <span>Coaching with Aïcha has been the best investment of my life! </span>
-                                She's not only an active listener, but very skilled in 
-                                identifying the core issues in the stories I told myself.
+                                <span
+                                    >Coaching with Aïcha has been the best
+                                    investment of my life!
+                                </span>
+                                She's not only an active listener, but very
+                                skilled in identifying the core issues in the
+                                stories I told myself.
                             </p>
 
                             <span class="auther"> Waris </span>
@@ -339,9 +368,13 @@
                             <img src="./assets/svg/quote-icon.svg" alt="" />
 
                             <p>
-                                I highly recommend DARA Coaching. With her <span>I feel like I am 
-                                    heard, understood and she gives relevant practical tools</span> that 
-                                we can use to improve our mindsets and habits.
+                                I highly recommend DARA Coaching. With her
+                                <span
+                                    >I feel like I am heard, understood and she
+                                    gives relevant practical tools</span
+                                >
+                                that we can use to improve our mindsets and
+                                habits.
                             </p>
 
                             <span class="auther"> Manisha Shrestha </span>
@@ -350,10 +383,15 @@
                             <img src="./assets/svg/quote-icon.svg" alt="" />
 
                             <p>
-                                <span>I only have good things to say about DARA Coaching.</span> I have signed 
-                                up for individual and group coaching. Aïcha not only provides helpful 
-                                tools, she also has a genuine interest in helping people actualize 
-                                their goals in life. Thank you DARA Coaching!
+                                <span
+                                    >I only have good things to say about DARA
+                                    Coaching.</span
+                                >
+                                I have signed up for individual and group
+                                coaching. Aïcha not only provides helpful tools,
+                                she also has a genuine interest in helping
+                                people actualize their goals in life. Thank you
+                                DARA Coaching!
                             </p>
 
                             <span class="auther"> Hannah Granada </span>

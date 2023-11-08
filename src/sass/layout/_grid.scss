@@ -4,13 +4,15 @@
 
 .layout {
     display: grid;
-
     section {
         margin-top: $section-margin-top-mobile;
         @include mq.mq($from: tablet) {
-            margin: 3rem 0;
-            margin-bottom: 6rem;
+            margin-bottom: 3rem;
         }
+        // @include mq.mq($from: wide) {
+        //     margin-top: 3rem;
+        //     margin-bottom: 3rem;
+        // }
     }
 
     // mobile

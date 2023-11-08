@@ -9,19 +9,21 @@ class CustomButton extends HTMLElement {
         const label = this.getAttribute("label") || "Button";
         const className = this.getAttribute("className");
         const isArrow = this.getAttribute("isArrow");
+        const isArrowDown = this.getAttribute("isArrowDown");
         const background = this.getAttribute("background") || _BUTTON_BACKGROUND_BROWN;
 
        // Check if isArrow is explicitly set to "false" (as a string)
        const hideArrow = isArrow === "false";
+       const arrowDown = isArrowDown ? 'btn-arrow-down' : '';
 
        // Use a ternary operator to conditionally include the <img> element
-       const imgElement = hideArrow ? '' : '<img src="./assets/svg/btn-arrow.svg" alt="" />';
+       const arrowIcon = hideArrow ? '' : `<img class="${arrowDown}" src="./assets/svg/btn-arrow.svg" alt="" />`;
 
         this.innerHTML = `
 
             <a class="${className} ${background}" href="${path}"
                 >${label}
-                ${imgElement}
+                ${arrowIcon}
             </a> 
 
         `;

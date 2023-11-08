@@ -3,172 +3,135 @@
 @use "../abstracts" as *;
 
 .hero {
-    grid-column: 1/4;
-    width: 100%;
-    // height: 100vh;
-
-    z-index: 1;
-
-    @include mq.mq($from: mobileLandscape, $until: tablet) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: $nav-mobile-height + 1rem !important;
-        gap: 1rem;
-        &__images {
-            width: 100%;
-            height: 350px;
-            img {
-                border-radius: 2rem;
-            }
-        }
-    }
-
-    @include mq.mq($from: tablet, $until: desktop) {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin-top: $nav-tablet-height !important;
-        &__images {
-            width: 100%;
-            height: 950px;
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 3rem;
-                padding: 1rem 1rem;
-            }
-        }
-    }
+    display: grid;
+    gap: 0.5rem;
+    height: 100%;
+    margin-bottom: 0rem !important;
 
     @include mq.mq($from: desktop) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        height: 100vh;
         gap: 2rem;
-        padding: 1rem 9rem;
-
-        &__images {
-            width: 100%;
-            height: 90%;
-            img {
-                width: 100%;
-                height: 100%;
-                // max-height: 600px;
-                border-radius: 3rem;
-            }
-        }
     }
 
-    @include mq.mq($from: wide) {
-        margin-top: $nav-desktop-height !important;
-    }
-
-    img {
+    &__image {
+        margin-top: 2rem;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        // filter: saturate(80%);
+        @include mq.mq($from: tablet, $until: desktop) {
+            margin-top: 3rem;
+            justify-self: center;
+            width: 90%;
+        }
+        @include mq.mq($from: desktop) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
     }
 
     &__be-your-best-self {
-        display: none;
-        align-self: center;
         text-align: center;
         color: $color-primary-brown;
         font-family: $font-family-hind;
-        @include mq.mq($from: mobileLandscape) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-        }
-        @include mq.mq($from: tablet, $until: desktop) {
-            width: 50%;
-        }
 
         @include mq.mq($from: desktop) {
-            padding: 4rem 0;
+            width: 100%;
         }
     }
 
     &__content {
-        width: 100%;
-        padding: 3rem 0;
-        border: 1px solid $color-primary-brown;
-        border-radius: 2rem;
-        @include mq.mq($from: mobileLandscape) {
-            @include flex-col-center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        @include mq.mq($from: desktop) {
+            align-items: flex-start;
             gap: 1rem;
         }
-
-        h4 {
-            font-size: 1.5rem;
+        h2 {
+            font-size: 1.6rem;
             font-weight: 200;
+
+            @include mq.mq($from: tablet, $until: desktop) {
+                font-size: 2.5rem;
+            }
         }
-        h1 {
-            font-size: 4rem;
-            font-family: $font-family-hind;
+        h3 {
+            font-size: 3.5rem;
             font-weight: 600;
+            @include mq.mq($from: tablet, $until: desktop) {
+                font-size: 5rem;
+            }
+        }
+        p {
+            padding-top: 1rem;
+            @include mq.mq($from: tablet, $until: desktop) {
+                width: 600px;
+            }
+            @include mq.mq($from: desktop) {
+                text-align: left;
+                border-left: 4px solid $color-primary-brown;
+                padding: 0;
+                padding-left: 1rem;
+                border-bottom: none;
+            }
         }
     }
 
-    &__welcome-text {
-        padding: 0 3rem;
-        @include mq.mq($from: mobileLandscape, $until: desktop) {
-            display: none;
-        }
+    custom-button {
+        display: none;
         @include mq.mq($from: desktop) {
-            span {
-                font-weight: bold;
-            }
+            margin-top: 1rem;
+            display: block;
         }
     }
 }
 
 .welcome {
+    grid-column: 1/4;
     @include flex-col-center;
     gap: 2rem;
+    margin-bottom: 0rem !important;
+    background: rgba(214, 200, 189, 46%);
+
+    padding: 3rem 1rem; // put this to a variable
+    @include mq.mq($from: tablet, $until: desktop) {
+        padding: 6rem 6rem; // put this to a variable
+    }
+
+    @include mq.mq($from: desktop) {
+        padding: 6rem 0; // put this to a variable
+    }
 
     &__title,
     &__text {
         color: $color-primary-brown;
         max-width: 900px;
+        @include mq.mq($from: desktop) {
+            width: 800px;
+        }
     }
 
     &__text {
-        text-align: center;
-    }
-
-    // tablet
-    @include mq.mq($from: tablet, $until: desktop) {
-        padding: 2rem 6rem; // put this to a variable
-    }
-
-    // desktop
-    @include mq.mq($from: wide) {
-        padding: 0 10rem;
+        @include paragraph-style;
     }
 }
 
 .meet-your-coach-container {
-    grid-column: 1/4;
-    margin: 0 !important;
+    // grid-column: 1/4;
+    // margin: 0 !important;
 
-    // mobile-land
     @include mq.mq($from: mobileLandscape) {
         // grid-column: 2/3;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
     }
-    // tablet
     @include mq.mq($from: tablet) {
         grid-column: 2/3;
         gap: 1rem;
     }
-
-    // tablet
     @include mq.mq($from: desktop) {
         display: flex;
         justify-content: center;
@@ -183,18 +146,28 @@
     position: relative;
     // grid-column: 1/4; // occupy full width
     display: flex;
-    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
 
+    @include mq.mq($from: mobileLandscape) {
+        margin-top: 0;
+    }
+
+    &__image-mobile {
+        @include mq.mq($from: mobileLandscape) {
+            display: none;
+        }
+    }
     &__title-wrapper {
         position: absolute;
         display: flex;
         flex-direction: column;
         text-align: right;
         font-family: $font-family-lora;
-        top: 15%;
+        top: 4%;
         right: 5%;
         transform: translateY(-50%);
-        color: $color-primary-beige;
+        color: $color-primary-brown;
         @include mq.mq($from: mobileLandscape) {
             display: none;
         }
@@ -218,8 +191,7 @@
 
     img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        object-fit: contain;
 
         @include mq.mq($from: mobileLandscape, $until: tablet) {
             width: 350px;
@@ -251,30 +223,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 2rem;
     color: $color-primary-brown;
     text-align: center;
-    padding: 0 1rem;
     font-family: $font-family-lora;
-    max-width: 550px;
+    width: 100%;
+    // max-width: 550px;
 
-
-    // mobile-land
     @include mq.mq($from: mobileLandscape) {
         width: 100%;
     }
+    // @include mq.mq($from: tablet) {
+    //     gap: 3rem;
+    //     padding: 2rem 0;
+    // }
+    // @include mq.mq($from: desktop) {
+    //     width: 500px;
+    //     padding: 0;
+    // }
 
-    // tablet
-    @include mq.mq($from: tablet) {
-        gap: 3rem;
-        padding: 2rem 0;
-    }
-
-     // tablet
-     @include mq.mq($from: desktop) {
-        width: 500px;
-        padding: 0;
+    &__image {
+        width: 100%;
+        display: none;
+        @include mq.mq($from: mobileLandscape) {
+            display: block;
+        }
+        img {
+            @include mq.mq($from: mobileLandscape, $until: tablet) {
+                width: 100%;
+            }
+            @include mq.mq($from: tablet, $until: desktop) {
+                width: 90%;
+            }
+            @include mq.mq($from: desktop) {
+                width: 100%;
+            }
+        }
     }
 
     &__title-wrapper {
@@ -284,9 +268,34 @@
         }
     }
 
+    &__content-wrapper {
+        width: 100%;
+        @include mq.mq($from: desktop) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+
+    &__text-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 3rem;
+        @include mq.mq($from: tablet, $until: desktop) {
+            gap: 3rem;
+        }
+        @include mq.mq($from: desktop) {
+            gap: 2rem;
+        }
+    }
+
     &__title {
         font-size: 3.5rem;
-        // destop
         @include mq.mq($from: tablet, $until: desktop) {
             font-size: 4rem;
         }
@@ -312,8 +321,20 @@
 
     &__name {
         width: 100%;
+        margin-top: 2rem;
+        width: 90%;
+        @include mq.mq($from: mobileLandscape) {
+            width: 60%;
+        }
         @include mq.mq($from: desktop) {
             width: 76%;
+        }
+    }
+
+    &__text {
+        @include paragraph-style;
+        @include mq.mq($from: tablet, $until: desktop) {
+            width: 80%;
         }
     }
 }
@@ -321,30 +342,28 @@
 .what-is-life-coaching {
     @include flex-col-center;
     grid-column: 1/4; // occupy full width
-    text-align: center;
     gap: 2rem;
     padding: 3rem 1rem;
     background: $color-primary-brown;
     color: $color-primary-white;
 
-    /* mobile-land */
     @include mq.mq($from: mobileLandscape) {
         width: 100%;
         padding: 6rem;
     }
 
     @include mq.mq($from: desktop, $until: wide) {
-        padding: 6rem 10rem;
-    }
-    @include mq.mq($from: wide) {
-        padding: 6rem 15rem;
+        padding: 6rem 0;
     }
 
     &__text {
+        @include paragraph-style;
         max-width: 1000px;
+        @include mq.mq($from: desktop) {
+            width: 800px;
+        }
     }
 }
-
 
 .company-logos {
     grid-column: 1/4;
@@ -355,12 +374,9 @@
     background: $color-primary-white;
     padding: 4rem 0;
 
-
-    //tablet
     @include mq.mq($from: tablet, $until: desktop) {
         padding: 6rem 0;
     }
-    //tablet
     @include mq.mq($from: desktop) {
         padding: 4rem 0;
     }
@@ -371,7 +387,6 @@
         @include flex-col-center;
         gap: 0.5rem;
 
-        /* mobile-land */
         @include mq.mq($from: mobileLandscape) {
             flex-direction: row;
             justify-content: center;
@@ -391,4 +406,3 @@
         }
     }
 }
-

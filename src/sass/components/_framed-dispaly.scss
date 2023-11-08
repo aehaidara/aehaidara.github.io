@@ -7,7 +7,7 @@
     grid-column: 1/4;
     gap: 3rem;
     background: $color-secondary-dark-green;
-    color: $color-primary-beige;
+    color: $color-primary-white;
     padding: 3rem 1rem;
     margin-bottom: 0 !important;
 
@@ -43,15 +43,13 @@
     }
 
     @include mq.mq($from: desktop) {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 3rem 1rem;
         gap: 2rem;
     }
 
     @include mq.mq($from: wide) {
-        flex-direction: row;
         padding: 3rem 5rem;
         gap: 4rem;
     }
@@ -69,6 +67,7 @@
 
     &__text {
         text-align: center;
+        height: 120px;
     }
 
     &--no-border {

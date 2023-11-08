@@ -16,3 +16,11 @@
     flex-direction: column;
     align-items: center;
 }
+
+@mixin paragraph-style {
+    @include flex-col;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: $paragraph-gap;
+}

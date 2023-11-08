@@ -29,8 +29,11 @@
 
     p {
         @include mq.mq($from: mobileLandscape) {
-            padding: 0 3rem;
+            padding: 0 6rem;
 
+        }
+        span {
+            font-style: normal;
         }
     }
 }

@@ -38,6 +38,10 @@
     }
 }
 
+.btn-arrow-down {
+    transform: rotate(90deg);
+}
+
 @include mq.mq($from: desktop) {
     .btn-brown:hover, .btn-transparent:hover {
         transition: 0.2s ease-in-out;

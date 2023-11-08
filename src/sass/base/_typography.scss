@@ -7,21 +7,28 @@ body {
         font-family: $font-family-lora;
         font-size: $font-size-x2;
         text-align: center;
+        @include mq.mq($from: tablet, $until: desktop) {
+            font-size: $font-size-x3;
+        }
+        @include mq.mq($from: desktop) {
+            font-size: 2.5rem;
+        }
     }
     p {
         font-family: $font-family-hind;
         font-weight: $font-weight-400;
         line-height: $line-height-sm;
         letter-spacing: $letter-spacing-sm;
+         @include mq.mq($from: tablet, $until: desktop) {
+            font-size: 1.3rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.7rem;
+        }
     }
 
     @include mq.mq($from: mobileLandscape, $until: tablet) {
     }
-    @include mq.mq($from: tablet, $until: desktop) {
-        h1 {
-            font-size: $font-size-x3;
-        }
-    }
+
     @include mq.mq($from: desktop, $until: wide) {
     }
     @include mq.mq($from: wide) {
@@ -34,4 +41,8 @@ body {
     line-height: $line-height-sm;
     letter-spacing: $letter-spacing-sm;
     color: $color-primary-brown;
+}
+
+.bold-text {
+    font-weight: bold;
 }
