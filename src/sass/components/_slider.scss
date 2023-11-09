@@ -11,8 +11,12 @@
     text-align: center;
     font-size: $font-size-x1;
     font-family: $font-family-hind;
-    padding: 2rem 3rem;
+    padding: 0 3rem;
     height: auto !important;
+
+    @include mq.mq($from: tablet) {
+        padding: 2rem 3rem;
+    }
 
 
     span {

@@ -46,3 +46,12 @@ body {
 .bold-text {
     font-weight: bold;
 }
+
+.accent-color {
+    color: $color-secondary-orange;
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}

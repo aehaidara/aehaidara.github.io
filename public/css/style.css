@@ -140,19 +140,26 @@ body:before {
     display: none;
   }
 }
+.page-main-section h2 {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
 .page-main-section p {
   text-align: center;
 }
-@media (min-width: 81.25em) {
+@media (min-width: 61.25em) {
   .page-main-section p {
-    max-width: 1000px;
+    max-width: 750px;
+    text-align: center;
   }
 }
-.page-main-section span {
+.page-main-section__tablet-sub-title {
   display: none;
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
-  .page-main-section span {
+  .page-main-section__tablet-sub-title {
     display: inline-block;
     font-weight: 600;
   }
@@ -193,7 +200,7 @@ body:before {
 @media (min-width: 81.25em) {
   .layer-back__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 8rem;
     margin-top: 3rem;
   }
@@ -233,6 +240,14 @@ body:before {
     font-size: 5rem;
   }
 }
+.layer-back__title--margin {
+  margin-top: 2rem;
+}
+@media (min-width: 61.25em) {
+  .layer-back__title--margin {
+    margin-top: 3.5rem;
+  }
+}
 .layer-back__sub-title {
   font-size: 2.5rem;
   font-family: "Lora", serif;
@@ -244,7 +259,7 @@ body:before {
 }
 @media (min-width: 61.25em) {
   .layer-back__sub-title {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 .layer-back__text {
@@ -328,6 +343,15 @@ body:before {
   .layer-front {
     margin-top: 600px;
   }
+}
+.layer-front__intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 @media (min-width: 48em) and (max-width: 61.24em) {
   .layer-front__intro-text {
@@ -470,6 +494,15 @@ body p {
 
 .bold-text {
   font-weight: bold;
+}
+
+.accent-color {
+  color: #CF7C29;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .btn-brown, .btn-transparent {
@@ -803,6 +836,11 @@ nav .logo img {
 .my-services__info span {
   color: #CF7C29;
 }
+.my-services__info a {
+  text-decoration: underline;
+  color: #CF7C29;
+  text-underline-offset: 3px;
+}
 
 .my-services__btn {
   align-self: flex-end;
@@ -817,8 +855,13 @@ nav .logo img {
   text-align: center;
   font-size: 1rem;
   font-family: "Hind", sans-serif;
-  padding: 2rem 3rem;
+  padding: 0 3rem;
   height: auto !important;
+}
+@media (min-width: 48em) {
+  .swiper-slide {
+    padding: 2rem 3rem;
+  }
 }
 .swiper-slide span {
   font-style: italic;
@@ -915,7 +958,11 @@ nav .logo img {
 }
 .card-regular__text {
   text-align: center;
-  height: 120px;
+}
+@media (min-width: 61.25em) {
+  .card-regular__text {
+    height: 150px;
+  }
 }
 .card-regular--no-border {
   border: none;
@@ -973,6 +1020,138 @@ nav .logo img {
 
 .swiper {
   max-width: 900px;
+}
+
+.numbered-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: #946A57;
+  padding: 0 1rem;
+  width: 100%;
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+  .numbered-display {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 48em) and (max-width: 61.24em) {
+  .numbered-display {
+    padding: 0 10rem;
+  }
+}
+.numbered-display__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 61.25em) {
+  .numbered-display__container {
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+@media (min-width: 61.25em) {
+  .numbered-display__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    max-width: 1100px;
+  }
+}
+.numbered-display__number-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+@media (min-width: 61.25em) {
+  .numbered-display__number-wrapper {
+    flex-direction: row;
+    width: fit-content;
+    gap: 0;
+  }
+}
+.numbered-display__number-wrapper hr {
+  border: none;
+  border-top: 1px solid #946A57;
+  width: 60px;
+  transform: rotate(90deg);
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 61.25em) {
+  .numbered-display__number-wrapper hr {
+    transform: rotate(0deg);
+    margin-bottom: 0;
+    margin-left: 3.5rem;
+    width: 150px;
+  }
+}
+.numbered-display__number-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: #946A57;
+  color: #FFFFFF;
+  font-size: 2rem;
+  border-radius: 50%;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+}
+@media (min-width: 61.25em) {
+  .numbered-display__number-item {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+}
+.numbered-display__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.numbered-display__content h2 {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+  font-size: 1.3rem;
+}
+@media (min-width: 61.25em) {
+  .numbered-display__content h2 {
+    align-self: flex-start;
+  }
+}
+.numbered-display__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+@media (min-width: 61.25em) {
+  .numbered-display__description {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.numbered-display__btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -1508,7 +1687,6 @@ section {
 }
 .aicha-info__name {
   width: 100%;
-  margin-top: 2rem;
   width: 90%;
 }
 @media (min-width: 30em) {
@@ -1578,17 +1756,8 @@ section {
   gap: 2rem;
   overflow: hidden;
   background: #FFFFFF;
-  padding: 4rem 0;
-}
-@media (min-width: 48em) and (max-width: 61.24em) {
-  .company-logos {
-    padding: 6rem 0;
-  }
-}
-@media (min-width: 61.25em) {
-  .company-logos {
-    padding: 4rem 0;
-  }
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 .company-logos h1 {
   color: #403A2C;
@@ -2182,7 +2351,7 @@ section {
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   position: relative;
   margin-top: 2rem;
   margin-left: 2rem;
@@ -2297,118 +2466,6 @@ section {
 .meet-your-coach-footer {
   padding: 2rem 1rem !important;
   height: auto;
-}
-
-.about-life-coaching {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  color: #946A57;
-  padding: 0 1rem;
-}
-@media (min-width: 30em) and (max-width: 47.99em) {
-  .about-life-coaching {
-    padding: 0 5rem;
-  }
-}
-@media (min-width: 48em) and (max-width: 61.24em) {
-  .about-life-coaching {
-    padding: 0 10rem;
-  }
-}
-@media (min-width: 61.25em) {
-  .about-life-coaching__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 2rem;
-    max-width: 1100px;
-  }
-}
-.about-life-coaching__number-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-}
-@media (min-width: 61.25em) {
-  .about-life-coaching__number-wrapper {
-    flex-direction: row;
-    width: fit-content;
-    gap: 0;
-  }
-}
-.about-life-coaching__number-wrapper hr {
-  border: none;
-  border-top: 1px solid #946A57;
-  width: 60px;
-  transform: rotate(90deg);
-  margin-bottom: 2.5rem;
-}
-@media (min-width: 61.25em) {
-  .about-life-coaching__number-wrapper hr {
-    transform: rotate(0deg);
-    margin-bottom: 0;
-    margin-left: 3.5rem;
-    width: 150px;
-  }
-}
-.about-life-coaching__number-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background: #946A57;
-  color: #FFFFFF;
-  font-size: 2rem;
-  border-radius: 50%;
-  font-family: "Hind", sans-serif;
-  font-weight: 600;
-}
-@media (min-width: 61.25em) {
-  .about-life-coaching__number-item {
-    width: 5rem;
-    height: 5rem;
-    font-size: 3rem;
-  }
-}
-.about-life-coaching__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
-}
-@media (min-width: 61.25em) {
-  .about-life-coaching__content {
-    text-align: left;
-  }
-}
-.about-life-coaching__content h2 {
-  font-family: "Hind", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.06rem;
-  font-size: 1.1rem;
-}
-@media (min-width: 61.25em) {
-  .about-life-coaching__content h2 {
-    align-self: flex-start;
-  }
-}
-.about-life-coaching__description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-.about-life-coaching__btn {
-  margin-top: 2rem;
 }
 
 .faq {
@@ -2551,13 +2608,23 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding: 0 1rem 4rem 1rem;
   color: #403A2C;
+  text-align: center;
 }
 @media (min-width: 48em) {
   .business-contact {
     padding-bottom: 0;
+  }
+}
+@media (min-width: 48em) {
+  .business-contact__text {
+    max-width: 60%;
+  }
+}
+@media (min-width: 81.25em) {
+  .business-contact__text {
+    max-width: 50%;
   }
 }
 .business-contact__btn {

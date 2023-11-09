@@ -65,11 +65,20 @@
 .business-contact {
     @include flex-col-center;
     gap: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding: 0 1rem 4rem 1rem;
     color: $color-secondary-dark-green;
+    text-align: center;
     @include mq.mq($from: tablet) {
         padding-bottom: 0;
+    }
+
+    &__text {
+        @include mq.mq($from: tablet) {
+            max-width: 60%;
+        }
+        @include mq.mq($from: wide) {
+            max-width: 50%;
+        }
     }
     &__btn {
         background: $color-secondary-dark-green;

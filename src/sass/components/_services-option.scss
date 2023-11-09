@@ -70,6 +70,11 @@
     span {
         color: $color-secondary-orange;
     }
+    a {
+        text-decoration: underline;
+        color: $color-secondary-orange;
+        text-underline-offset: 3px;
+    }
 }
 
 .my-services__btn {

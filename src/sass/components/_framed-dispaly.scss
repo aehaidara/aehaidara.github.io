@@ -67,7 +67,9 @@
 
     &__text {
         text-align: center;
-        height: 120px;
+        @include mq.mq($from: desktop) {
+            height: 150px;
+        }
     }
 
     &--no-border {
