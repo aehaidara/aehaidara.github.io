@@ -8,18 +8,17 @@ class Footer extends HTMLElement {
                     <div class="footer__image-container">
                         <img src="./assets/images/home/footer-img.jpg" alt="" />
                     </div>
-                    <div class="footer__text-and-btn">
-                        <p>
-                            Show up for yourself and get started on your personal development 
-                            journey by booking your free introduction call.
-                        </p>
-                        <a class="btn-transparent" href="https://dara-coaching.planway.com"
-                            >Book your free call
-                            <img src="./assets/svg/btn-arrow.svg" alt="" />
-                        </a>
-                    </div>
                 </div>
-
+                <div class="footer__text-and-btn footer__text-and-btn--hide-on-wide">
+                    <p>
+                        Show up for yourself and get started on your personal development 
+                        journey by booking your free introduction call.
+                    </p>
+                    <a class="btn-transparent" href="https://dara-coaching.planway.com"
+                        >Book your free call
+                        <img src="./assets/svg/btn-arrow.svg" alt="" />
+                    </a>
+                </div>
                 <div class="footer__contacts">
                     <div>
                         <p>
@@ -40,10 +39,26 @@ class Footer extends HTMLElement {
                         />
                     </div>
                     <div class="footer__icons">
-                        <img src="./assets/svg/instagram-icon.svg" alt="" />
-                        <img src="./assets/svg/facebook-icon.svg" alt="" />
-                        <img src="./assets/svg/linkedin-icon.svg" alt="" />
+                        <a href="https://www.instagram.com/daracoaching/">
+                            <img src="./assets/svg/instagram-icon.svg" alt="" />
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100086533623477">
+                            <img src="./assets/svg/facebook-icon.svg" alt="" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/dara-coaching/">
+                            <img src="./assets/svg/linkedin-icon.svg" alt="" />
+                        </a>
                     </div>
+                </div>
+                <div class="footer__text-and-btn footer__text-and-btn--hide-on-mobile">
+                    <p>
+                        Show up for yourself and get started on your personal development 
+                        journey by booking your free introduction call.
+                    </p>
+                    <a class="btn-transparent" href="https://dara-coaching.planway.com"
+                        >Book your free call
+                        <img src="./assets/svg/btn-arrow.svg" alt="" />
+                    </a>
                 </div>
             </div>
 

@@ -15,21 +15,22 @@
     height: 100%;
 
     &__wrapper {
-        @include flex-col-center;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0;
         gap: 2rem;
-        padding: 2rem 0;
         text-align: center;
-
+        
         /* mobile-land */
-        @include mq.mq($from: mobileLandscape) {
+        @include mq.mq($from: tablet) {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            
+            margin-left: 1.5rem;
         }
 
         //tablet
-        @include mq.mq($from: wide) {
-
+        @include mq.mq($from: desktop) {
+            width: 1000px;
         }
     }
 
@@ -42,22 +43,16 @@
     }
 
     &__image-container {
-        width: 20rem;
-        height: 20rem;
+        width: 100%;
+        height: 23rem;
 
-        /* mobile-land */
-        @include mq.mq($from: mobileLandscape, $until: tablet) {
-            width: 15rem;
-            height: 15rem;
-        }
-        //tablet
         @include mq.mq($from: tablet) {
-            width: 26.5rem;
-            height: 26.5rem;
+            width: 100%;
+            height: 28rem;
         }
 
         @include mq.mq($from: desktop) {
-            width: 30rem;
+            width: 100%;
             height: 30rem;
         }
 
@@ -74,15 +69,33 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding: 0 2.5rem
+        padding: 0 2.5rem;
+        grid-column: 1/4;
+        @include mq.mq($from: mobileLandscape, $until: tablet) {
+            padding: 0 10rem;
+        }
+        @include mq.mq($from: tablet) {
+            padding: 0 10rem;
+        }
+
+        &--hide-on-mobile {
+            display: none;
+            @include mq.mq($from: tablet) {
+                display: flex;
+            }
+        }
+
+        &--hide-on-wide {
+            @include mq.mq($from: tablet) {
+                display: none;
+            }
+        }
     }
 
     &__contacts {
         @include flex-col-center;
         gap: 2rem;
-
-        /* mobile-land */
-        @include mq.mq($from: mobileLandscape) {
+        @include mq.mq($from: tablet) {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -117,7 +130,7 @@
         font-size: 0.8rem;
         font-weight: lighter;
         padding-bottom: 1rem;
-        // position: relative;
-        // top: 2rem;
+        position: relative;
+        top: 2rem;
     }
 }
