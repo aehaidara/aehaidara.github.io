@@ -44,7 +44,7 @@
     border-radius: 2rem;
     border: 1px solid $color-primary-brown;
     color: $color-primary-brown;
-    cursor: pointer;
+    cursor: pointer !important;
     &--active {
         background: $color-primary-brown;
         color: $color-primary-white;

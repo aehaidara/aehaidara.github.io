@@ -18,7 +18,7 @@ nav {
     @include mq.mq($from: desktop, $until: wide) {
     }
     @include mq.mq($from: wide) {
-        padding: 0 9rem;
+        padding: 0 19rem; // match layer-back
         height: $nav-desktop-height;
     }
 }
