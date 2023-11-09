@@ -11,7 +11,7 @@
     text-align: center;
     font-size: $font-size-x1;
     font-family: $font-family-hind;
-    padding: 0 3rem;
+    padding: 2rem 3rem;
     height: auto !important;
 
     @include mq.mq($from: tablet) {
@@ -23,6 +23,7 @@
         font-style: italic;
         color: $color-secondary-orange;
     }
+
 }
 
 .swiper-button-next::after,

@@ -91,6 +91,9 @@
             background: $color-primary-beige;
             resize: none;
             padding-left: 1rem;
+            color: $color-primary-brown !important;
+            font-family: $font-family-hind;
+            font-size: 1.3rem;
         }
 
         input {
@@ -123,6 +126,7 @@
     &__text {
         color: $color-primary-brown;
         text-align: center;
+        padding: 0 1rem;
 
         @include mq.mq($from: mobileLandscape, $until: tablet) {
             width: 400px;
