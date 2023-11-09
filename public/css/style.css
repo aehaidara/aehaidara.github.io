@@ -2451,13 +2451,13 @@ section {
 @media (min-width: 48em) and (max-width: 61.24em) {
   .timeline__image {
     max-width: 550px;
-    height: 400px;
+    height: 500px;
   }
 }
 @media (min-width: 61.25em) {
   .timeline__image {
     width: 600px;
-    height: 400px;
+    height: 500px;
   }
 }
 .timeline__image img {

@@ -125,11 +125,11 @@
 
         @include mq.mq($from: tablet, $until: desktop) {
             max-width: 550px;
-            height: 400px;
+            height: 500px;
         }
         @include mq.mq($from: desktop) {
             width: 600px;
-            height: 400px;
+            height: 500px;
         }
 
         img {
