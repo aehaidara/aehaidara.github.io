@@ -48,7 +48,7 @@ class Footer extends HTMLElement {
                             <img src="./assets/svg/facebook-icon.svg" alt="" />
                         </a>
                         <a href="https://www.linkedin.com/company/dara-coaching/">
-                            <img src="./assets/svg/linkedin-icon.svg" alt="" />
+                            <img src="./assets/svg/linkedIn-icon.svg" alt="" />
                         </a>
                     </div>
                 </div>
@@ -66,7 +66,12 @@ class Footer extends HTMLElement {
 
             <p class="footer__copywrite">
                 Copyright &copy; <span id="copyrightYear"></span> DARA
-                Coaching
+                Coaching |
+
+                <!-- Below is the link that users can use to open Preferences Center to change 
+                their preferences. Do not modify the ID parameter. Place it where appropriate, 
+                style it as needed. -->
+                <a class="underline" href="#" id="open_preferences_center">Update cookies preferences</a>
             </p>
 
       `;
