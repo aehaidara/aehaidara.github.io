@@ -2,7 +2,8 @@
 @use "../base" as *;
 @use "../abstracts" as *;
 
-.btn-brown, .btn-transparent {
+.btn-brown,
+.btn-transparent {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -43,7 +44,8 @@
 }
 
 @include mq.mq($from: desktop) {
-    .btn-brown:hover, .btn-transparent:hover {
+    .btn-brown:hover,
+    .btn-transparent:hover {
         transition: 0.2s ease-in-out;
         gap: 1.5rem;
     }

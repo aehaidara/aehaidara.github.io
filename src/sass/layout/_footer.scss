@@ -20,15 +20,13 @@
         padding: 3rem 0;
         gap: 2rem;
         text-align: center;
-        
-        /* mobile-land */
+
         @include mq.mq($from: tablet) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             margin-left: 1.5rem;
         }
 
-        //tablet
         @include mq.mq($from: desktop) {
             width: 1000px;
         }

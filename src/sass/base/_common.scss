@@ -123,8 +123,11 @@
         @include mq.mq($from: wide) {
             display: flex;
             justify-content: space-between;
-            padding: 0 18.5rem; // match nav-bar
+            padding: 0 8.5rem;
             margin-top: 3rem;
+        }
+        @include mq.mq($from: 1800px) {
+            padding: 0 18.5rem;
         }
     }
 
@@ -179,7 +182,7 @@
         }
     }
 
-    // ***********  PAGE IMAGE BACK *********** //
+    // page image back
     .page-image-back {
         display: none;
         overflow: hidden;
@@ -259,6 +262,7 @@
         }
     }
 
+    // page image back
     .page-image-front {
         width: 100%;
 

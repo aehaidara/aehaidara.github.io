@@ -9,10 +9,6 @@
         @include mq.mq($from: tablet) {
             margin-bottom: 3rem;
         }
-        // @include mq.mq($from: wide) {
-        //     margin-top: 3rem;
-        //     margin-bottom: 3rem;
-        // }
     }
 
     // mobile

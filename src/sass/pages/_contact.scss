@@ -34,7 +34,6 @@
             width: 400px;
         }
         @include mq.mq($from: tablet, $until: desktop) {
-
         }
 
         img {
@@ -44,7 +43,6 @@
             border-radius: 1rem;
         }
     }
-
 
     &__form {
         display: flex;

@@ -158,7 +158,7 @@ nav {
     border-radius: 0 0 0 2rem;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
+    /* stop flickering of text in safari */
 
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
@@ -199,11 +199,11 @@ nav {
     opacity: 1;
 }
 
-////// DROPDOWN
+////// DROPDOWN **********************
 
 /* dropdown container */
 .nav-with-dropdown:hover .dropdown {
-    display: block; /* Show the dropdown when the parent is hovered */
+    display: block; /* Shows the dropdown when the parent is hovered */
 }
 
 /* dropdown items */
@@ -222,10 +222,4 @@ nav {
     padding: 10px 20px;
     color: $color-primary-brown;
     text-decoration: none;
-}
-
-/* dropdown links on hover */
-.dropdown a:hover {
-    // background-color: #ddd;
-    // color: #333;
 }

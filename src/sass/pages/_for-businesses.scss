@@ -12,7 +12,6 @@
 
     @include mq.mq($from: desktop) {
         flex-direction: row;
-
     }
     @include mq.mq($from: wide) {
         max-width: 1300px;
@@ -33,7 +32,6 @@
 .statistics__title {
     margin-bottom: 2rem;
 }
-
 
 .progressbar-text {
     font-family: $font-family-hind;

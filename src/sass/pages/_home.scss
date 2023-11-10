@@ -90,11 +90,7 @@
 }
 
 .meet-your-coach-container {
-    // grid-column: 1/4;
-    // margin: 0 !important;
-
     @include mq.mq($from: mobileLandscape) {
-        // grid-column: 2/3;
         display: flex;
         flex-direction: column;
     }
@@ -114,7 +110,6 @@
 
 .meet-your-coach {
     position: relative;
-    // grid-column: 1/4; // occupy full width
     display: flex;
     width: 100%;
     margin-top: 4rem;
@@ -198,19 +193,10 @@
     text-align: center;
     font-family: $font-family-lora;
     width: 100%;
-    // max-width: 550px;
 
     @include mq.mq($from: mobileLandscape) {
         width: 100%;
     }
-    // @include mq.mq($from: tablet) {
-    //     gap: 3rem;
-    //     padding: 2rem 0;
-    // }
-    // @include mq.mq($from: desktop) {
-    //     width: 500px;
-    //     padding: 0;
-    // }
 
     &__image {
         width: 100%;
