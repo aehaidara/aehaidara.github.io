@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google Tag Manager -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC3WYJEWV2"></script>
         <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "G-PTZZHZLLHY");
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-SC3WYJEWV2");
         </script>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -34,15 +32,7 @@
         <title>Dara coaching</title>
     </head>
     <body class="page-bg-beige">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=G-PTZZHZLLHY"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
+       
         <!-- End Google Tag Manager (noscript) -->
         <main class="layout">
             <!-- *********************************  NAVIGATION   ********************************* -->
@@ -405,7 +395,5 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
     </body>
 </html>
