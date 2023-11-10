@@ -2,21 +2,21 @@
   "name": "dara-coaching",
   "version": "1.0.0",
   "description": "life coaching",
-  "main": "public/index.html",
+  "main": "docs/index.html",
   "author": "Elisha Ngoma",
   "scripts": {
-    "build:sass": "sass  --no-source-map src/sass:public/css",
-    "copy:html": "copyfiles -u 1 ./src/*.html public",
-    "copy:js": "copyfiles -u 1 ./src/js/**/*.js public",
+    "build:sass": "sass  --no-source-map src/sass:docs/css",
+    "copy:html": "copyfiles -u 1 ./src/*.html docs",
+    "copy:js": "copyfiles -u 1 ./src/js/**/*.js docs",
     "copy": "npm-run-all --parallel copy:*",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
     "watch:js": "onchange \"src/js/**/*.js\" -- npm run copy:js",
-    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:sass": "sass  --no-source-map --watch src/sass:docs/css",
     "watch": "npm-run-all --parallel watch:*",
-    "serve": "browser-sync start --server public --files public",
+    "serve": "browser-sync start --server docs --files docs",
     "start": "npm-run-all copy --parallel watch serve",
     "build": "npm-run-all copy:* build:*",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+    "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",

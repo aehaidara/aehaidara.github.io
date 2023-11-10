@@ -33,10 +33,12 @@ class Footer extends HTMLElement {
                         <p>CVR 38955462</p>
                     </div>
                     <div class="footer__logo">
-                        <img
-                            src="./assets/svg/logos/logo-white.svg"
-                            alt="dara-coaching-logo"
-                        />
+                        <a href="./index.html">
+                            <img
+                                src="./assets/svg/logos/logo-white.svg"
+                                alt="dara-coaching-logo"
+                            />
+                        </a>
                     </div>
                     <div class="footer__icons">
                         <a href="https://www.instagram.com/daracoaching/">
