@@ -301,8 +301,8 @@ $media-type: all !default;
   }
 }
 
-// uncomment this to see breakpoints
+/** uncomment this to see breakpoints */ 
 
-@if list.length($show-breakpoints) > 0 {
-  @include show-breakpoints;
-}
+// @if list.length($show-breakpoints) > 0 {
+//   @include show-breakpoints;
+// }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Hind:wght@300;400&display=swap");
 /* ==========================================================================
@@ -28,45 +27,7 @@ HEIGHTS
 /* ==========================================================================
 SPACING
 ========================================================================== */
-body:before {
-  background-color: #fcf8e3;
-  border-bottom: 1px solid #fbeed5;
-  border-left: 1px solid #fbeed5;
-  color: #c09853;
-  font: small-caption;
-  padding: 3px 6px;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 100;
-}
-@media (min-width: 20em) {
-  body:before {
-    content: "mobile ≥ 320px (20em)";
-  }
-}
-@media (min-width: 30em) {
-  body:before {
-    content: "mobileLandscape ≥ 480px (30em)";
-  }
-}
-@media (min-width: 48em) {
-  body:before {
-    content: "tablet ≥ 768px (48em)";
-  }
-}
-@media (min-width: 61.25em) {
-  body:before {
-    content: "desktop ≥ 980px (61.25em)";
-  }
-}
-@media (min-width: 81.25em) {
-  body:before {
-    content: "wide ≥ 1300px (81.25em)";
-  }
-}
-
+/** uncomment this to see breakpoints */
 .page-bg-beige {
   background-color: #F4EEE3;
 }
