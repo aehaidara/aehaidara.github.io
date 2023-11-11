@@ -70,8 +70,8 @@ class Footer extends HTMLElement {
                 <!-- Below is the link that users can use to open Preferences Center to change 
                 their preferences. Do not modify the ID parameter. Place it where appropriate, 
                 style it as needed. -->
-                <a class="underline" href="./cookie-policy.html" id="open_preferences_center">Cookie</a>
-                & <a class="underline" href="./privacy-policy.html" id="open_preferences_center">Privacy</a> Policies
+                <a class="underline" href="./cookie-policy.html">Cookie</a>
+                & <a class="underline" href="./privacy-policy.html">Privacy</a> Policies
                 | <a class="underline" href="#" id="open_preferences_center">Update cookies preferences</a>
                 <br>
                 Copyright &copy; <span id="copyrightYear"></span> DARA
