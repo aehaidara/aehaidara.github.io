@@ -1,4 +1,4 @@
-// // My services
+// ------------------- My services ----------------------- //
 const myServicesItems = document.querySelectorAll(".my-services__item-wrapper");
 
 myServicesItems.forEach((item, index) => {
@@ -26,7 +26,7 @@ myServicesItems.forEach((item, index) => {
     });
 });
 
-// // FAQ
+// ------------------- FAQ ------------------- //
 const faqQuestions = document.querySelectorAll(".faq__item-wrapper");
 
 faqQuestions.forEach((item, index) => {
@@ -91,31 +91,12 @@ function removeOpenQuestions(index1) {
     });
 }
 
-/* @@@@@@@@@@@@@@@ */
-// Initialize Swiper
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    // loop: true,
-    // autoplay: {
-    //     delay: 2000,
-    // },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
-// Copywright
-// Get the current year
+// ------------------- Copywright ------------------- //
 const currentYear = new Date().getFullYear();
 document.getElementById('copyrightYear').textContent = `${currentYear}`;
 
 
-// Srolling to targeted
+// ------------------- Srolling to targeted ------------------- //
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("a[href^='#']").addEventListener("click", function(e) {
         e.preventDefault();

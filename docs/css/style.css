@@ -1215,7 +1215,7 @@ nav .logo img {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 0 2.5rem;
+  padding: 0 1rem;
   grid-column: 1/4;
 }
 @media (min-width: 30em) and (max-width: 47.99em) {

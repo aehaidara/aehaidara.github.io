@@ -5,6 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#F4EEE3" />
+        <!-- meta description -->
+        <meta
+            name="description"
+            content="
+                    Unlock Your Potential with DARA Coaching - Your Guide 
+                    to Personal Growth, Well-being, and Mindset Change. 
+                    Explore Tailored Life Coaching Services Online or 
+                    In-person and Transform Your Life Today."
+        />
         <!-- fontawsome -->
         <script src="https://kit.fontawesome.com/f47357e038.js" crossorigin="anonymous"></script>
         <!-- sytles.css -->
@@ -18,7 +27,7 @@
         <script src="./js/scripts/scripts.js" defer></script>
         <!-- favicon dara logo -->
         <link rel="icon" href="./assets/svg/logos/favicon.ico" type="image/x-icon" />
-        <title>Dara coaching</title>
+        <title>Dara coaching | Life coaching | Become Your Bestself</title>
     </head>
     <body class="page-bg-beige">
         <main class="layout">
@@ -378,10 +387,28 @@
         <script src="./js/components/header.js"></script>
         <script src="./js/components/footer.js"></script>
         <script src="./js/components/button.js"></script>
-        <!-- jquery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                // loop: true,
+                // autoplay: {
+                //     delay: 2000,
+                // },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
 
         <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
         <script

@@ -67,7 +67,7 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding: 0 2.5rem;
+        padding: 0 1rem;
         grid-column: 1/4;
         @include mq.mq($from: mobileLandscape, $until: tablet) {
             padding: 0 10rem;
