@@ -74,7 +74,7 @@ class Header extends HTMLElement {
                         <li>For Individuals</li>
                       </a>
                       <a class="menu-item" href="./for-businesses.html">
-                        <li>For Business</li>
+                        <li>For Businesses</li>
                       </a>
                       <a class="menu-item" href="./about-dara-coaching.html">
                         <li>About Dara Coaching</li>
