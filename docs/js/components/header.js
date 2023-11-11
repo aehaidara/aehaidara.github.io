@@ -80,7 +80,7 @@ class Header extends HTMLElement {
                         <li>About Dara Coaching</li>
                       </a>
                       <a class="menu-item" href="./meet-your-coach.html">
-                        <li>Meet your coach</li>
+                        <li>Meet Your Coach</li>
                       </a>
                       <a class="menu-item" href="./prices.html">
                         <li>Prices</li>
