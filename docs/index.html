@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#F4EEE3" />
-        
+
         <!-- meta description - start -->
         <meta
             name="description"
@@ -55,7 +55,14 @@
             <!-- *********************************  HERO  ********************************* -->
             <section class="hero">
                 <div class="hero__image">
-                    <img src="./assets/images/home/hero.png" alt="" />
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./assets/images/home/home.png" />
+                        <img
+                            src="./assets/images/home/home@1x.png"
+                            alt="landing page image with the life coach Aïcha Haïdara"
+                            loading="lazy"
+                        />
+                    </picture>
                 </div>
 
                 <div class="hero__be-your-best-self">
@@ -101,23 +108,6 @@
 
             <!-- *********************************  MEET YOUR COACH  ********************************* -->
             <section class="meet-your-coach-container">
-                <div class="meet-your-coach">
-                    <div class="meet-your-coach__title-wrapper">
-                        <h2 class="meet-your-coach__title">MEET</h2>
-                        <h3 class="meet-your-coach__sub-title">YOUR COACH</h3>
-                        <img
-                            class="meet-your-coach__arrow-icon"
-                            src="./assets/svg/drown-arrow.svg"
-                            alt=""
-                        />
-                    </div>
-                    <img
-                        class="meet-your-coach__image-mobile"
-                        src="./assets/images/home/met-your-coach.png"
-                        alt=""
-                    />
-                </div>
-
                 <!-- ***  AICHA INFO  ******************* -->
                 <div class="aicha-info">
                     <div class="aicha-info__title-wrapper">
@@ -125,12 +115,35 @@
                         <!-- <h2 class="aicha-info__title">Your Coach</h2> -->
                     </div>
                     <div class="aicha-info__content-wrapper">
-                        <div class="aicha-info__image">
-                            <img src="./assets/images/home/met-your-coach.png" alt="" />
+                        <div class="meet-your-coach__title-wrapper">
+                            <h2 class="meet-your-coach__title">MEET</h2>
+                            <h3 class="meet-your-coach__sub-title">YOUR COACH</h3>
+                            <img
+                                class="meet-your-coach__arrow-icon"
+                                src="./assets/svg/drown-arrow.svg"
+                                alt="drwon arrow pointing at Aïcha"
+                            />
                         </div>
-                        <!-- name -->
+                        <div class="aicha-info__image">
+                            <picture>
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="./assets/images/home/meet-your-coach.png"
+                                />
+                                <img
+                                    src="./assets/images/home/meet-your-coach@1x.png"
+                                    alt="meet your coach image"
+                                    loading="lazy"
+                                />
+                            </picture>
+                        </div>
+                        <!-- content -->
                         <div class="aicha-info__text-wrapper">
-                            <img class="aicha-info__name" src="./assets/svg/name.svg" alt="" />
+                            <img
+                                class="aicha-info__name"
+                                src="./assets/svg/name.svg"
+                                alt="image displaying the name of A¨ïcha Haïdara"
+                            />
                             <div class="aicha-info__text">
                                 <p>
                                     Hey there! I'm Aïcha, a certified life coach specializing in
@@ -201,7 +214,7 @@
                                 class="my-services__btn btn-brown"
                                 href="for-individuals.html#individual-coaching"
                                 >Find out more
-                                <img src="./assets/svg/btn-arrow.svg" alt="" />
+                                <img src="./assets/svg/btn-arrow.svg" alt="button arrow icon" />
                             </a>
                         </div>
                     </div>
@@ -226,7 +239,7 @@
                                 class="my-services__btn btn-brown"
                                 href="for-individuals.html#group-coaching"
                                 >Find out more
-                                <img src="./assets/svg/btn-arrow.svg" alt="" />
+                                <img src="./assets/svg/btn-arrow.svg" alt="button arrow icon" />
                             </a>
                         </div>
                     </div>
@@ -253,7 +266,7 @@
                                 class="my-services__btn btn-brown"
                                 href="for-individuals.html#workshops"
                                 >Find out more
-                                <img src="./assets/svg/btn-arrow.svg" alt="" />
+                                <img src="./assets/svg/btn-arrow.svg" alt="button arrow icon" />
                             </a>
                         </div>
                     </div>
@@ -271,7 +284,10 @@
                 <div class="card-regular">
                     <div class="card-regular__wrapper">
                         <div class="card-regular__icon">
-                            <img src="./assets/svg/well-being-survey-icon.svg" alt="" />
+                            <img
+                                src="./assets/svg/well-being-survey-icon.svg"
+                                alt="well being survey icon"
+                            />
                         </div>
                         <h2 class="card-regular__title">Well-being Survey</h2>
                         <p class="card-regular__text">
@@ -283,7 +299,10 @@
 
                     <div class="card-regular__wrapper">
                         <div class="card-regular__icon">
-                            <img src="./assets/svg/well-being-hour-icon.svg" alt="" />
+                            <img
+                                src="./assets/svg/well-being-hour-icon.svg"
+                                alt="well being hour icon"
+                            />
                         </div>
                         <h2 class="card-regular__title">Well-being Hour</h2>
                         <p class="card-regular__text">
@@ -294,7 +313,10 @@
 
                     <div class="card-regular__wrapper">
                         <div class="card-regular__icon">
-                            <img src="./assets/svg/customised-workshops.svg" alt="" />
+                            <img
+                                src="./assets/svg/customised-workshops-icon.svg"
+                                alt="customised workshops icon"
+                            />
                         </div>
                         <h2 class="card-regular__title">Customized Workshops</h2>
                         <p class="card-regular__text">
@@ -317,13 +339,19 @@
                 <h1>Valued Clients</h1>
                 <div class="company-logos__wrapper">
                     <div class="company-logos__item">
-                        <img src="./assets/svg/eupry-logo.svg" alt="" />
+                        <img src="./assets/svg/eupry-logo.svg" alt="eupry company logo" />
                     </div>
                     <div class="company-logos__item">
-                        <img src="./assets/images/home/mixed-finns-logo.png" alt="" />
+                        <img
+                            src="./assets/images/home/mixed-finns-logo.png"
+                            alt="mixed finns company logo"
+                        />
                     </div>
                     <div class="company-logos__item">
-                        <img src="./assets/images/home/ticketbutler-logo.png" alt="" />
+                        <img
+                            src="./assets/images/home/ticketbutler-logo.png"
+                            alt="ticketbutler compay logo"
+                        />
                     </div>
                 </div>
             </div>
@@ -336,7 +364,7 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./assets/svg/quote-icon.svg" alt="" />
+                            <img src="./assets/svg/quote-icon.svg" alt="quote icon" />
 
                             <p>
                                 <span>I had a very good experience!</span> Aïcha is very
@@ -347,7 +375,7 @@
                             <span class="auther"> Josephine Thestrup </span>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/svg/quote-icon.svg" alt="" />
+                            <img src="./assets/svg/quote-icon.svg" alt="quote icon" />
 
                             <p>
                                 <span
@@ -360,7 +388,7 @@
                             <span class="auther"> Waris </span>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/svg/quote-icon.svg" alt="" />
+                            <img src="./assets/svg/quote-icon.svg" alt="quote icon" />
 
                             <p>
                                 I highly recommend DARA Coaching. With her
@@ -374,7 +402,7 @@
                             <span class="auther"> Manisha Shrestha </span>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/svg/quote-icon.svg" alt="" />
+                            <img src="./assets/svg/quote-icon.svg" alt="quote icon" />
 
                             <p>
                                 <span>I only have good things to say about DARA Coaching.</span>
@@ -387,10 +415,10 @@
                         </div>
                     </div>
                     <div class="swiper-button-next">
-                        <img src="./assets/svg/next-button.svg" alt="" />
+                        <img src="./assets/svg/next-button.svg" alt="next button icon" />
                     </div>
                     <div class="swiper-button-prev">
-                        <img src="./assets/svg/prev-button.svg" alt="" />
+                        <img src="./assets/svg/prev-button.svg" alt="prev button icon" />
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>

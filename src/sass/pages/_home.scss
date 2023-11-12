@@ -4,7 +4,6 @@
 
 .hero {
     display: grid;
-    gap: 0.5rem;
     height: 100%;
     margin-bottom: 0rem !important;
 
@@ -16,7 +15,7 @@
     }
 
     &__image {
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 100%;
         @include mq.mq($from: tablet, $until: desktop) {
             margin-top: 3rem;
@@ -112,7 +111,6 @@
     position: relative;
     display: flex;
     width: 100%;
-    margin-top: 4rem;
 
     @include mq.mq($from: mobileLandscape) {
         margin-top: 0;
@@ -129,7 +127,7 @@
         flex-direction: column;
         text-align: right;
         font-family: $font-family-lora;
-        top: 4%;
+        top: -1%;
         right: 5%;
         transform: translateY(-50%);
         color: $color-primary-brown;
@@ -142,7 +140,7 @@
             align-self: center;
             width: 40% !important;
             position: relative;
-            right: 1rem;
+            right: -2rem;
         }
     }
 
@@ -154,31 +152,33 @@
         font-size: 1.5rem;
     }
 
-    img {
-        width: 100%;
-        object-fit: contain;
+    &__image-mobile {
+        margin-top: 0.5rem;
+        img {
+            width: 100%;
+            object-fit: contain;
+            @include mq.mq($from: mobileLandscape, $until: tablet) {
+                width: 350px;
+                height: 100%;
+                border-radius: 2rem;
+            }
 
-        @include mq.mq($from: mobileLandscape, $until: tablet) {
-            width: 350px;
-            height: 100%;
-            border-radius: 2rem;
-        }
+            @include mq.mq($from: tablet, $until: desktop) {
+                width: 400px;
+                height: 600px;
+                border-radius: 2rem;
+            }
+            @include mq.mq($from: desktop) {
+                width: 360px;
+                height: 600px;
+                border-radius: 2rem;
+            }
 
-        @include mq.mq($from: tablet, $until: desktop) {
-            width: 400px;
-            height: 600px;
-            border-radius: 2rem;
-        }
-        @include mq.mq($from: desktop) {
-            width: 360px;
-            height: 600px;
-            border-radius: 2rem;
-        }
-
-        @include mq.mq($from: wide) {
-            width: 450px;
-            height: 700px;
-            border-radius: 2rem;
+            @include mq.mq($from: wide) {
+                width: 450px;
+                height: 700px;
+                border-radius: 2rem;
+            }
         }
     }
 }
@@ -200,11 +200,11 @@
 
     &__image {
         width: 100%;
-        display: none;
         @include mq.mq($from: mobileLandscape) {
             display: block;
         }
         img {
+            width: 100%;
             @include mq.mq($from: mobileLandscape, $until: tablet) {
                 width: 100%;
             }
@@ -225,7 +225,12 @@
     }
 
     &__content-wrapper {
+        margin-top: 5rem;
+        position: relative;
         width: 100%;
+        @include mq.mq($from: mobileLandscape) {
+            margin-top: 0;
+        }
         @include mq.mq($from: desktop) {
             display: flex;
             flex-direction: row-reverse;
@@ -276,7 +281,6 @@
     }
 
     &__name {
-        width: 100%;
         width: 90%;
         @include mq.mq($from: mobileLandscape) {
             width: 60%;

@@ -6,7 +6,11 @@ class Footer extends HTMLElement {
             <div class="footer__wrapper">
                 <div class="footer__left-side">
                     <div class="footer__image-container">
-                        <img src="./assets/images/home/footer-img.jpg" alt="" />
+                        <img 
+                            src="./assets/images/footer/footer.jpg" 
+                            alt="footer image with coaching Aïcha" 
+                            loading="lazy" 
+                        />
                     </div>
                 </div>
                 <div class="footer__text-and-btn footer__text-and-btn--hide-on-wide">
@@ -16,7 +20,7 @@ class Footer extends HTMLElement {
                     </p>
                     <a class="btn-transparent" href="https://dara-coaching.planway.com"
                         >Book your free call
-                        <img src="./assets/svg/btn-arrow.svg" alt="" />
+                        <img src="./assets/svg/btn-arrow.svg" alt="button arrow icon" />
                     </a>
                 </div>
                 <div class="footer__contacts">
@@ -36,19 +40,19 @@ class Footer extends HTMLElement {
                         <a href="./index.html">
                             <img
                                 src="./assets/svg/logos/logo-white.svg"
-                                alt="dara-coaching-logo"
+                                alt="dara coaching logo"
                             />
                         </a>
                     </div>
                     <div class="footer__icons">
                         <a href="https://www.instagram.com/daracoaching/">
-                            <img src="./assets/svg/instagram-icon.svg" alt="" />
+                            <img src="./assets/svg/instagram-icon.svg" alt="instagram icon" />
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=100086533623477">
-                            <img src="./assets/svg/facebook-icon.svg" alt="" />
+                            <img src="./assets/svg/facebook-icon.svg" alt="facebook icon" />
                         </a>
                         <a href="https://www.linkedin.com/company/dara-coaching/">
-                            <img src="./assets/svg/linkedIn-icon.svg" alt="" />
+                            <img src="./assets/svg/linkedIn-icon.svg" alt="linkedIn icon" />
                         </a>
                     </div>
                 </div>
@@ -59,14 +63,12 @@ class Footer extends HTMLElement {
                     </p>
                     <a class="btn-transparent" href="https://dara-coaching.planway.com"
                         >Book your free call
-                        <img src="./assets/svg/btn-arrow.svg" alt="" />
+                        <img src="./assets/svg/btn-arrow.svg" alt="button arrwo icon" />
                     </a>
                 </div>
             </div>
 
             <p class="footer__copywrite">
-                
-
                 <!-- Below is the link that users can use to open Preferences Center to change 
                 their preferences. Do not modify the ID parameter. Place it where appropriate, 
                 style it as needed. -->
