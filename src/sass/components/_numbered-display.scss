@@ -8,6 +8,7 @@
     color: $color-primary-brown;
     padding: 0 1rem;
     width: 100%;
+    margin-bottom: 3rem;
     @include mq.mq($from: mobileLandscape, $until: tablet) {
         padding: 0 5rem;
     }

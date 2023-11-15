@@ -988,6 +988,7 @@ nav .logo img {
   color: #946A57;
   padding: 0 1rem;
   width: 100%;
+  margin-bottom: 3rem;
 }
 @media (min-width: 30em) and (max-width: 47.99em) {
   .numbered-display {
