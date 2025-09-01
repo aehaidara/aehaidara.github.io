@@ -25,10 +25,9 @@ class Footer extends HTMLElement {
                 </div>
                 <div class="footer__contacts">
                     <div>
-                        <p>
-                            <a class="bold-text underline" href="https://hosnorup.dk/">Hos Norup</a> <br>
-                            Roskildevej 46 <br>
-                            2000 Frederiksberg
+                        <p
+                            class="bold-text">Hvidehus, Valbygårdsvej 64 A <br>
+                            2500 Valby
                         </p>
                     </div>
                     <div>
