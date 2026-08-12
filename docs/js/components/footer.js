@@ -32,8 +32,6 @@ class Footer extends HTMLElement {
                     </div>
                     <div>
                         <p class="">contact@daracoaching.com</p>
-                        <p>+45 93 93 55 38</p>
-                        <p>CVR 38955462</p>
                     </div>
                     <div class="footer__logo">
                         <a href="./index.html">
